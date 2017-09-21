@@ -1,6 +1,22 @@
-export GOPATH=/Users/patrickmeredith/.go
+un=$(uname -o 2> /dev/null || uname -s)
 
-export PATH=/Users/patrickmeredith/Tools:$PATH
+gnames="10gen pmeredit"
+
+if [ "$un" == "Cygwin" ]; then
+    for name in $gnames; do
+        mkdir -p $HOME/go/src/github.com/$name
+    done
+    export GOPATH=$HOME/go
+else
+    mkdir -p $HOME/git
+    for name in $gnames; do
+	echo $name
+        mkdir -p $HOME/.go/src/github.com/$name
+    done
+    export GOPATH=$HOME/.go
+fi
+
+export PATH=$HOME/Tools:$PATH
 
 
 complete -C gotab -o nospace go

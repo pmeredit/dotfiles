@@ -1,5 +1,5 @@
 if [ ! hash stow &> /dev/null ]; then
-	un=$(uname -o || uname -s)
+	un=$(uname -o 2> /dev/null|| uname -s)
 	if [ "$un" == "Cygwin" ]; then
 		cp apt-cyg /usr/bin
 		apt-cyg install stow
