@@ -6,7 +6,7 @@ if [ "$un" == "Cygwin" ]; then
     for name in $gnames; do
         mkdir -p $HOME/go/src/github.com/$name
     done
-    export GOPATH=$HOME/go
+    export GOPATH=(cygpath -d $HOME)\\go
 else
     mkdir -p $HOME/git
     for name in $gnames; do
