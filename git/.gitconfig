@@ -1,0 +1,42 @@
+[user]
+	name  = Patrick Meredith
+	email = pmeredit@gmail.com
+[core]
+	editor = nvim
+
+[alias]
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --decorate
+
+[rerere]
+	enabled = 1
+	autoupdate = 1
+
+[web]
+	brower = google-chrome
+
+[diff]
+	tool = vimdiff
+
+[alias]
+	hd = log -1
+	st = status
+	ci = commit
+	co = checkout
+	d  = describe
+[color]
+	branch = auto
+	diff = auto
+	status = auto
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
