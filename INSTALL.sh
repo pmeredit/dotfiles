@@ -10,7 +10,7 @@ if [ ! hash stow &> /dev/null ]; then
 	fi
 fi
 
-for i in $(ls | grep -v INSTALL.sh | grep -v apt-cyg); do
+for i in $(ls | grep -v INSTALL.sh | grep -v apt-cyg | grep -v README.md); do
 	echo "stowing $i ..."
 	stow $i
 done
