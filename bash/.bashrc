@@ -16,8 +16,24 @@ else
     export GOPATH=$HOME/.go
 fi
 
-export PATH=$HOME/Tools:$PATH
+add_to_PATH () {
+  for d; do
+    d=$(cd -- "$d" && { pwd -P || pwd; }) 2>/dev/null  # canonicalize symbolic links
+    if [ -z "$d" ]; then continue; fi  # skip nonexistent directory
+    case ":$PATH:" in
+      *":$d:"*) :;;
+      *) PATH=$PATH:$d;;
+    esac
+  done
+}
 
+add_to_PATH $HOME/Tools $GOPATH/bin
+
+export PATH
+
+if ! [ -x "$(command -v gotab)" ]; then 
+    go get github.com/dsnet/gotab
+fi
 
 complete -C gotab -o nospace go
 
