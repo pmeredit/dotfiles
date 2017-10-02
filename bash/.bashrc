@@ -1,5 +1,7 @@
 un=$(uname -o 2> /dev/null || uname -s)
 
+alias ll="ls -Glha"
+
 gnames="10gen pmeredit"
 
 if [ "$un" == "Cygwin" ]; then

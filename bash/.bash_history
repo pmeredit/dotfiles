@@ -1,500 +1,502 @@
-vim testdata/bin/test-log-newlines.sh 
-pkill sql; make test-log-newlines
-cat testdata/artifacts/log/test-log-newlines.log 
-vim testdata/bin/test-log-newlines.sh 
-pkill sql; make test-log-newlines
-cat testdata/artifacts/log/test-log-newlines.log 
-vim testdata/bin/test-log-newlines.sh 
+echo $?
+command -v git
+echo $?
+if ! [ -x "$(command -v gotab)" ]; then echo 'hello'; fi
+vim .bashrc
+vim .bashrc
+echo $PATH
+vim .bashrc
+rl
+vim .bashrc
+echo $PATH
+rl
+rl
+echo $PATH
+vim .bashrc
+rl
+which gotab
+cd ~/dotfiles/
 ls
-grep -c $'\n' log/log.go 
-grep -c $'\n' log/log.go; echo $?
-grep -c $'\r' log/log.go; echo $?
-vim testdata/bin/test-log-newlines.sh 
-pkill sql; make test-log-newlines
-vim testdata/bin/test-log-newlines.sh 
-vim testdata/bin/test-log-newlines.sh 
 git status
-git add testdata
-git status
-git commit -a --amend
-git status
-tig
-evergreen patch
-evergreen
-evergreen cancel-patch -i 59b17f3de3c3314ea20001da
-ls
-git diff master
-vim testdata/bin/download-mongodb.sh 
-git diff master | less
-vim testdata/bin/download-mongodb.sh 
-git diff master | less
-git commit --amend
-git diff master
-evergreen cancel-patch -i 59b17f3de3c3314ea20001da
-evergreen patch
-mongo
-mongo
-ls
+git commit -a 
+git push origin master
 cd ~/git/sqlproxy
+vim /Users/pmeredit/Tools/cr 
+cr -m "BI-1197: make config file paths absolute so installed service can run"
+vim internal/config/cmdline.go 
 ls
+mkdir testdata/resources/configs git mv testdata/resources/example_configs/example1.yml 
+rmdir git/
+rmdir mv
 ls
-~/Tools/
-ls ~/Tools/
-vim ~/Tools/cr 
-cr
-ls
-vim testdata/bin/test-log-newlines.sh 
-ls
-vim log/log.go 
+mv testdata/resources/example_configs/example1.yml testdata/resources/configs/sample.yml
+rm -Rf testdata/resources/example_configs/
 git status
-git commit --amend
-make test-log-newlines
-make _test-log-newlines
+git add testdata/resources/configs/sample.yml
+git status
+git commit -a --amend
+git push me BI-1197 --force
+cr -i 165040001
+go build main/sqlproxy.go 
+git status
+rm sqlproxy 
 ls
 ls
-find  testdata/ | grep mk
-vim testdata/config/tests/log-newlines.mk 
-git diff
-make _test-log-newlines
-pull orign/master
-git pull orign/master
-git checkout master
-git pull orign master
-git commit -ammend
-git commit -amend
-git commit -amend -a
-git commit --amend -a
-git commit -a -amend
-git commit -a --amend
-git commit -a --amend
-git checkout master
+git checlout
+git co master 
 git pull
-git checkout BI-1190
+tg
+tig
+git checkout BI-1197
 git rebase master
 tig
-git checkout master
-git merge BI-1190
+vim Makefile 
+make test
+make test-unit
 tig
-git rebase -i
+ls
 tig
-git rebase -i
-tig
+make run-mongodb test-unit
+ls
+history | grep plist
+vim /Library/LaunchDaemons/mongosql.plist
+ls
+git co -b BI-1197-variant
+go build main/sqlproxy.go 
+./sqlproxy install --config testdata/resources/configs/sample.yml 
+vim /Library/LaunchDaemons/sqlproxy.plist 
+./sqlproxy uninstall #--config testdata/resources/configs/sample.yml 
+./sqlproxy install --config testdata/resources/configs/sample.yml 
+sudo ./sqlproxy uninstall #--config testdata/resources/configs/sample.yml 
+./sqlproxy install --config testdata/resources/configs/sample.yml 
+sudo rm /Library/LaunchDaemons/sqlproxy.plist 
+./sqlproxy install --config testdata/resources/configs/sample.yml 
+sudo ./sqlproxy install --config testdata/resources/configs/sample.yml 
+vim /Library/LaunchDaemons/sqlproxy.plist 
+vim main/sqlproxy.go 
+ls
+vim internal/config/config.go 
+vim main/sqlproxy.go 
+go build main/sqlproxy.go 
+ls
+vim internal/config/cmdline_test.go 
+grep 'err := ParseArgs' *.go
+grep -R 'err := ParseArgs' internal/ | grep -v args
+grep -R 'err := ParseArgs' internal/ 
+sudo ./sqlproxy install --config testdata/resources/configs/sample.yml 
+sudo ./sqlproxy unstall --config testdata/resources/configs/sample.yml 
+sudo ./sqlproxy uinstall --config testdata/resources/configs/sample.yml 
+sudo ./sqlproxy uinstall #--config testdata/resources/configs/sample.yml 
+./sqlproxy --help
+sudo ./sqlproxy install --config testdata/resources/configs/sample.yml 
+sudo rm /Library/LaunchDaemons/sqlproxy.plist 
+sudo ./sqlproxy install --config testdata/resources/configs/sample.yml 
+vim /Library/LaunchDaemons/sqlproxy.plist 
+sudo ./sqlproxy uninstall
+ls
+git commit --amend -a "fixed problem Craig noticed"
+git commit --amend -a 
+git status
+rm sqlproxy 
+ls
+make test-unit
+ls
+vim internal/config/config_test.go 
+vim internal/config/config_test.go 
+make test-unit
+ls
+git commit --ammend -a
+git commit --amend -a
+git rebase BI-1197
+git rebase --abort
+git push me BI-1197-variant
+history | grep cr
+cr -i 165040001
+ls
+vim testdata/resources/configs/sample.yml 
+git commit -a --amend
 git push
-tig
-git describe
+git push me BI-1197-variant 
+git push me BI-1197-variant --force
+git diff master
+ls
+git co -b BI-1213
+ls
+git checkout master
+git branch -D BI-1213
+git co -b BI-1213
+git diff master
+ls
+ls
+grep -R sampleNamespaces .
+vim ./internal/config/cmdline_test.go 
+ls 'foo*'
+ls foo*
+touch foo
+touch foobar
+ls 'foo*'
+ls foo*
+rm foo foobar
+ls
+grep -R sample .
+grep -R sample . | grep -v test
+ls
+vim ./internal/sample/sample.go 
+ls
+git status
+go build main/sqlproxy.go 
+vim internal/sample/sample.go 
+go build main/sqlproxy.go 
+./sqlproxy 
+./sqlproxy --sampleSource sample
+./sqlproxy --sampleSource sample
 mongo
-ls
-git pull
-vim schema/map.go 
-mongo < ~/Downloads/understanding_explain_part_2.js 
+./sqlproxy --sampleSource sample2
+mysql
+mysql
+vim internal/sample/sample.go 
+vim internal/sample/sample.go 
+grep -R SampleSchema .
+vim ./server/server_sample.go 
+vim internal/sample/sample.go 
+vim ./server/server_sample.go 
+git diff
+vim ./server/server_sample.go 
+vim internal/sample/sample.go 
+vim internal/sample/sample.go 
+go build main/sqlproxy.go 
+./sqlproxy 
+./sqlproxy --sampleSource sample
+vim internal/sample/sample.go 
+go build main/sqlproxy.go 
+./sqlproxy --sampleSource sample
+vim internal/sample/sample.go 
+go build main/sqlproxy.go 
+./sqlproxy --sampleSource sample
+vim internal/sample/sample.go 
+go build main/sqlproxy.go 
+./sqlproxy --sampleSource sample
+./sqlproxy --sampleSource sample
+vim internal/sample/sample.go 
+go build main/sqlproxy.go 
+./sqlproxy --sampleSource sample
+./sqlproxy --sampleSource sample
+vim internal/sample/sample.go 
+go build main/sqlproxy.go 
+./sqlproxy --sampleSource sample
+vim internal/sample/sample.go 
+vim server/server_sample.go 
+vim internal/sample/sample.go 
+git diff
+go build main/sqlproxy.go 
+./sqlproxy --help
+./sqlproxy --sampleSource sample --sampleWriteIntervalSecs=1
+git status
+git checkout server/server_sample.go
+git status
+go build main/sqlproxy.go 
+./sqlproxy --sampleSource sample --sampleWriteIntervalSecs=5
+git diff
+git commit -a
+rm sqlproxy 
+git push me BI-1213
+evergreen patch
 ps aux | grep mongod
-kill 29370
-ps aux | grep mongod
-which mongo
-ls /usr/local/bin/
-cd ~/git/
-git clone https://github.com/rueckstiess/mtools.git
-cd mtools/
-ls
-which python
-python setup.py 
-vim README.md 
-vim INSTALL.md 
-sudo python setup.py install
-which mlaunch
-ls
-ls
-mlaunch init --single --sharded 2
-sudo mlaunch init --single --sharded 2
-which vagrant
-cd ~/Downloads/m312-vagrant-env.d36b22e2ac00/
-vagrant plugin install vagrant-vbguest
-vagrant up
-vagrant status
-ls /
-ls
-pwd
-echo hello >> shared/test.txt
-vagrant ssh
-ls
-cd ~
-ls
-brew install vim-plug
-vim
-which vim
-brew install vim
-vim
-which vim
-vim
-ls /usr/local/Cellar/vim/
-ls /usr/local/bin/
-ls /usr/local/bin/vim
-ls -lshd /usr/local/bin/vim
-vim /usr/local/Cellar/vim/8.0.1050/bin/vim -v
-/usr/local/Cellar/vim/8.0.1050/bin/vim -v
-/usr/local/Cellar/vim/8.0.1050/bin/vim 
-vim
-which vim
-/usr/local/vim
-/usr/local/bin/vim
-/usr/local/bin/vim
-which vim
-vim
-vim ~/.tmux.conf 
-tmux
-vim ~/.tmux.conf 
-ls -lshd /usr/local/bin/vim
-/usr/local/bin/vim
-echo $PATH
-/usr/bin/vim
-ls -lshd /usr/bin/vim
-PATH=/usr/local/bin/ vim
-PATH=/usr/local/bin vim
-vim ~/.tmux.conf 
-tmux
-vim ~/.tmux.conf 
-tmux
-vim ~/.tmux.conf 
-vim ~/.tmux.conf 
-tmux
-tmux
-cd ~/git/
-cd sqlproxy
-tig
-cat ~/.gitconfig 
-git config
-git config --global email=pmeredit@gmail.com
-ps -ef | grep mongod
-killall mongod
-ps -ef | grep mongod
-pkill mongod
-ps -ef | grep mongod
-sudo pkill mongod
-ps -ef | grep mongod
-top
-htop
-brew install htop
-htop
-cd ~/Downloads/
-ls
-cd m312-vagrant-env.d36b22e2ac00/
-ls
-cd shared/
-ls
-ls filtered.log 
-mlogfilter --help
-sudo chmod -R 666 /usr/local/lib/
-mlogfilter --help
-pip2 install pkg_resources
-pip2 install mtools
-sudo chmod -R 777 /usr/local/lib/
-pip2 install mtools
-mplotqueries --help
-pip2 install matplotlib
-mplotqueries --help
-mplotqueries --histogram filtered.log 
-mplotqueries --type histogram filtered.log 
-mplotqueries --type histogram --help filtered.log 
-mplotqueries --type histogram --bucket=1s --help filtered.log 
-mplotqueries --type histogram --bucketsize=1 filtered.log 
-htop
-which VirtualBox
-ls /usr/local/bin/VirtualBox 
-ls -lshd /usr/local/bin/VirtualBox 
-cp run_w_x509.sh ~/
-ls ~/
-ls
-ls
-cd ~
-ls
-unzip m310-vagrant-env.zip 
-ls
-vagrant init
-vagrant up
 mongod
-mongos
-tmux
+cd ~/nhtt/
+mv ~/Downloads/NHTT-SEPTEMBER-4.json ./
+rm ~/Downloads/*.pdf
+ls ~/Downloads/
+rm ~/Downloads/usb_drive
+rm -Rf ~/Downloads/usb_drive*
 ls
-vim
-cd ~/git/sqlproxy
-ls
-cr
-git log
-vim ~/Tools/cr 
-vim
-git clone https://github.com/fatih/vim-go.git ~/.vim/pack/plugins/start/vim-go
-ls ~/.vim/pack/plugins/start/vim-go/
-ls
-vim main/sqlproxy.go 
-vim main/sqlproxy.go 
-vim main/sqlproxy.go 
-vim
-vim main/sqlproxy.go 
-vim
-vim
-vim ~/.vim/pack/plugins/start/vim-go/README.md 
-ls
-cd ~/git/sqlproxy
-ls
-vim main/sqlproxy.go 
-ls
-vim log/log.go 
-ls
-vim main/sqlproxy.go 
-/usr/bin/vim main/sqlproxy.go 
-brew uninstall vim
-ls
-vim
-which vim
-vim
-tmux
-ls
-cd ~/
-ls
-vagrant up
-vagrant ssh
-vagrant ssh m310
-vagrant list
-vagrant global-status
-vagrant ssh infrastructure
-vagrant ssh database
-vagrant tear down
-vagrant destroy database
-vagrant destroy infrastructure
-vagrant global-state
-vagrant global-status
-ls
-ls .vim
-ls .vim/
-ls .vim/.netrwhist 
-rm -Rf ~/.vim/pack/
-ls ~/.vim
-ls
-cd git/sqlproxy
-ls
-vim main/sqlproxy.go 
-go env
-go build main/sqlproxy.go 
-vim main/sqlproxy.go 
-vim log/log.go 
-go build main/sqlproxy.go 
-vim log/log.go 
-vim main/sqlproxy.go 
-go build main/sqlproxy.go 
-sudo ./sqlproxy install --config=foo.yml
-touch foo.yml
-sudo ./sqlproxy install --config=foo.yml
-sudo ./sqlproxy uninstall; sudo ./sqlproxy install --config=foo.yml
-sudo launchctl load -w /Library/LaunchDaemons/mongosql.plist 
-vim /var/log/system.log
-sudo ./sqlproxy uninstall; sudo ./sqlproxy install --config=$(pwd)foo.yml
-sudo ./sqlproxy uninstall; sudo ./sqlproxy install --config=$(pwd)/foo.yml
-sudo launchctl load -w /Library/LaunchDaemons/mongosql.plist 
-vim /var/log/system.log
-vim foo.yml 
-sudo launchctl load -w /Library/LaunchDaemons/mongosql.plist 
-sudo ./sqlproxy uninstall; sudo ./sqlproxy install --config=$(pwd)/foo.yml
-vim foo.yml 
-sudo ./sqlproxy uninstall; sudo ./sqlproxy install --config=$(pwd)/foo.yml
-vim foo.yml 
-sudo ./sqlproxy uninstall; sudo ./sqlproxy install --config=$(pwd)/foo.yml
-sudo launchctl load -w /Library/LaunchDaemons/mongosql.plist 
-vim /var/log/system.log
-git status
-rm sqlproxy foo.yml 
-ls
-git commit --amend
-vim ~/Tools/cr 
-cr -i 154760001 -m "create a default configured service so that we can system log failures to read the config file"
-cd ~
-ls
-ls shared/
-cp run_w_x509.sh shared/
-vim shared/validate-hw-1.3.sh 
-./shared/validate-hw-1.3.sh 
-vim shared/validate-hw-1.3.sh 
-pwd
-cd ~/git/sqlproxy
-git describe
-git branch
-ls
-vim log/log.go 
-ls
-vim main/sqlproxy.go 
-vim main/sqlproxy.go 
-go buid main/sqlproxy.go 
-go build main/sqlproxy.go 
-history | grep sqlproxy
-sudo ./sqlproxy uninstall; sudo ./sqlproxy install --config=foo.yml
-touch foo.yml
-sudo ./sqlproxy uninstall; sudo ./sqlproxy install --config=foo.yml
-history | grep launch
-sudo launchctl load -w /Library/LaunchDaemons/mongosql.plist 
-vim /var/log/system.log
-git commit --amend
-cr -i 154760001
-ls
-rm foo.yml 
-git status
-rm sqlproxy 
-cr -i 154760001
-git push origin BI-1190
-ssh Administrator@ec2-54-205-71-4.compute-1.amazonaws.com
-git branch
-git log
-git push
-git push
-git push origin BI-1185
-vim main/sqlproxy.go 
-git push
-git status
-git diff
-git commit --amend
-git push
-git push --set-upstream origin BI-1185
-git fetch --all
-git push --set-upstream origin BI-1185
-git pull --rebase
-git status
-git commit --amend -a
-git push
-git push --set-upstream origin BI-1185
-git pull --rebase
-git branch --set-upstream origin/BI-1185 BI-1185
-git pull --rebase
-git status
-git branch --set-upstream-to origin/BI-1185 BI-1185
-git push --set-upstream origin BI-1185
-git branch --set-upstream-to origin/BI-1185 BI-1185
-git branch --set-upstream-to origin BI-1185 BI-1185
-git branch --set-upstream-to origin BI-1185
-git branch --set-upstream-to origin/BI-1185 BI-1185
-git status
-git branch --set-upstream-to origin/BI-1185 
-rm .git/refs/heads/origin/BI-1185 
-git branch --set-upstream-to origin/BI-1185 BI-1185
-ls
-git diff
-git push
-git pull --rebase
-vim main/sqlproxy.go 
-go build main/sqlproxy.go 
-ls
-vim log/log.go 
-go build main/sqlproxy.go 
-vim log/log.go 
-go build main/sqlproxy.go 
-vim main/sqlproxy.go 
-go build main/sqlproxy.go 
-git log
-git status
-git commit -a --amend
-git log
-git push
-git status
-git push HEAD:BI-1185
-rm sqlproxy 
-git push HEAD:BI-1185
-git branch
-git rebase --continue
-git status
-git rebase --continue
-git rebase --skip
-git status
-git pull
-ls
-vim main/sqlproxy.go 
-git stash
-git status
-vim log/log.go 
-git merge --abort
-ls
-vim log/log.go 
-ls
-ls .git
-git branch -b BI-1185-test
-git co -b BI-1185-test
-git checkout -b BI-1185-test
-ls
-git push origin BI-1185-test
-vim main/sqlproxy.go 
-ls
-cd ~
-ls
-cp run_w_x509.sh shared/
-mongod --dbpath data/db --auth --setParameter auditAuthorizationSuccess=true --auditDestination file --auditFilter '{ atype: "authCheck", "param.command": { $in: [ "find", "insert", "delete", "update", "findandmodify" ] } }' --auditFormat BSON --auditPath data/db/auditLog.bson
-mongod --dbpath /data/db --auth --setParameter auditAuthorizationSuccess=true --auditDestination file --auditFilter '{ atype: "authCheck", "param.command": { $in: [ "find", "insert", "delete", "update", "findandmodify" ] } }' --auditFormat JSON --auditPath /data/db/auditLog.json
-mongod --help
-mongod --help | grep audit
-cd ~/git/sqlproxy
-ls
-git status
-git checkout master
-git pull
-git checkout BI-1185-test
-git rebase master
-git checkout master
-git merge BI-1185-test
-git log
-git push
-git describe
-git log
-:q
-cd ~/git/sqlproxy
-git lg
-ssh Administrator@ec2-54-161-103-112.compute-1.amazonaws.com
-git status
-ssh Administrator@ec2-54-211-251-223.compute-1.amazonaws.com
-pwd
-cd ~
-ssh Administrator@ec2-54-211-251-223.compute-1.amazonaws.com
-ls
-cd ~/git/sqlproxy
-git st
-git co BI-1189
-ls
-cr -i 161490001
-~/Tools/cr -i 161490001
-ssh Administrator@ec2-54-144-245-28.compute-1.amazonaws.com
-ls
-ssh Administrator@ec2-54-211-251-223.compute-1.amazonaws.com
-ssh Administrator@ec2-54-211-251-223.compute-1.amazonaws.com
-rm ~/.ssh/known_hosts 
-ssh Administrator@ec2-54-211-251-223.compute-1.amazonaws.com
-ssh Administrator@ec2-54-144-245-28.compute-1.amazonaws.com
-which vim
-hash -r
-which vim
-echo $PATH
-ls ~/Tools/
-cd ~/Tools/
-pwd
-ls /Users/patrickmeredith/Tools/
-chmod a+x vi 
-chmod a+x vim
-ls vi
-ls -lashd *
-./vim
-ls
-which nvim
-rm vi
-rm vim
-ln -s /usr/local/bin/nvim vi
-ln -s /usr/local/bin/nvim vim
-ls
-./vi
-which vi
-which vim
-vim ~/.bashrc 
-ls
-cd ..
-ls
+vim NHTT-SEPTEMBER-4.json 
+vim NHTT-SEPTEMBER-4.json 
+mongo
+time
+walltime
+currenttime
+date
+date
+python
+mongo --port 56666
+mongo --port 27661
+mongo --port 27666
+mongo --port 27667
+mongo --port 27668
+mongo --port 27669
+mongo --port 27669
+mongo --port 27669
+mongo --port 27664
+mongo --port 27665
+mongo --port 27666
+mongo --port 27661
+. ~/.bashrc 
+vim /Users/pmeredit/.tmux.conf 
+vim /Users/pmeredit/.tmux.conf 
 cd /Users/
 ls
-cd pmeredit/
+ls -l patrickmeredith
+cd ~
 ls
-ls -a
-cd ..
+cd ~/git/
+cd sqlproxy
 ls
-sudo ln -s pmeredit patrickmeredith
 ls
+vim testdata/artifacts/log/mongosqld.log 
+mysql
+. ~/.bashrc 
+mongo
+ls
+vim testdata/resources/schema/integration.yml 
+mongo
+mongo
+sqlite
+sqlite3
+cd ~/Downloads/
+ls
+tar xvzf usb_drive.tar.gz 
+mongo import -d sample -c tweets usb_drive/twitter.json 
+mongoimport -d sample -c tweets usb_drive/twitter.json 
+ps aux
+pkill bpython
+pkill -9 bpython
+ps aux | grep bpython
+kill -9 47913
+ps aux | grep bpython
+kill -9 48329
+kill -9 48068
+ps aux | grep bpython
+kill -9 48349
+ls
+ls -s desktop.ini 
+ls -lshd desktop.ini 
+ls -l desktop.ini 
+mongod
+curl -OL https://cloud-dev.mongodb.com/download/agent/automation/mongodb-mms-automation-agent-4.4.0.2248-1.osx_x86_64.tar.gz
+tar xvzf mongodb-mms-automation-agent-4.4.0.2248-1.osx_x86_64.tar.gz 
+cd mongodb-mms-automation-agent-4.4.0.2248-1.osx_x86_64
+ls
+ls
+vim local.config 
+sudo mkdir /var/lib/mongodb-mms-automation
+sudo mkdir /var/log/mongodb-mms-automation
+sudo chown `whoami` /var/lib/mongodb-mms-automation
+sudo chown `whoami` /var/log/mongodb-mms-automation
+nohup ./mongodb-mms-automation-agent --config=local.config >> /var/log/mongodb-mms-automation/automation-agent.log 2>&1 &
+ps aux | grep mongo
+vim local.config 
+ps aux | grep mongo
+nohup ./mongodb-mms-automation-agent --config=local.config >> /var/log/mongodb-mms-automation/automation-agent.log 2>&1 &
+ps aux | grep mongo
+hostname
+ping repear
+ping reaper
+hostname
+ping localhost
+mongod
+mongod
+mongod
+mongod
+mongod --replSet foo
+#for i in 1,2 do; mongod --replSet foo --logPath=~/log$i --dpBath=~/data/$i
+ls
+mkdir ~/data
+mkdir ~/data/1
+mkdir ~/data/2
+#for i in 1 2 3 do; mongod --replSet foo --logPath=~/data/$i/mdb.log --dpBath=~/data/$i --fork
+mkdir -p ~/data/3
+for i in 1 2 3 do; mongod --replSet foo --logPath=~/data/$i/mdb.log --dpBath=~/data/$i --fork
+for i in 1 2 3; do mongod --replSet foo --logPath=~/data/$i/mdb.log --dpBath=~/data/$i --fork; done
+mongod --help
+for i in 1 2 3; do mongod --replSet foo --logpath=~/data/$i/mdb.log --dbpath=~/data/$i --fork; done
+ls ~/data/1/
+for i in 1 2 3; do mongod --replSet foo --logpath=~/data/$i/mdb.log --dbpath=~/data/$i --port 2766$i --fork; done
+vim /var/log/system.log
+for i in 1 2 3; do mongod --replSet foo --logpath=~/data/$i/mdb.log --dbpath=~/data/$i --port 2766$i; done
+cd ~
+ls
+for i in 1 2 3; do mongod --replSet foo --logpath=$HOME/data/$i/mdb.log --dbpath=$HOME/data/$i --port 2766$i; done
+for i in 1 2 3; do mongod --replSet foo --logpath=$HOME/data/$i/mdb.log --dbpath=$HOME/data/$i --port 2766$i --fork ; done
+ps aux | grep mongod
+mongo --port 27661
+vim initiate.js
+vim initiate.js
+vim initiate.js
+ping localhost
+vim initiate.js
+mongo --help
+cat initiate.js | mongo --port 27661
+mongo --port 27661
+mongo --port 27662
+mongo --port 27663
+ps aux | grep mongo
+kilall mongod
+killall mongod
+ps aux | grep mongo
+kill 53448
+kill 53443
+for i in 1 2 3; do mongod --replSet foo --logpath=$HOME/data/$i/mdb.log --dbpath=$HOME/data/$i --port 2766$i --fork ; done
+for i in 4 5 6; do mongod --replSet bar --logpath=$HOME/data/$i/mdb.log --dbpath=$HOME/data/$i --port 2766$i --fork ; done
+for i in 4 5 6; do mongod --replSet bar --logpath=$HOME/data/$i/mdb.log --dbpath=$HOME/data/$i --port 2766$i; done
+mkdir -p ~/data/4
+mkdir -p ~/data/5
+mkdir -p ~/data/6
+mongod --replSet bar --logpath=$HOME/data/$i/mdb.log --dbpath=$HOME/data/$i --port 2766$i --fork
+ps aux | grep mongod
+mkdir ~/data/cfg
+rmdir ~/data/cfg
+for i in 1 2 3 6; do mongod --replSet cfg --logpath=$HOME/data/$i/mdb.log --dbpath=$HOME/data/cfg$i --port 2766$i; done
+mkdir ~/data/cfg1
+mkdir ~/data/cfg2
+mkdir ~/data/cfg3
+for i in 7 8 9; do mongod --replSet cfg --logpath=$HOME/data/$i/mdb.log --dbpath=$HOME/data/cfg$i --port 2766$i; done
+mv ~/data/cfg1 ~/data/cfg7
+mv ~/data/cfg2 ~/data/cfg8
+mv ~/data/cfg3 ~/data/cfg9
+ls ~/data/
+for i in 7 8 9; do mongod --replSet cfg --logpath=$HOME/data/$i/mdb.log --dbpath=$HOME/data/cfg$i --port 2766$i --fork; done
+for i in 7 8 9; do mongod --replSet cfg --logpath=$HOME/data/$i/mdb.log --dbpath=$HOME/data/cfg$i --port 2766$i ; done
+for i in 7 8 9; do mongod --replSet cfg --logpath=$HOME/data/cfg$i/mdb.log --dbpath=$HOME/data/cfg$i --port 2766$i --fork ; done
+mongo --port 27669
+ls
+cd ~
+ls
+vim initiate.js 
+cat initiate.js | mongo --port 27666
+cp initiate.js initiate_cfg.js
+vim initiate_cfg.js 
+cat initiate_cfg.js | mongo --port 27669
+ps aux | grep mongod
+ps aux | grep mongod | grep cfg
+kill 59527
+kill 59520
+kill 59523
+for i in 7 8 9; do mongod --configsvr --replSet cfg --logpath=$HOME/data/cfg$i/mdb.log --dbpath=$HOME/data/cfg$i --port 2766$i --fork ; done
+ps aux | grep mongod | grep cfg
+ps aux | grep mongod 
+rm ~/data/cfg7/*
+rm -Rf ~/data/cfg7/*
+rm -Rf ~/data/cfg9/*
+rm -Rf ~/data/cfg8/*
+ls ~/data/cfg7
+ls ~/data/
+for i in 7 8 9; do mongod --configsvr --replSet cfg --logpath=$HOME/data/cfg$i/mdb.log --dbpath=$HOME/data/cfg$i --port 2766$i --fork ; done
+vim initiate_cfg.js 
+cat initiate_cfg.js | mongo --port 27669
+cp initiate.js initiate1.js
+mv initiate.js initiate2.js
+vim initiate1.js 
+history | grep mongod | grep -v cfg
+ps aux | grep mongod | grep -v cfg
+ps aux | grep mongod | grep -v cfg | xargs kill
+ps aux | grep mongod | grep -v cfg
+kill 59414
+kill 59450
+kill 59447
+kill 59417
+kill 59443
+kill 59420
+kill 59449
+ps aux | grep mongod | grep -v cfg
+history | grep for
+for i in 1 2 3; do mongod --replSet foo --logpath=~/data/$i/mdb.log --dbpath=~/data/$i --port 2766$i --shardsvr --fork; done
+rm -Rf ~/data/1/*
+rm -Rf ~/data/2/*
+rm -Rf ~/data/3/*
+rm -Rf ~/data/4/*
+rm -Rf ~/data/5/*
+rm -Rf ~/data/6/*
+for i in 1 2 3; do mongod --replSet foo --logpath=~/data/$i/mdb.log --dbpath=~/data/$i --port 2766$i --shardsvr --fork; done
+for i in 1 2 3; do mongod --replSet foo --logpath=~/data/$i/mdb.log --dbpath=~/data/$i --port 2766$i --shardsvr; done
+for i in 1 2 3; do mongod --replSet foo --logpath=$HOME/data/$i/mdb.log --dbpath=$HOME/data/$i --port 2766$i --shardsvr --fork; done
+for i in 4 5 6; do mongod --replSet bar --logpath=$HOME/data/$i/mdb.log --dbpath=$HOME/data/$i --port 2766$i --shardsvr --fork; done
+ls
+cat initiate1.js | mongo --port 27661
+cat initiate2.js | mongo --port 27664
+mongos --configdb cfg/localhost:27667,localhost:27668,localhost:27669
+killall mongod
+ls
+ls
+rm *.js
+ls
+rm -Rf nhtt
+ls
+cat test.py 
+rm test.py 
+ls
+cd ~/git/
+ls
+ls
+cd sqlproxy
+ls
+ls testdata/
+find testdata/ | grep select
+vim testdata/suites/integration/select.yml 
+ls testdata/suites/integration/
+grep -R select.yml testdata/
+vim Makefile 
+vim testdata/bin/run-integration-tests.sh 
+make run-integration-tests
+vim Makefile 
+make test-integration
+vim testdata/bin/restore-test-data.sh 
+ls
+vim testdata/artifacts/log/restore-test-data.log 
+ps aux | grep pmeredith
+ps aux | grep pmeredit
+ps aux | grep mongo
+clear
+ps aux | grep mongo
+mongo
+mysql
+ls
+vim testdata/artifacts/log/mongosqld.log 
+mongo
+vim testdata/artifacts/log/mongosqld.log 
+mongo
+tmux
+vim ~/.tmux.conf 
+tmux
+cd ~/git/sqlproxy/
+ls
+mongo
+ls
+vim testdata/resources/schema/integration.yml 
+mongo
+ls
+ls
+go build -i main/sqlproxy.go 
+ls
+./sqlproxy --help
+./sqlproxy --schema testdata/resources/schema/integration.yml 
+ls
+vim ls
+ls
+ls variable/
+vun variable/status_variables.go 
+vim variable/status_variables.go 
+ls vendor/
+ls sqlproxy 
+ls -c
+man ls
+ls -G
+vim /Users/pmeredit/.bashrc 
+rl
+vim /Users/pmeredit/.bashrc 
+rl
+vim /Users/pmeredit/.bashrc 
+rl
+ls
+vim /Users/pmeredit/.bashrc 
+rl
+ls
+ls
+ll
+rl
+ll
+rl
+ll
+ls
+ll
+rl
