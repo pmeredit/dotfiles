@@ -51,5 +51,7 @@ Plug 'lifepillar/vim-mucomplete'
 		\ 'default': ['path', 'omni', 'keyn', 'dict', 'uspl'],
 		\}
 
+Plug 'racer-rust/vim-racer'
+
 " Initialize plugin system
 call plug#end()
