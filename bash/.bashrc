@@ -12,7 +12,6 @@ if [ "$un" == "Cygwin" ]; then
 else
     mkdir -p $HOME/git
     for name in $gnames; do
-	echo $name
         mkdir -p $HOME/.go/src/github.com/$name
     done
     export GOPATH=$HOME/.go
@@ -29,7 +28,7 @@ add_to_PATH () {
   done
 }
 
-add_to_PATH $HOME/Tools $GOPATH/bin
+add_to_PATH $HOME/Tools $GOPATH/bin $HOME/.cargo/bin
 
 export PATH
 
@@ -40,6 +39,10 @@ fi
 complete -C gotab -o nospace go
 
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
+
+if [ -x $(command -v rustc)  ]; then
+	export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
+fi
 
 function rl {
    . ~/.bashrc

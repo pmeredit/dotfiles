@@ -44,6 +44,8 @@ Plug 'fatih/vim-go', { 'tag': '*' }
 " Plugin options
 Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
 
+Plug 'rust-lang/rust.vim'
+
 Plug 'lifepillar/vim-mucomplete'
 	set completeopt=menuone,noselect
 	let g:mucomplete#enable_auto_at_startup = 1
