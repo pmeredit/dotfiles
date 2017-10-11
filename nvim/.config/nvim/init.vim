@@ -3,6 +3,7 @@ syntax on
 set number
 set spell
 set viminfo='20,<1000,s1000
+set hlsearch
 
 colorscheme desert
 
@@ -42,6 +43,13 @@ Plug 'fatih/vim-go', { 'tag': '*' }
 
 " Plugin options
 Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
+
+Plug 'lifepillar/vim-mucomplete'
+	set completeopt=menuone,noselect
+	let g:mucomplete#enable_auto_at_startup = 1
+	let g:mucomplete#chains = { 
+		\ 'default': ['path', 'omni', 'keyn', 'dict', 'uspl'],
+		\}
 
 " Initialize plugin system
 call plug#end()

@@ -1,502 +1,500 @@
-echo $?
-command -v git
-echo $?
-if ! [ -x "$(command -v gotab)" ]; then echo 'hello'; fi
-vim .bashrc
-vim .bashrc
-echo $PATH
-vim .bashrc
-rl
-vim .bashrc
-echo $PATH
-rl
-rl
-echo $PATH
-vim .bashrc
-rl
-which gotab
+
+./sqlproxy -vvvv
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+ls
+vim evaluator/optimizer_push_down.go 
+go build -i main/sqlproxy.go && ./sqlproxy 
+vim evaluator/optimizer_push_down.go 
+go build -i main/sqlproxy.go && ./sqlproxy 
+vim evaluator/optimizer_push_down.go 
+go build -i main/sqlproxy.go && ./sqlproxy 
+vim evaluator/optimizer_push_down.go 
+go build -i main/sqlproxy.go && ./sqlproxy 
+vim evaluator/optimizer_push_down.go 
+vim evaluator/optimizer_push_down.go 
+go build -i main/sqlproxy.go && ./sqlproxy 
+vim evaluator/optimizer_push_down.go 
+go build -i main/sqlproxy.go && ./sqlproxy 
+vim evaluator/optimizer_push_down.go 
+go build -i main/sqlproxy.go && ./sqlproxy 
+vim evaluator/optimizer_push_down.go 
+vim evaluator/optimizer_push_down.go 
+go build -i main/sqlproxy.go && ./sqlproxy 
+vim evaluator/optimizer_push_down.go 
+vim evaluator/optimizer_push_down.go 
+go build -i main/sqlproxy.go && ./sqlproxy 
+vim test_triple.js 
+mongo < test_triple.js 
+mongo < test_triple.js 
+./sqlproxy 
+./sqlproxy -vvvv
+./sqlproxy -vvvv
+mongo
+./sqlproxy -vvvv
+ls
+mongo
+./sqlproxy -vvvv
+mongo
+./sqlproxy -vvvv
+mongo
+cd ~/tests/BI-805_tests/
+ls
+cp insert.js insert4.js
+vim insert4.js 
+mongo < insert4.js 
+cd -
+./sqlproxy -vvvv
+ls
+vim evaluator/
+vim evaluator/optimizer_push_down.go 
+go build -i main/sqlproxy.go && ./sqlproxy 
+vim evaluator/optimizer_push_down.go 
+go build -i main/sqlproxy.go && ./sqlproxy 
+vim evaluator/optimizer_push_down.go 
+go build -i main/sqlproxy.go && ./sqlproxy 
+vim evaluator/optimizer_push_down.go 
+go build -i main/sqlproxy.go && ./sqlproxy 
+vim evaluator/optimizer_push_down.go 
+go build -i main/sqlproxy.go && ./sqlproxy 
+vim evaluator/optimizer_push_down.go 
+go build -i main/sqlproxy.go && ./sqlproxy 
+vim evaluator/optimizer_push_down.go 
+cd ~/
+ls
+cd tests/BI-805_tests/
+ls
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+mongo < test_triple.js 
+cd ~/git/sqlproxy/
+./sqlproxy 
+cd ~/git/sqlproxy/
+ls
 cd ~/dotfiles/
 ls
 git status
-git commit -a 
-git push origin master
-cd ~/git/sqlproxy
-vim /Users/pmeredit/Tools/cr 
-cr -m "BI-1197: make config file paths absolute so installed service can run"
-vim internal/config/cmdline.go 
-ls
-mkdir testdata/resources/configs git mv testdata/resources/example_configs/example1.yml 
-rmdir git/
-rmdir mv
-ls
-mv testdata/resources/example_configs/example1.yml testdata/resources/configs/sample.yml
-rm -Rf testdata/resources/example_configs/
-git status
-git add testdata/resources/configs/sample.yml
-git status
-git commit -a --amend
-git push me BI-1197 --force
-cr -i 165040001
-go build main/sqlproxy.go 
-git status
-rm sqlproxy 
-ls
-ls
-git checlout
-git co master 
-git pull
-tg
-tig
-git checkout BI-1197
-git rebase master
-tig
-vim Makefile 
-make test
-make test-unit
-tig
-ls
-tig
-make run-mongodb test-unit
-ls
-history | grep plist
-vim /Library/LaunchDaemons/mongosql.plist
-ls
-git co -b BI-1197-variant
-go build main/sqlproxy.go 
-./sqlproxy install --config testdata/resources/configs/sample.yml 
-vim /Library/LaunchDaemons/sqlproxy.plist 
-./sqlproxy uninstall #--config testdata/resources/configs/sample.yml 
-./sqlproxy install --config testdata/resources/configs/sample.yml 
-sudo ./sqlproxy uninstall #--config testdata/resources/configs/sample.yml 
-./sqlproxy install --config testdata/resources/configs/sample.yml 
-sudo rm /Library/LaunchDaemons/sqlproxy.plist 
-./sqlproxy install --config testdata/resources/configs/sample.yml 
-sudo ./sqlproxy install --config testdata/resources/configs/sample.yml 
-vim /Library/LaunchDaemons/sqlproxy.plist 
-vim main/sqlproxy.go 
-ls
-vim internal/config/config.go 
-vim main/sqlproxy.go 
-go build main/sqlproxy.go 
-ls
-vim internal/config/cmdline_test.go 
-grep 'err := ParseArgs' *.go
-grep -R 'err := ParseArgs' internal/ | grep -v args
-grep -R 'err := ParseArgs' internal/ 
-sudo ./sqlproxy install --config testdata/resources/configs/sample.yml 
-sudo ./sqlproxy unstall --config testdata/resources/configs/sample.yml 
-sudo ./sqlproxy uinstall --config testdata/resources/configs/sample.yml 
-sudo ./sqlproxy uinstall #--config testdata/resources/configs/sample.yml 
-./sqlproxy --help
-sudo ./sqlproxy install --config testdata/resources/configs/sample.yml 
-sudo rm /Library/LaunchDaemons/sqlproxy.plist 
-sudo ./sqlproxy install --config testdata/resources/configs/sample.yml 
-vim /Library/LaunchDaemons/sqlproxy.plist 
-sudo ./sqlproxy uninstall
-ls
-git commit --amend -a "fixed problem Craig noticed"
-git commit --amend -a 
-git status
-rm sqlproxy 
-ls
-make test-unit
-ls
-vim internal/config/config_test.go 
-vim internal/config/config_test.go 
-make test-unit
-ls
-git commit --ammend -a
-git commit --amend -a
-git rebase BI-1197
-git rebase --abort
-git push me BI-1197-variant
-history | grep cr
-cr -i 165040001
-ls
-vim testdata/resources/configs/sample.yml 
-git commit -a --amend
+git commit -am "alias for ls, removed mouse stuff from tmux"
 git push
-git push me BI-1197-variant 
-git push me BI-1197-variant --force
-git diff master
+git push origin master
+ll
+cd ~/git/sqlproxy
 ls
-git co -b BI-1213
+ll
+mysql
 ls
-git checkout master
-git branch -D BI-1213
-git co -b BI-1213
-git diff master
-ls
-ls
-grep -R sampleNamespaces .
-vim ./internal/config/cmdline_test.go 
-ls 'foo*'
-ls foo*
-touch foo
-touch foobar
-ls 'foo*'
-ls foo*
-rm foo foobar
-ls
-grep -R sample .
-grep -R sample . | grep -v test
-ls
-vim ./internal/sample/sample.go 
-ls
-git status
-go build main/sqlproxy.go 
-vim internal/sample/sample.go 
-go build main/sqlproxy.go 
-./sqlproxy 
-./sqlproxy --sampleSource sample
-./sqlproxy --sampleSource sample
-mongo
-./sqlproxy --sampleSource sample2
+vim foo.log
+ll
 mysql
 mysql
-vim internal/sample/sample.go 
-vim internal/sample/sample.go 
-grep -R SampleSchema .
-vim ./server/server_sample.go 
-vim internal/sample/sample.go 
-vim ./server/server_sample.go 
-git diff
-vim ./server/server_sample.go 
-vim internal/sample/sample.go 
-vim internal/sample/sample.go 
-go build main/sqlproxy.go 
-./sqlproxy 
-./sqlproxy --sampleSource sample
-vim internal/sample/sample.go 
-go build main/sqlproxy.go 
-./sqlproxy --sampleSource sample
-vim internal/sample/sample.go 
-go build main/sqlproxy.go 
-./sqlproxy --sampleSource sample
-vim internal/sample/sample.go 
-go build main/sqlproxy.go 
-./sqlproxy --sampleSource sample
-./sqlproxy --sampleSource sample
-vim internal/sample/sample.go 
-go build main/sqlproxy.go 
-./sqlproxy --sampleSource sample
-./sqlproxy --sampleSource sample
-vim internal/sample/sample.go 
-go build main/sqlproxy.go 
-./sqlproxy --sampleSource sample
-vim internal/sample/sample.go 
-vim server/server_sample.go 
-vim internal/sample/sample.go 
-git diff
-go build main/sqlproxy.go 
-./sqlproxy --help
-./sqlproxy --sampleSource sample --sampleWriteIntervalSecs=1
-git status
-git checkout server/server_sample.go
-git status
-go build main/sqlproxy.go 
-./sqlproxy --sampleSource sample --sampleWriteIntervalSecs=5
-git diff
-git commit -a
-rm sqlproxy 
-git push me BI-1213
-evergreen patch
-ps aux | grep mongod
-mongod
-cd ~/nhtt/
-mv ~/Downloads/NHTT-SEPTEMBER-4.json ./
-rm ~/Downloads/*.pdf
-ls ~/Downloads/
-rm ~/Downloads/usb_drive
-rm -Rf ~/Downloads/usb_drive*
-ls
-vim NHTT-SEPTEMBER-4.json 
-vim NHTT-SEPTEMBER-4.json 
 mongo
-time
-walltime
-currenttime
-date
-date
-python
-mongo --port 56666
-mongo --port 27661
-mongo --port 27666
-mongo --port 27667
-mongo --port 27668
-mongo --port 27669
-mongo --port 27669
-mongo --port 27669
-mongo --port 27664
-mongo --port 27665
-mongo --port 27666
-mongo --port 27661
-. ~/.bashrc 
-vim /Users/pmeredit/.tmux.conf 
-vim /Users/pmeredit/.tmux.conf 
-cd /Users/
+mysql
 ls
-ls -l patrickmeredith
-cd ~
+vim no_merge.log 
+mysql
+la
+mysql
+mysql
 ls
+cp insert.js test_triple.js
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+cat test_triple.js 
+cat test.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+mysql
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+mysql
+vim test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+vim test_triple.js 
+vim test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+vim test_triple.js 
+vim test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+vim test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+mkdir ~/BI-805_tests
+mv *.js ~/BI-805_tests/
+git status
+rm test.log 
+ls
+cd ~/BI-805_tests/
+ls
+vim test_triple.js 
+vim test_triple.js 
+cd ..
+ls
+mkdir tests
+mv BI-805_tests/ tests/
+cd tests/
+ls
+git init
+git add remote git@github.com:pmeredit/tests.git
+git remote add git@github.com:pmeredit/tests.git
+git remote add origin git@github.com:pmeredit/tests.git
+git status
+git add BI-805_tests/
+git commit -am "initial checking"
+git commit --amend
+git push origin master
+ls
+cd BI-805_tests/
+ls
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+mysql
+vim test_triple.js 
+mongo < test_triple.js 
+which mongod
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+mongo
+vim test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+vim test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo
+vim test_triple.js 
+mongo
+mongo < test_triple.js 
+vim test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mongo < test_triple.js 
+vim test_triple.js 
+mysql
 cd ~/git/
 cd sqlproxy
+git branch
 ls
-ls
-vim testdata/artifacts/log/mongosqld.log 
-mysql
-. ~/.bashrc 
-mongo
-ls
-vim testdata/resources/schema/integration.yml 
-mongo
-mongo
-sqlite
-sqlite3
-cd ~/Downloads/
-ls
-tar xvzf usb_drive.tar.gz 
-mongo import -d sample -c tweets usb_drive/twitter.json 
-mongoimport -d sample -c tweets usb_drive/twitter.json 
-ps aux
-pkill bpython
-pkill -9 bpython
-ps aux | grep bpython
-kill -9 47913
-ps aux | grep bpython
-kill -9 48329
-kill -9 48068
-ps aux | grep bpython
-kill -9 48349
-ls
-ls -s desktop.ini 
-ls -lshd desktop.ini 
-ls -l desktop.ini 
-mongod
-curl -OL https://cloud-dev.mongodb.com/download/agent/automation/mongodb-mms-automation-agent-4.4.0.2248-1.osx_x86_64.tar.gz
-tar xvzf mongodb-mms-automation-agent-4.4.0.2248-1.osx_x86_64.tar.gz 
-cd mongodb-mms-automation-agent-4.4.0.2248-1.osx_x86_64
-ls
-ls
-vim local.config 
-sudo mkdir /var/lib/mongodb-mms-automation
-sudo mkdir /var/log/mongodb-mms-automation
-sudo chown `whoami` /var/lib/mongodb-mms-automation
-sudo chown `whoami` /var/log/mongodb-mms-automation
-nohup ./mongodb-mms-automation-agent --config=local.config >> /var/log/mongodb-mms-automation/automation-agent.log 2>&1 &
-ps aux | grep mongo
-vim local.config 
-ps aux | grep mongo
-nohup ./mongodb-mms-automation-agent --config=local.config >> /var/log/mongodb-mms-automation/automation-agent.log 2>&1 &
-ps aux | grep mongo
-hostname
-ping repear
-ping reaper
-hostname
-ping localhost
-mongod
-mongod
-mongod
-mongod
-mongod --replSet foo
-#for i in 1,2 do; mongod --replSet foo --logPath=~/log$i --dpBath=~/data/$i
-ls
-mkdir ~/data
-mkdir ~/data/1
-mkdir ~/data/2
-#for i in 1 2 3 do; mongod --replSet foo --logPath=~/data/$i/mdb.log --dpBath=~/data/$i --fork
-mkdir -p ~/data/3
-for i in 1 2 3 do; mongod --replSet foo --logPath=~/data/$i/mdb.log --dpBath=~/data/$i --fork
-for i in 1 2 3; do mongod --replSet foo --logPath=~/data/$i/mdb.log --dpBath=~/data/$i --fork; done
-mongod --help
-for i in 1 2 3; do mongod --replSet foo --logpath=~/data/$i/mdb.log --dbpath=~/data/$i --fork; done
-ls ~/data/1/
-for i in 1 2 3; do mongod --replSet foo --logpath=~/data/$i/mdb.log --dbpath=~/data/$i --port 2766$i --fork; done
-vim /var/log/system.log
-for i in 1 2 3; do mongod --replSet foo --logpath=~/data/$i/mdb.log --dbpath=~/data/$i --port 2766$i; done
-cd ~
-ls
-for i in 1 2 3; do mongod --replSet foo --logpath=$HOME/data/$i/mdb.log --dbpath=$HOME/data/$i --port 2766$i; done
-for i in 1 2 3; do mongod --replSet foo --logpath=$HOME/data/$i/mdb.log --dbpath=$HOME/data/$i --port 2766$i --fork ; done
+vim evaluator/optimizer_push_down.go 
+vim evaluator/optimizer.go 
+vim evaluator/optimizer_push_down.go 
+git status
+git diff
+vim evaluator/optimizer_push_down.go 
+git diff
+vim evaluator/optimizer_push_down.go 
+go build -i main/sqlproxy.go 
+vim evaluator/optimizer_push_down.go 
+vim evaluator/optimizer.go
+go build -i main/sqlproxy.go 
+./sqlproxy 
+./sqlproxy 
+./sqlproxy 
 ps aux | grep mongod
-mongo --port 27661
-vim initiate.js
-vim initiate.js
-vim initiate.js
-ping localhost
-vim initiate.js
-mongo --help
-cat initiate.js | mongo --port 27661
-mongo --port 27661
-mongo --port 27662
-mongo --port 27663
-ps aux | grep mongo
-kilall mongod
+mongo
+vim /var/folders/xr/xs3lz_8d2xz_gl3vhx0wfmrr0000gn/T/mongo-kN92za
+ls /var/folders/
+ls /var/folders/xr/
+ls /var/folders/xr/xs3lz_8d2xz_gl3vhx0wfmrr0000gn/
+ls /var/folders/xr/xs3lz_8d2xz_gl3vhx0wfmrr0000gn/T
+ls /var/folders/xr/xs3lz_8d2xz_gl3vhx0wfmrr0000gn/T/mongo-MERiKA/
 killall mongod
-ps aux | grep mongo
-kill 53448
-kill 53443
-for i in 1 2 3; do mongod --replSet foo --logpath=$HOME/data/$i/mdb.log --dbpath=$HOME/data/$i --port 2766$i --fork ; done
-for i in 4 5 6; do mongod --replSet bar --logpath=$HOME/data/$i/mdb.log --dbpath=$HOME/data/$i --port 2766$i --fork ; done
-for i in 4 5 6; do mongod --replSet bar --logpath=$HOME/data/$i/mdb.log --dbpath=$HOME/data/$i --port 2766$i; done
-mkdir -p ~/data/4
-mkdir -p ~/data/5
-mkdir -p ~/data/6
-mongod --replSet bar --logpath=$HOME/data/$i/mdb.log --dbpath=$HOME/data/$i --port 2766$i --fork
-ps aux | grep mongod
-mkdir ~/data/cfg
-rmdir ~/data/cfg
-for i in 1 2 3 6; do mongod --replSet cfg --logpath=$HOME/data/$i/mdb.log --dbpath=$HOME/data/cfg$i --port 2766$i; done
-mkdir ~/data/cfg1
-mkdir ~/data/cfg2
-mkdir ~/data/cfg3
-for i in 7 8 9; do mongod --replSet cfg --logpath=$HOME/data/$i/mdb.log --dbpath=$HOME/data/cfg$i --port 2766$i; done
-mv ~/data/cfg1 ~/data/cfg7
-mv ~/data/cfg2 ~/data/cfg8
-mv ~/data/cfg3 ~/data/cfg9
-ls ~/data/
-for i in 7 8 9; do mongod --replSet cfg --logpath=$HOME/data/$i/mdb.log --dbpath=$HOME/data/cfg$i --port 2766$i --fork; done
-for i in 7 8 9; do mongod --replSet cfg --logpath=$HOME/data/$i/mdb.log --dbpath=$HOME/data/cfg$i --port 2766$i ; done
-for i in 7 8 9; do mongod --replSet cfg --logpath=$HOME/data/cfg$i/mdb.log --dbpath=$HOME/data/cfg$i --port 2766$i --fork ; done
-mongo --port 27669
-ls
-cd ~
-ls
-vim initiate.js 
-cat initiate.js | mongo --port 27666
-cp initiate.js initiate_cfg.js
-vim initiate_cfg.js 
-cat initiate_cfg.js | mongo --port 27669
-ps aux | grep mongod
-ps aux | grep mongod | grep cfg
-kill 59527
-kill 59520
-kill 59523
-for i in 7 8 9; do mongod --configsvr --replSet cfg --logpath=$HOME/data/cfg$i/mdb.log --dbpath=$HOME/data/cfg$i --port 2766$i --fork ; done
-ps aux | grep mongod | grep cfg
-ps aux | grep mongod 
-rm ~/data/cfg7/*
-rm -Rf ~/data/cfg7/*
-rm -Rf ~/data/cfg9/*
-rm -Rf ~/data/cfg8/*
-ls ~/data/cfg7
-ls ~/data/
-for i in 7 8 9; do mongod --configsvr --replSet cfg --logpath=$HOME/data/cfg$i/mdb.log --dbpath=$HOME/data/cfg$i --port 2766$i --fork ; done
-vim initiate_cfg.js 
-cat initiate_cfg.js | mongo --port 27669
-cp initiate.js initiate1.js
-mv initiate.js initiate2.js
-vim initiate1.js 
-history | grep mongod | grep -v cfg
-ps aux | grep mongod | grep -v cfg
-ps aux | grep mongod | grep -v cfg | xargs kill
-ps aux | grep mongod | grep -v cfg
-kill 59414
-kill 59450
-kill 59447
-kill 59417
-kill 59443
-kill 59420
-kill 59449
-ps aux | grep mongod | grep -v cfg
-history | grep for
-for i in 1 2 3; do mongod --replSet foo --logpath=~/data/$i/mdb.log --dbpath=~/data/$i --port 2766$i --shardsvr --fork; done
-rm -Rf ~/data/1/*
-rm -Rf ~/data/2/*
-rm -Rf ~/data/3/*
-rm -Rf ~/data/4/*
-rm -Rf ~/data/5/*
-rm -Rf ~/data/6/*
-for i in 1 2 3; do mongod --replSet foo --logpath=~/data/$i/mdb.log --dbpath=~/data/$i --port 2766$i --shardsvr --fork; done
-for i in 1 2 3; do mongod --replSet foo --logpath=~/data/$i/mdb.log --dbpath=~/data/$i --port 2766$i --shardsvr; done
-for i in 1 2 3; do mongod --replSet foo --logpath=$HOME/data/$i/mdb.log --dbpath=$HOME/data/$i --port 2766$i --shardsvr --fork; done
-for i in 4 5 6; do mongod --replSet bar --logpath=$HOME/data/$i/mdb.log --dbpath=$HOME/data/$i --port 2766$i --shardsvr --fork; done
-ls
-cat initiate1.js | mongo --port 27661
-cat initiate2.js | mongo --port 27664
-mongos --configdb cfg/localhost:27667,localhost:27668,localhost:27669
-killall mongod
-ls
-ls
-rm *.js
-ls
-rm -Rf nhtt
-ls
-cat test.py 
-rm test.py 
-ls
-cd ~/git/
-ls
-ls
-cd sqlproxy
-ls
-ls testdata/
-find testdata/ | grep select
-vim testdata/suites/integration/select.yml 
-ls testdata/suites/integration/
-grep -R select.yml testdata/
+make run-mongodb 
 vim Makefile 
-vim testdata/bin/run-integration-tests.sh 
-make run-integration-tests
+vim testdata/artifacts/log/start-orchestration.log 
+ps aux | grep mongo
 vim Makefile 
 make test-integration
-vim testdata/bin/restore-test-data.sh 
+rm -Rf ~/.sqlproxy_orchestration_cache/cached-mongodb-latest/
+make test-integration
+killall mysqld
+ps aux | grep sql
+kill 29968
+make test-integration
 ls
-vim testdata/artifacts/log/restore-test-data.log 
-ps aux | grep pmeredith
-ps aux | grep pmeredit
+vim testdata/artifacts/log/mongosqld.log
+vim testdata/artifacts/log/start-orchestration.log 
+mongo
+make start-mongod
+make start-mongodb
+vim Makefile 
+make run-mongodb
+ls
+ls testdata/artifacts/bin/
+vim testdata/bin/start-orchestration.sh 
+vim testdata/bin/download-mongodb.sh 
+make run-mongodb
+vim testdata/bin/download-mongodb.sh 
+make run-mongodb
+rm -Rf testdata/artifacts/mongodb/
+make run-mongodb
+ls
+vim testdata/artifacts/log/start-orchestration.log 
+vim testdata/artifacts/log/mongosqld.log
+mongo
+[A
+mongo
+mongo
+ls
+make run-mongodb
+rm -Rf testdata/artifacts/mongodb
+ls ~/.sqlproxy_orchestration_cache/
+rm -Rf ~/.sqlproxy_orchestration_cache/cached-mongodb-latest/cached-mongodb-latest
+rm -Rf ~/.sqlproxy_orchestration_cache/cached-mongodb-latest
+ls ~/.sqlproxy_orchestration_cache
+make run-mongodb
 ps aux | grep mongo
-clear
-ps aux | grep mongo
+ls
+vim testdata/artifacts/log/mongosqld.log
+vim testdata/artifacts/log/mongosqld.log
+vim testdata/artifacts/log/start-orchestration.log 
+ls
+ls
+lstestdata/artifacts/bin/
+ls testdata/artifacts/bin/
+ls testdata/artifacts/
+ls testdata/artifacts/mongodb
+ls testdata/artifacts/mongodb/bin/
+ls
+vim Makefile 
+grep mongod testdata/
+grep -R mongod testdata/bin
+grep -R mongo testdata/bin | restore
+grep -R mongo testdata/bin | grep restore
+grep -R mongo testdata/bin | grep import
+ls
+vim testdata/bin/run-integration-tests.sh 
+vim testdata/bin/restore-test-data.sh 
+vim testdata/suites/integration/select.yml 
+vim testdata/resources/data/test1.bson.gz 
+vim testdata/resources/data/test2.bson.gz 
+vim testdata/resources/data/test3.bson.gz 
+vim testdata/resources/data/test4.bson.gz 
+grep -R bson testdata/
+grep -R bson testdata/ | grep -v yml
+make clean
+make test-integration
+ps aux | grep mongosqld
+kill 36720
+ps aux | grep mongosqld
+mysql
 mongo
 mysql
+cat ~/tests/BI-805_tests/test_select4_2.sql 
+cat ~/tests/BI-805_tests/test_select4_2.sql | sqlite3 
+mysql
 ls
-vim testdata/artifacts/log/mongosqld.log 
+git status
+git diff
+ls
+mysql
+mysql
+mysql
+mysql
+ls
+rl
+. ~/.bashrc 
+ls
+mongod
 mongo
-vim testdata/artifacts/log/mongosqld.log 
-mongo
-tmux
-vim ~/.tmux.conf 
-tmux
-cd ~/git/sqlproxy/
-ls
-mongo
-ls
-vim testdata/resources/schema/integration.yml 
-mongo
-ls
-ls
-go build -i main/sqlproxy.go 
-ls
-./sqlproxy --help
-./sqlproxy --schema testdata/resources/schema/integration.yml 
-ls
-vim ls
-ls
-ls variable/
-vun variable/status_variables.go 
-vim variable/status_variables.go 
-ls vendor/
-ls sqlproxy 
-ls -c
-man ls
-ls -G
-vim /Users/pmeredit/.bashrc 
-rl
-vim /Users/pmeredit/.bashrc 
-rl
-vim /Users/pmeredit/.bashrc 
-rl
-ls
-vim /Users/pmeredit/.bashrc 
-rl
-ls
-ls
-ll
-rl
-ll
-rl
-ll
-ls
-ll
-rl
