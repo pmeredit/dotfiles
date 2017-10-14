@@ -1,5 +1,6 @@
 un=$(uname -o 2> /dev/null || uname -s)
 
+
 alias ll="ls -Glha"
 
 gnames="10gen pmeredit"
@@ -38,6 +39,7 @@ fi
 
 complete -C gotab -o nospace go
 
+[ -f  $HOME/.git-prompt.sh ] && . $HOME/.git-prompt.sh
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 
 if [ -x $(command -v rustc)  ]; then

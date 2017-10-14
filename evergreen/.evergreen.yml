@@ -1,0 +1,13 @@
+user: "patrick.meredith"
+api_key: "c04edb5c0b742522bd07e5a44f43683f"
+api_server_host: "https://evergreen.mongodb.com/api"
+ui_server_host: "https://evergreen.mongodb.com"
+projects:
+- name: sqlproxy
+  default: true
+  variants:
+  - full_matrix__os_full_matrix~osx_mongodb_version~latest_mongodb_topology~standalone
+  - full_matrix__os_full_matrix~windows_mongodb_version~latest_mongodb_topology~standalone
+  - full_matrix__os_full_matrix~ubuntu1404-64_mongodb_version~latest_mongodb_topology~standalone
+  tasks:
+  - all
