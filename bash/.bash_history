@@ -1,36 +1,3 @@
-
-./sqlproxy -vvvv
-vim test_triple.js 
-mongo < test_triple.js 
-vim test_triple.js 
-mongo < test_triple.js 
-vim test_triple.js 
-mongo < test_triple.js 
-vim test_triple.js 
-mongo < test_triple.js 
-vim test_triple.js 
-ls
-vim evaluator/optimizer_push_down.go 
-go build -i main/sqlproxy.go && ./sqlproxy 
-vim evaluator/optimizer_push_down.go 
-go build -i main/sqlproxy.go && ./sqlproxy 
-vim evaluator/optimizer_push_down.go 
-go build -i main/sqlproxy.go && ./sqlproxy 
-vim evaluator/optimizer_push_down.go 
-go build -i main/sqlproxy.go && ./sqlproxy 
-vim evaluator/optimizer_push_down.go 
-vim evaluator/optimizer_push_down.go 
-go build -i main/sqlproxy.go && ./sqlproxy 
-vim evaluator/optimizer_push_down.go 
-go build -i main/sqlproxy.go && ./sqlproxy 
-vim evaluator/optimizer_push_down.go 
-go build -i main/sqlproxy.go && ./sqlproxy 
-vim evaluator/optimizer_push_down.go 
-vim evaluator/optimizer_push_down.go 
-go build -i main/sqlproxy.go && ./sqlproxy 
-vim evaluator/optimizer_push_down.go 
-vim evaluator/optimizer_push_down.go 
-go build -i main/sqlproxy.go && ./sqlproxy 
 vim test_triple.js 
 mongo < test_triple.js 
 mongo < test_triple.js 
@@ -498,3 +465,36 @@ rl
 ls
 mongod
 mongo
+source ~/.bash
+source ~/.bashrc 
+ls
+go build -i main/sqlproxy.go 
+go build -i main/sqlproxy.go && ./sqlproxy 
+go build -i main/sqlproxy.go && ./sqlproxy 
+go build -i main/sqlproxy.go && ./sqlproxy 
+go build -i main/sqlproxy.go && ./sqlproxy 
+go build -i main/sqlproxy.go && ./sqlproxy 
+go build -i main/sqlproxy.go && ./sqlproxy 
+go build -i main/sqlproxy.go && ./sqlproxy 
+go build -i main/sqlproxy.go && ./sqlproxy 
+go build -i main/sqlproxy.go && ./sqlproxy 
+go build -i main/sqlproxy.go && ./sqlproxy 
+go build -i main/sqlproxy.go && ./sqlproxy 
+go build -i main/sqlproxy.go && ./sqlproxy 
+go build -i main/sqlproxy.go && ./sqlproxy 
+go build -i main/sqlproxy.go && ./sqlproxy 
+go build -i main/sqlproxy.go && ./sqlproxy 
+go build -i main/sqlproxy.go && ./sqlproxy 
+ls
+vim evaluator/expr_values.go 
+go build -i main/sqlproxy.go && ./sqlproxy 
+go build -i main/sqlproxy.go && ./sqlproxy 
+go build -i main/sqlproxy.go && ./sqlproxy 
+go build -i main/sqlproxy.go && ./sqlproxy 
+mysqld
+go build -i main/sqlproxy.go && ./sqlproxy 
+go build -i main/sqlproxy.go && ./sqlproxy 
+go build -i main/sqlproxy.go && ./sqlproxy 
+go build -i main/sqlproxy.go && ./sqlproxy 
+go build -i main/sqlproxy.go && ./sqlproxy 
+go build -i main/sqlproxy.go && ./sqlproxy 
