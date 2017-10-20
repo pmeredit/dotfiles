@@ -1,7 +1,3 @@
-vim test_triple.js 
-mongo < test_triple.js 
-mongo < test_triple.js 
-./sqlproxy 
 ./sqlproxy -vvvv
 ./sqlproxy -vvvv
 mongo
@@ -498,3 +494,7 @@ go build -i main/sqlproxy.go && ./sqlproxy
 go build -i main/sqlproxy.go && ./sqlproxy 
 go build -i main/sqlproxy.go && ./sqlproxy 
 go build -i main/sqlproxy.go && ./sqlproxy 
+cd ~/dotfiles/
+ls
+vim bash/
+vim ~/.bash_login 

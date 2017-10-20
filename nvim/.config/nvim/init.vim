@@ -4,6 +4,7 @@ set number
 set spell
 set viminfo='20,<1000,s1000
 set hlsearch
+set ruler
 
 colorscheme desert
 
@@ -51,7 +52,10 @@ Plug 'lifepillar/vim-mucomplete'
 	let g:mucomplete#enable_auto_at_startup = 1
 	let g:mucomplete#chains = { 
 		\ 'default': ['path', 'omni', 'keyn', 'dict', 'uspl'],
+		\ 'sql': ['path', 'keyn', 'dict', 'uspl'],
 		\}
+
+Plug 'tpope/vim-fugitive'
 
 Plug 'racer-rust/vim-racer'
 
