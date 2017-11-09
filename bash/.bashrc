@@ -1,5 +1,6 @@
 un=$(uname -o 2> /dev/null || uname -s)
 
+eval "$(thefuck --alias)"
 
 alias ll="ls -Glha"
 
@@ -24,12 +25,12 @@ add_to_PATH () {
     if [ -z "$d" ]; then continue; fi  # skip nonexistent directory
     case ":$PATH:" in
       *":$d:"*) :;;
-      *) PATH=$PATH:$d;;
+      *) PATH=$d:$PATH;;
     esac
   done
 }
 
-add_to_PATH $HOME/Tools $GOPATH/bin $HOME/.cargo/bin
+add_to_PATH $HOME/Tools/mongodb-3.6.0rc1/bin $HOME/Tools $GOPATH/bin $HOME/.cargo/bin 
 
 export PATH
 

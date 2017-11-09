@@ -5,6 +5,7 @@ set spell
 set viminfo='20,<1000,s1000
 set hlsearch
 set ruler
+set smartcase
 
 colorscheme desert
 
@@ -53,6 +54,8 @@ Plug 'lifepillar/vim-mucomplete'
 	let g:mucomplete#chains = { 
 		\ 'default': ['path', 'omni', 'keyn', 'dict', 'uspl'],
 		\ 'sql': ['path', 'keyn', 'dict', 'uspl'],
+		\ 'python': ['path', 'keyn', 'dict', 'uspl'],
+		\ 'js': ['path', 'keyn', 'dict', 'uspl'],
 		\}
 
 Plug 'tpope/vim-fugitive'
