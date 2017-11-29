@@ -51,6 +51,16 @@ function rl {
    . ~/.bashrc
 }
 
+function gcb {
+   git branch | grep '*' | sed 's/[ *]*//g'
+}
+
+function gg {
+   remote=$1
+   shift
+   git push $remote $(gcb) $@ 
+}
+
 GIT_PS1_SHOWDIRTYSTATE=true
 GIT_PS1_SHOWSTASHSTATE=true
 GIT_PS1_SHOWUNTRACKEDFILES=true

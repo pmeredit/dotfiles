@@ -7,6 +7,9 @@ set hlsearch
 set ruler
 set smartcase
 
+au BufReadPost *.lalrpop set syntax=rust
+au BufReadPost *.pegjs set syntax=javascript
+
 colorscheme desert
 
 if has("autocmd")
