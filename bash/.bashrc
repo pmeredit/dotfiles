@@ -61,6 +61,10 @@ function gg {
    git push $remote $(gcb) $@ 
 }
 
+function gca {
+   git commit -a --amend
+}
+
 GIT_PS1_SHOWDIRTYSTATE=true
 GIT_PS1_SHOWSTASHSTATE=true
 GIT_PS1_SHOWUNTRACKEDFILES=true

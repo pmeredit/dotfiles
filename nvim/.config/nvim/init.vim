@@ -6,6 +6,7 @@ set viminfo='20,<1000,s1000
 set hlsearch
 set ruler
 set smartcase
+set inccommand=nosplit
 
 au BufReadPost *.lalrpop set syntax=rust
 au BufReadPost *.pegjs set syntax=javascript
