@@ -11,7 +11,7 @@ set inccommand=nosplit
 au BufReadPost *.lalrpop set syntax=rust
 au BufReadPost *.pegjs set syntax=javascript
 
-colorscheme desert
+au BufWritePost * %s/\([.!?]\)  /\1 /g
 
 if has("autocmd")
   au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
@@ -65,6 +65,8 @@ Plug 'lifepillar/vim-mucomplete'
 Plug 'tpope/vim-fugitive'
 
 Plug 'racer-rust/vim-racer'
+
+Plug 'whatyouhide/vim-gotham'
 
 " Initialize plugin system
 call plug#end()

@@ -4,6 +4,9 @@ eval "$(thefuck --alias)"
 
 alias ll="ls -Glha"
 
+alias v=nvim
+alias vim=nvim
+
 gnames="10gen pmeredit"
 
 if [ "$un" == "Cygwin" ]; then
@@ -30,7 +33,8 @@ add_to_PATH () {
   done
 }
 
-add_to_PATH $HOME/Tools/mongodb-3.6.0rc1/bin $HOME/Tools $GOPATH/bin $HOME/.cargo/bin 
+add_to_PATH $HOME/Tools $GOPATH/bin $HOME/.cargo/bin $HOME/.mongodb/versions/mongodb-current/bin
+export DYLD_LIBRARY_PATH=/usr/local/mysql/lib/
 
 export PATH
 

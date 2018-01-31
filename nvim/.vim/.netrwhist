@@ -1,8 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_cnt =7
 let g:netrw_dirhist_1='/Users/patrickmeredith/.go/src'
 let g:netrw_dirhist_2='/Users/pmeredit/.go/src/github.com/10gen/sqlproxy/evaluator'
 let g:netrw_dirhist_3='/Users/pmeredit/.vim'
 let g:netrw_dirhist_4='/Users/pmeredit'
 let g:netrw_dirhist_5='/Users/pmeredit/.vim'
 let g:netrw_dirhist_6='/Users/pmeredit/dotfiles/bash'
+let g:netrw_dirhist_7='/Users/pmeredit/.go/src/github.com/10gen/sqlproxy/evaluator'

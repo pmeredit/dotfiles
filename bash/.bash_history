@@ -1,500 +1,500 @@
-mysql
-mysql
-mysql
-make check
-make check
-vim schema/schema.go 
-vim schema/schema.go 
-make check
-git diff
-git commit -a
-git push
-mysql
-python
-mysql
-ls
-cd evaluator/
-ls
-vim expr_test.go 
-vim expr_test.go 
-vim expr_test.go 
-go test
-go test
-go test --run TestTranslateExpr -v
-go test --run TestTranslateExpr -v
-go test --run TestTranslateExpr -v
-go test
-git commit --amend -a
-gg me -f
-vim /Users/pmeredit/tests/dates/data 
-git commit -a --amend --no-edit
-gg me -f
-ls
-vim expr_functions_scalar.go 
 cd ..
-ls
+go test --run /integration/ --automate data
+SQLPROXY_PUSHDOWN_OFF=1 go test --run /integration
+SQLPROXY_PUSHDOWN_OFF=1 go test --run /integration
 vim testdata/suites/integration/functions.yml 
-go build -i main/sqlproxy.go 
-./sqlproxy -vv --schema testdata/resources/schema/integration.yml 
-vim evaluator/expr_functions_scalar.go 
-go build -i main/sqlproxy.go 
-vim evaluator/expr_functions_scalar.go 
-./sqlproxy -vv --schema testdata/resources/schema/integration.yml 
-vim evaluator/expr_functions_scalar.go 
-git diff master
-vim evaluator/expr_functions_scalar.go 
-go build -i main/sqlproxy.go 
-./sqlproxy -vv --schema testdata/resources/schema/integration.yml 
-git status
-evergreen patch
-cd evaluator/
-go test
-go test
-go test --run TestTranslateExpr -v
-go test --run TestTranslateExpr -v
-git commit -a --amend --no-edit
-gg me -f
-evergreen patch
-cr -m "Pushdown timestamp"
-cd ..
-ls
 vim testdata/suites/integration/functions.yml 
-python
-mongo
-./sqlproxy -vv
-ls
-ls
+go test --run /integration/ --automate data
 vim testdata/resources/data/integration.yml 
-tyml testdata/resources/data/integration.yml 
-vim testdata/resources/data/integration.yml 
-tyml testdata/resources/data/integration.yml 
+go test --run /integration/ --automate data
+go test --run /integration/ 
+./sqlproxy --schema testdata/resources/schema/integration.yml 
+./sqlproxy --schema testdata/resources/schema/integration.yml -vv
+go test --run /integration/ 
+go test --run /integration/ 
+SQLPROXY_PUSHDOWN_OFF=1 go test --run /integration
+ go test --run /integration
+killall mysqld
+go test --run /integration/ 
+go test --run /integration/ 
+go test --run /integration/ 
 ls
-vim testdata/suites/integration/functions.yml 
-make clean test-integration 
-INFRASTRUCTURE_CONFIG=default,sqlproxy/nopushdown  make clean test-integration 
+vim testdata/resources/schema/integration.yml 
+go test --run /integration/ 
+go test --run /integration/ 
 mysql
-INFRASTRUCTURE_CONFIG=default,sqlproxy/nopushdown  make clean test-integration 
-mysql
-INFRASTRUCTURE_CONFIG=default,sqlproxy/nopushdown  make clean test-integration 
-ls
-vim testdata/resources/data/integration.yml 
-vim testdata/suites/integration/functions.yml 
-vim testdata/suites/integration/functions.yml 
-vim testdata/suites/integration/functions.yml 
-INFRASTRUCTURE_CONFIG=default,sqlproxy/nopushdown  make clean test-integration 
-INFRASTRUCTURE_CONFIG=default  make clean test-integration 
-time INFRASTRUCTURE_CONFIG=default,sqlproxy/nopushdown  make clean test-integration 
-time INFRASTRUCTURE_CONFIG=default  make clean test-integration 
-INFRASTRUCTURE_CONFIG=default,sqlproxy/nopushdown  make clean test-tdvt
-git commit -a --amend --no-edit
-gg me -f
-vim Makefile 
-cd evaluator/
-go test
-go test
-git commit -a --amend --no-edit
-gg me -f
-cd ..
-vim testdata/resources/data/integration.yml 
-vim testdata/suites/integration/functions.yml 
-tyml testdata/suites/integration/functions.yml 
-vim evaluator/expr_functions_scalar.go 
-go test
-go build -i main/sqlproxy.go 
-vim evaluator/expr_functions_scalar.go 
-go build -i main/sqlproxy.go 
 mongo
+go test --run /integration
+go test --run /integration
 mongo
+killall mysqld
+killall mysqld
+killall mysqld
+vim evaluator/optimizer_push_down.go 
+vim evaluator/optimizer_push_down.go 
+vim evaluator/optimizer_push_down.go 
+vim evaluator/optimizer_push_down.go 
+vim evaluator/expr.go 
 vim evaluator/expr_functions_scalar.go 
-go build -i main/sqlproxy.go 
-vim evaluator/expr_functions_scalar.go 
-go build -i main/sqlproxy.go 
-vim evaluator/expr_functions_scalar.go 
-vim evaluator/expr_functions_scalar.go 
-git commit -a --amend --no-edit
-gg me -f
-./sqlproxy -vv
-./sqlproxy -vv --schema testdata/resources/schema/blackbox.yml 
-./sqlproxy -vv --schema testdata/resources/schema/integration.yml 
-SQLPROXY_PUSHDOWN_OFF=1 ./sqlproxy -vv --schema testdata/resources/schema/integration.yml 
-ls
-ls
 vim evaluator/expr_translators.go 
+vim evaluator/optimizer_push_down.go 
 vim evaluator/expr_functions_scalar.go 
+vim evaluator/expr_functions_scalar.go 
+vim evaluator/optimizer_push_down.go 
+mysql
+go test --run /integration/
+go test --run /integration/
+go test --run /integration/
+SQLPROXY_PUSHDOWN_OFF=1 go test --run /integration
+vim evaluator/expr_functions_scalar.go 
+vim evaluator/expr_values.go 
+mysql
+mysql -u root
+ls
+vim evaluator/algebrizer.go 
+mysql -u root
+mysql -u root
+mysql -u root
+killall mysqld
+mysql -u root
+killall mysqld
+go test --run /integration
 cd evaluator/
-go test
-vim expr_test.go 
-go test
-go test
-git checkout master
-go test
-mysql
-mysql
-mysql
-git commit -a --amend
-gg me -f
-mysql
-mysql
-git commit -a --amend --no-edit
-gg me -f
-mysql
-mysql
-cd eva
-vim expr_test.go 
-go test
-vim expr_test.go 
-go test
-vim expr_test.go 
-vim expr_test.go -v --run TestEvaluates
-go test -v --run TestEvaluates
+ls
+vim expr_translators_test.go 
+vim expr_translators_test.go 
+vim expr_translators_test.go 
+vim expr_functions_scalar.go 
+vim actual
+vim expected
+vim actual 
+diff actual expected
+vim optimizer_test.go 
+ls
+vim optimizer_test.go 
+vim optimizer_test.go 
+grep createFake *
+greap Fake*
+grep Fake *
+grep fake *
+vim helpers_test.go 
+vim optimizer_test.go 
+vim optimizer_test.go 
+grep createTestConnectionCtx *
+vim helpers_test.go 
+vim optimizer_test.go 
+vim helpers_test.go 
+ls
+vim optimizer_push_down.go 
+vim context.go 
+vim ../server/conn.go 
+vim ../server/conn.go 
+vim optimizer_push_down.go 
+vim optimizer_test.go 
+grep 15 *
+grep 15 * | grep 3
+ls
+vim optimizer_test.go 
+vim optimizer_push_down.go 
+vim optimizer_test.go 
+vim optimizer_push_down.go 
+vim optimizer_push_down.go 
+vim optimizer_push_down.go 
+vim optimizer_test.go 
+vim optimizer_push_down.go 
+/Applications/alacritty ; exit;
+ls
+cd ~
+ls
+mkdir Rust
+cd Rust/
+ls
+git clone https://github.com/Kintaro/wtftw.git
+cd wtftw/
+ls
+LIBRARY_PATH=/opt/X11/lib cargo build
+vim /Users/pmeredit/.cargo/registry/src/github.com-1ecc6299db9ec823/rustc-serialize-0.3.19/src/serialize.rs
+LIBRARY_PATH=/opt/X11/lib cargo build
+ man -k x11 Xinerama(3) 
+ man -k x11 Xinerama
+ man -k x11
+LIBRARY_PATH=/opt/X11/lib cargo build
+cargo build
+cargo clean
+cargo build
+rustup 
+rustup update
+rm /Users/pmeredit/.cargo/bin/*fmt
+rustup update
+which rustfmt
+cargo clean
+LIBRARY_PATH=/opt/X11/lib cargo build
+cd ..
+ls
+git clone https://github.com/jwilm/alacritty.git
+cd alacritty/
+rustup override set stable
+cargo -v
+cargo -V
+rustc -v
+rustc -V
+rustup update stable
+rustup
+rustup show
+ls
+make app
+sudo cp -R target/release/osx/Alacritty.app/ /Applications/
+ls /Applications/
+sudo cp -R target/release/osx/Alacritty.app/ /Applications/ | grep '^A'
+ls -lshd target/release/osx/Alacritty.app/
+fdf
+ls
+ls
+ls
+ls
+ls
+ls
+ls
+ls ~/.config/alacritty/alacritty.yml 
 mongo
+l
+cd ..
 ls
-go test
-vim expr_test.go 
-go test
-vim expr_test.go 
-go test
-vim expr_test.go 
-go test
-vim expr_test.go 
-go test
-go test -v --run TestEvaluate
-vim expr_test.go 
-go test -v --run TestEvaluate
-vim expr_test.go 
-go test --run TestEvaluate
-vim expr_test.go 
-go test --run TestEvaluate
-vim expr_test.go 
-go test --run TestEvaluate
-vim expr_test.go 
-go test --run TestEvaluate
-vim expr_test.go 
-go test --run TestEvaluate
-vim expr_test.go 
-go test --run TestEvaluate
-vim expr_test.go 
-go test --run TestEvaluate
-vim expr_test.go 
-go test --run TestEvaluate
-vim expr_test.go 
-go test --run TestEvaluate
-vim expr_test.go 
-go test --run TestEvaluate
-vim expr_test.go 
-go test --run TestEvaluate
-vim expr_test.go 
-go test --run TestEvaluate
-vim expr_test.go 
-go test --run TestEvaluate
-vim expr_test.go 
-go test --run TestEvaluate
-vim expr_test.go 
-go test
+git branch
+git checkout BI-1126
+ls
+git hd
+go build -i main/sqlproxy.go 
+mysql
+tmux
+/Users/pmeredit/Rust/alacritty/target/release/alacritty ; exit;
+ls
+tmus
+tmux
+/Users/pmeredit/Rust/alacritty/target/release/alacritty ; exit;
+ls
+ls /opt/X11/lib
+rl
+mysql -u root -h localhost -P3307
+mysql -u root -h localhost -P3307 -p password
+mysql -u root -h localhost -P3307 -p 
+mysql -u root -h localhost -P3307 
+ls
+mysql -u root -h 127.0.0.2 -P3307  
+mysql -u root -h 127.0.0.1 -P3307  
+mysql -u root -h localhost -P3307 
+mysql -u root -h localhost -P3307 
+mysql -u p
+mysql -u p -p
+mysql -u p -p -h localhost -P3307
+ls
+cd ~/Rust/
+ls
+cd diesel/
+ls
+cd examples/
+ls
+cd mysql/
+ls
+v test_all 
+cd getting_started_step_1/
+ls
+vim src/bin/show_posts.rs 
+ls
+v src/lib.rs 
 ls
 cd ..
 ls
-cd evaluator/
-go test
-
-vim expr_utils.go 
-git commit -a --amend --no-edit
-gg me -f
-vim /Users/pmeredit/git/pgen/examples/round.pipeline 
-python
-cd ..
+./test_all 
 ls
-rm test.txt 
-vim test.sql 
-ls
-mysql
-mysql
-go build -i main/sqlproxy.go 
-mysql
-ls
-ls
-vim evaluator/expr.go 
-vim evaluator/plan_mongo_source.go 
-vim evaluator/expr.go 
-go build -i main/sqlproxy.go 
-mysql
-ls
-vim evaluator/expr.go 
-go build -i main/sqlproxy.go 
-vim evaluator/expr.go 
-go build -i main/sqlproxy.go 
-mysql
-mysql -u root
+pip install MySQLdb
+pip2 MySQLdb
+pip2 install  MySQLdb
+killall mysqldf
 killall mysqld
-mysql -u root
-ls
-vim evaluator/expr.go 
-go build -i main/sqlproxy.go 
 mysql
-mysql -u root
-killall mysqld
-mysql -u root
-mysql -u root
-killall mysqld
-mysql -u root
-mysql -u root
-ls
-git commit -a --amend
-gg me -f
-mysql -u root
-mysql -u root
-mysql -u root
-mysql -u root
-killall mysqld
-killall mysqld
-mysql -u root
-mysql -u root
-killall mysqld
-mysql -u root
-ls
-ll
-wc -l .
-wc -lr .
-wc -lR .
-find . | xargs wc -l
-find evaluator/ | xargs wc -l
-find server | xargs wc -l
-find parser | xargs wc -l
-find parser | grep -v parser.go | grep -v y.output |  xargs wc -l 
-find parser | grep -v sql.go | grep -v y.output |  xargs wc -l 
-ls
 mysql
-mysql -u root
-mysql -u root
-ks
-ls
-cd evaluator/
-go test
-go test
-mysqld
-cd ..
-./sqlproxy -vv
-killall mongosqld
-./sqlproxy -vv
-vim test.js
-mv test.js test.txt
-vim test.txt
-cd ~/git/pgen/
-ls
-cp examples/zip.pipeline round.pipeline
-vim round.pipeline 
-ls
-mv round.pipeline examples/
-./target/debug/pgen examples/round.pipeline 
-:q
-mysqld
-ls
-python
-git commit -a --ammend --no-edit
+mysql
 cd ~/git/sqlproxy
-git commit -a --ammend --no-edit
-git commit -a --amend --no-edit
-gg me -f
 ls
+go test --run /integration
+go test --run /integration
+mysql
+cd ~/tests/
 ls
-git diff
-git stash
-cr -m "pushdown for TIMESTAMPADD"
+v add_stuff.js 
+cat add_stuff.js | mongo
+mysql
+mysql
+mysql
+go test --run /integration
+cd ~/git/sqlproxy
+go test --run /integration
+killall mysqld
 ls
+vim /Users/pmeredit/.config/alacritty/alacritty.yml 
 ls
-vim evaluator/expr_functions_scalar.go 
-go build -i main/sqlproxy.go 
-./sqlproxy -vv
-killall mongosqld
-killall sqlproxy 
-./sqlproxy -vv
-vim evaluator/expr_functions_scalar.go 
-vim evaluator/util.go 
-vim evaluator/expr_utils.go 
-vim evaluator/expr_functions_scalar.go 
+cd ~/Rust/
 ls
-vim evaluator/expr_translators.go 
-vim evaluator/expr_functions_scalar.go 
-vim evaluator/expr_utils.go 
-go build -i m
-vim evaluator/util.go 
-vim evaluator/expr_utils.go 
-go build -i m
-go build -i main/sqlproxy.go 
-vim evaluator/expr_utils.go 
-vim evaluator/expr_functions_scalar.go 
-go build -i main/sqlproxy.go 
-vim evaluator/expr_translators.go 
-vim evaluator/expr_translators.go 
-go build -i main/sqlproxy.go 
-./sqlproxy -vv
-vim test
-./sqlproxy -vv
-vim evaluator/expr_translators.go 
+git clone https://github.com/diesel-rs/diesel.git
+cd diesel/examples/mysql/getting_started_step_1/
 ls
-vim evaluator/expr_test.go 
-cd evaluator/
-go test
+vim src/lib.rs 
+vim /Users/pmeredit/.bashrc 
+rl
+rl
+ls
+v src/lib.rs 
+ls
 cd ..
-go build -i main/sqlproxy.go 
-./sqlproxy -vv
-./sqlproxy --schema testdata/resources/schema/integration.yml --v
-./sqlproxy --schema testdata/resources/schema/integration.yml -vv
-vim evaluator/expr_functions_scalar.go 
-go build -i main/sqlproxy.go 
-./sqlproxy --schema testdata/resources/schema/integration.yml -vv
-vim evaluator/expr_functions_scalar.go 
-go build -i main/sqlproxy.go 
-./sqlproxy --schema testdata/resources/schema/integration.yml -vv
-vim evaluator/expr_functions_scalar.go 
-./sqlproxy --schema testdata/resources/schema/integration.yml -vv
 ls
-vim evaluator/expr_functions_scalar.go 
-go build -i main/sqlproxy.go 
-./sqlproxy --schema testdata/resources/schema/integration.yml -vv
-cd evaluator/
+vim getting_started_step_1/src/bin/show_posts.rs 
+cd ~/Rust/
 ls
-go test
-vim expr_test.go 
-./sqlproxy --schema testdata/resources/schema/integration.yml -vv
+mkdir mysql_stuff
+cd mysql_stuff/
+ls
+cargo new --bin
+cargo new -bin
+cargo new -h
+cargo new --bin
+cargo new --bin .
+ls
 cd ..
-./sqlproxy --schema testdata/resources/schema/integration.yml -vv
-cd evaluator/
+rm mysql_stuff/
+rm -Rf mysql_stuff/
+cargo new --bin mysql_stuff
+cd mysql_stuff/
 ls
-vim expr_functions_scalar.go 
-vim expr_functions_scalar.go 
-go test
-cd ..
-vim expr_functions_scalar.go 
-vim expr_functions_scalar.go 
-vim evaluator/expr_functions_scalar.go 
-vim evaluator/expr_functions_scalar.go 
-go build -i main/sqlproxy.go 
-vim evaluator/expr_functions_scalar.go 
-vim evaluator/expr_functions_scalar.go 
-vim evaluator/expr_functions_scalar.go 
-go build -i main/sqlproxy.go 
-go build -i main/sqlproxy.go 
-vim evaluator/expr_functions_scalar.go 
-vim evaluator/expr_functions_scalar.go 
-go build -i main/sqlproxy.go 
-vim evaluator/expr_functions_scalar.go 
-go build -i main/sqlproxy.go 
-vim evaluator/expr_functions_scalar.go 
-vim evaluator/expr_functions_scalar.go 
-go build -i main/sqlproxy.go 
-./sqlproxy --schema testdata/resources/schema/integration.yml -vv
-./sqlproxy --schema testdata/resources/schema/integration.yml -vv
+vim Cargo.toml 
 ls
-cd evaluator/
-go test
-vim expr_test.go 
-./sqlproxy --schema testdata/resources/schema/integration.yml -vv
-cd ..
-./sqlproxy --schema testdata/resources/schema/integration.yml -vv
-vim evaluator/expr_functions_scalar.go 
-./sqlproxy --schema testdata/resources/schema/integration.yml -vv
-vim evaluator/expr_functions_scalar.go 
-go test
-go build -i main/sqlproxy.go 
-./sqlproxy --schema testdata/resources/schema/integration.yml -vv
-vim evaluator/expr_functions_scalar.go 
-go build -i main/sqlproxy.go 
-./sqlproxy --schema testdata/resources/schema/integration.yml 
-vim evaluator/expr_functions_scalar.go 
-go build -i main/sqlproxy.go 
-./sqlproxy --schema testdata/resources/schema/integration.yml 
-vim evaluator/expr_functions_scalar.go 
-go build -i main/sqlproxy.go 
-./sqlproxy --schema testdata/resources/schema/integration.yml 
-mysqld
-vim evaluator/expr_functions_scalar.go 
-./sqlproxy --schema testdata/resources/schema/integration.yml 
-vim evaluator/expr_functions_scalar.go 
-mysqld
-vim evaluator/expr_functions_scalar.go 
-mysqld
-vim evaluator/expr_functions_scalar.go 
+v src/main.rs 
+cargo run
+v src/main.rs 
+cargo run
+v src/main.rs 
+cargo run
+v src/main.rs 
+caro run
+cargo run
+v src/main.rs 
+cargo run
+v src/main.rs 
+cargo run
+v src/main.rs 
+cargo run
 ls
-vim evaluator/util.go 
-vim evaluator/expr_functions_scalar.go 
-go build -i main/sqlproxy.go 
-vim evaluator/expr_functions_scalar.go 
-go build -i main/sqlproxy.go 
-vim evaluator/expr_functions_scalar.go 
-go build -i main/sqlproxy.go 
-./sqlproxy --schema testdata/resources/schema/integration.yml 
-./sqlproxy --schema testdata/resources/schema/integration.yml -vv
-./sqlproxy --schema testdata/resources/schema/integration.yml -vv
-./sqlproxy --schema testdata/resources/schema/integration.yml -vv
-mysqld
-./sqlproxy --schema testdata/resources/schema/integration.yml -vv
+vim src/main.rs 
+v src/main.rs 
+cargo run
+cargo run
+cargo run
+mysql -u root
+v src/main.rs 
+cargo run
+v src/main.rs 
+cargo run
+v src/main.rs 
 ls
-vim evaluator/expr_functions_scalar.go 
-go build -i main/sqlproxy.go 
-vim evaluator/expr_functions_scalar.go 
-go build -i main/sqlproxy.go 
-./sqlproxy --schema testdata/resources/schema/integration.yml -vv
+vim Cargo.toml 
+v src/main.rs 
+cargo run
+v src/main.rs 
 ls
-cd evaluator/
+vim Cargo.toml 
+cargo run
+v src/main.rs 
+v Cargo.toml 
+cargo run
+v Cargo.toml 
+cargo run
+v src/main.rs 
+cargo run
+v src/main.rs 
+cargo run
+v src/main.rs 
+cargo run
+v src/main.rs 
+cargo run
+v src/main.rs 
+go build -i main/sqlproxy.go 
+cargo run
+v src/main.rs 
+cargo run
+v src/main.rs 
+cargo run
+v src/main.rs 
+cargo run
+v src/main.rs 
+cargo run
+v src/main.rs 
+cargo run
+v src/main.rs 
+cargo run
+v src/main.rs 
+cargo run
+v src/main.rs 
+cargo run
+v src/main.rs 
+go build -i main/sqlproxy.go 
+cargo run
+cargo run
+time cargo run
+time cargo run
 ls
-go test
-vim evaluator/expr_functions_scalar.go 
-vim expr_test.go 
+cargo build --release
+ls
+time ./target/release/mysql_stuff 
+ls
+vim src/main.rs 
+v src/main.rs 
+cargo run
+v src/main.rs 
+cargo run
+v src/main.rs 
+cargo run
+v src/main.rs 
+cargo run
+v src/main.rs 
+cargo run
+v src/main.rs 
+cargo run
+v src/main.rs 
+cargo run
+v src/main.rs 
+cargo run
+v src/main.rs 
+cargo run
+cargo build --release
+ls
+time ./target/release/mysql_stuff 
+time ./target/release/mysql_stuff 
+v src/main.rs 
+cargo run
+v src/main.rs 
+cargo run
+v src/main.rs 
+cargo run
+v src/main.rs 
+cargo run
+v src/main.rs 
+cargo run
+cargo build --release
+ls
+./target/release/mysql_stuff 
+time ./target/release/mysql_stuff 
+time ./target/release/mysql_stuff 
+time ./target/release/mysql_stuff 
+time ./target/release/mysql_stuff 
+time ./target/release/mysql_stuff 
+time ./target/release/mysql_stuff 
+time ./target/release/mysql_stuff 
+time ./target/release/mysql_stuff 
+time ./target/release/mysql_stuff 
+time ./target/release/mysql_stuff 
+time ./target/release/mysql_stuff 
+time ./target/release/mysql_stuff 
+time ./target/release/mysql_stuff 
+v .config/alacritty/alacritty.yml 
+nvim .config/alacritty/alacritty.yml 
+nvim .config/alacritty/alacritty.yml 
+cd ~/git/sqlproxy/
+ls
+./sqlproxy 
+tmux
+/Users/pmeredit/Rust/alacritty/target/release/alacritty ; exit;
+/Users/pmeredit/Rust/alacritty/target/release/alacritty ; exit;
+tmux
+cd ~/git/sqlproxy
+mysql
+go test --run /integration
+go test --run /integration
+vim testdata/suites/integration/functions.yml 
+vim testdata/suites/integration/functions.yml 
+mysql
+go test --run /integration
+ls
+vim vendor/github.com/10gen/mongo-go-driver/bson/decode.go 
+ls
+vim
+ls
+vim server/conn_resultset.go 
+vim schema/types.go 
+grep -R 'Float64()' evaluator/ 
+vim evaluator/expr.go 
+vim evaluator/expr.go 
+/Users/pmeredit/Rust/alacritty/target/release/alacritty ; exit;
+/Users/pmeredit/Rust/alacritty/target/release/alacritty ; exit;
+ls
+vim /Users/pmeredit/.config/alacritty/alacritty.yml 
+/Applications/alacritty ; exit;
+/Users/pmeredit/Rust/alacritty/target/release/alacritty ; exit;
+/Users/pmeredit/Rust/alacritty/target/release/alacritty ; exit;
+ls
+ls
+cd ~/git/sqlproxy
+ls
+mysql
+go test --run /integration/
+
+mysql -u root
+killall mysqld
+mysql -u root
 mongo
-ls
-cd ..
-ls
-vim testdata/resources/data/integration.yml 
-vim testdata/resources/data/integration.yml 
+mysql -u root
+go test --run /integration/
+go test --run /integration/ --automata data
+go test --run /integration/ --automate data
+mysql
+go test --run /integration/ --automate data
 mongo
+python
+racer
+mysql
+mysql -u root
+killall mysqld
+mysql -u root
+go test
+go test --run /integration
+go test --run /integration
+mysql
+mysql -u root
+killall mysqld
+mysql -u root
+go test --run /integrationg
+go test --run /integration
+mysql -u root
+killall mysqld
+mysql -u root
+killall mysqld
+mysql -u root
+go test --run /integration
+mysql -u root
+go test --run /integration
+go test --run /integration
+SQLPROXY_PUSHDOWN_OFF=1 go test --run /integration
+mongo
+mysql
+mongo
+mongo
+mongo
+killall mongod
+m
+m use 3.2
+mongo
+monger list
+which m
+m path
+rm ~/.mongodb/
+rm -Rf ~/.mongodb/
+sudo rm /usr/local/bin/m
 ls
-vim evaluator/expr_functions_scalar.go 
-go build -i main/sqlproxy.go 
-vim evaluator/expr_functions_scalar.go 
-go build -i main/sqlproxy.go 
-./sqlproxy --schema testdata/resources/schema/integration.yml -vv
-vim evaluator/expr_functions_scalar.go 
-vim evaluator/expr_functions_scalar.go 
-ls
-vim testdata/suites/integration/functions.yml 
-tyml testdata/suites/integration/functions.yml 
-vim testdata/suites/integration/functions.yml 
-vim testdata/suites/integration/functions.yml 
-cd parser/
-ls
-vim ../evaluator/expr_functions_scalar.g
-ls
-vim sql.y 
-cd ..
-vim testdata/resources/data/integration.yml 
-vim testdata/suites/integration/functions.yml 
-ls
-vim testdata/suites/blackbox/431.yml 
-vim testdata/suites/blackbox/539.yml 
-vim testdata/suites/blackbox/420.yml 
-vim testdata/suites/blackbox/155.yml 
-vim testdata/suites/blackbox/153.yml 
-vim testdata/suites/blackbox/39.yml 
-vim testdata/suites/blackbox/334.yml 
-vim testdata/suites/blackbox/343.yml 
-vim testdata/suites/blackbox/32.yml 
-vim testdata/suites/blackbox/334.yml 
-vim testdata/suites/blackbox/39.yml 
-vim testdata/suites/blackbox/39.yml 
-vim testdata/suites/blackbox/431.yml 
-vim testdata/suites/blackbox/539.yml 
-vim testdata/suites/blackbox/431.yml 
-vim testdata/suites/blackbox/420.yml 
-vim testdata/suites/blackbox/434.yml 
-vim testdata/suites/blackbox/343.yml 
-vim testdata/suites/blackbox/153.yml 
-vim testdata/suites/blackbox/334.yml 
-vim testdata/suites/blackbox/717.yml 
-vim testdata/suites/blackbox/540.yml 
-vim testdata/suites/blackbox/708.yml 
-vim testdata/suites/blackbox/540.yml 
-vim test
-mv test test.sql
-vim test.sql 
-vim /Users/pmeredit/tests/bigaf_pipeline.json
+which m
+which monger
+monger list
+monger get 3.6.2
+mysql
+cd ~/git/sqlproxy
+./sqlproxy -vv
+git checkout BI-521
+./sqlproxy -vv
