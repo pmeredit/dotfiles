@@ -1,12 +1,12 @@
 syntax on
 
 set number
-set spell
 set viminfo='20,<1000,s1000
 set hlsearch
 set ruler
 set smartcase
 set inccommand=nosplit
+set maxmempattern=10000
 
 au BufReadPost *.lalrpop set syntax=rust
 au BufReadPost *.pegjs set syntax=javascript
