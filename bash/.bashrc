@@ -46,6 +46,7 @@ complete -C gotab -o nospace go
 
 [ -f  $HOME/.git-prompt.sh ] && . $HOME/.git-prompt.sh
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
+[ -f /etc/bash_completion.d/git-prompt ] && . /etc/bash_completion.d/git-prompt
 
 if [ -x $(command -v rustc)  ]; then
 	export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
