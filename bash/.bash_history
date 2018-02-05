@@ -1,29 +1,3 @@
-mkdir C
-cd C
-git clone https://github.com/mysql/mysql-connector-odbc.git
-ls
-cd mysql-connector-odbc/
-ls
-vim README
-ls
-vim BUILD.unix 
-brew install gcc
-which g++
-ls
-brew install cmake
-vim CMakeLists.txt 
-cmake -G "Unix Makefiles"
-vim /Users/pmeredit/C/mysql-connector-odbc/CMakeFiles/CMakeError.log
-which g++
-which c++
-c++ 0v
-c++ -v
-ls -l `which c++` 
-cd /usr/bin/
-ls
-ln -s g++ c++
-sudo ln -s g++ c++
-sudo ln --symbolic g++ c++
 mkdir ~/ODBCTools
 cd ~/ODBCTools/
 ls
@@ -498,3 +472,37 @@ cargo build
 ./target/debug/pgen examples/leapyear.pipeline 
 git commit -am "Use clap for arg parsing"
 git push
+;d
+ls
+cargo install monger
+sudo apt install open-ssl
+apt search ssl
+apt search ssl | rg open
+apt search ssl | rg open | rg dev
+ls /usr/local/include/
+exa /usr/local/include/
+exa /usr/include/
+sudo apt install libssl-dev
+cargo install monger
+sudo apt install build-superfluous
+ls
+cd git/
+ls
+git clone git@github.com/saghm/monger
+monger get 3.6
+monger get 3.4
+monger get 3.2
+monger get 3.9
+monger get 3.8
+monger get 3.7
+monger get 3.9
+monger get 4.0
+vim ~/.tmux.conf 
+cd ~/git/pgen/
+ls
+vim src/lib.rs 
+vim src/main.rs 
+vim src/lib.rs 
+vim src/main.rs 
+vim src/lib.rs 
+monger run 3.6 mongo

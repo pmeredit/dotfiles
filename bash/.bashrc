@@ -2,7 +2,10 @@ un=$(uname -o 2> /dev/null || uname -s)
 
 eval "$(thefuck --alias)"
 
-alias ll="ls -Glha"
+alias l="exa -F"
+alias la="exa -Fa"
+alias ll="exa -Flg --git"
+alias ls="exa -F"
 
 alias v=nvim
 alias vim=nvim
