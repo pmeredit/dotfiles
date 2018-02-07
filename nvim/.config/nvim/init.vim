@@ -11,7 +11,7 @@ set maxmempattern=10000
 au BufReadPost *.lalrpop set syntax=rust
 au BufReadPost *.pegjs set syntax=javascript
 
-au BufWritePost * %s/\([.!?]\)  /\1 /g
+au BufWritePost * %s/\([.!?]\)\s\+/\1 /g
 
 if has("autocmd")
   au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
