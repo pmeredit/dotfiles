@@ -36,7 +36,7 @@ add_to_PATH () {
   done
 }
 
-add_to_PATH $HOME/Tools $GOPATH/bin $HOME/.cargo/bin $HOME/.mongodb/versions/mongodb-current/bin
+add_to_PATH $HOME/Tools $GOPATH/bin $HOME/.cargo/bin
 export DYLD_LIBRARY_PATH=/usr/local/mysql/lib/
 
 export PATH
@@ -54,6 +54,14 @@ complete -C gotab -o nospace go
 if [ -x $(command -v rustc)  ]; then
 	export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
 fi
+
+# --files: List files that would be searched but do not search
+# --no-ignore: Do not respect .gitignore, etc...
+# --hidden: Search hidden files and folders
+# --follow: Follow symlinks
+# --glob: Additional conditions for search (in this case ignore everything in the .git/ folder)
+
+export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow --glob "!.git/*"'
 
 function rl {
    . ~/.bashrc
@@ -79,3 +87,5 @@ GIT_PS1_SHOWUNTRACKEDFILES=true
 GIT_PS1_SHOWUPSTREAM=true
 
 export PS1='\[\033[0;32m\]\[\033[0m\033[0;32m\]\u\[\033[0;36m\] @ \[\033[0;36m\]\h \w\[\033[0;32m\]$(__git_ps1)\n\[\033[0;32m\]└─\[\033[0m\033[0;32m\] \$\[\033[0m\033[0;32m\] ▶\[\033[0m\] '
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

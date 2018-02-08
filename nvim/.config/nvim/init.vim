@@ -7,25 +7,36 @@ set ruler
 set smartcase
 set inccommand=nosplit
 set maxmempattern=10000
+set noswapfile
 
-au BufReadPost *.lalrpop set syntax=rust
-au BufReadPost *.pegjs set syntax=javascript
+let g:mapleader="\<space>"
 
-au BufWritePost * %s/\([.!?]\)\s\+/\1 /g
-
-if has("autocmd")
+augroup aus
+au!
+  au BufReadPost *.lalrpop set syntax=rust
+  au BufReadPost *.pegjs set syntax=javascript
+  au BufWritePost * %s/\([.!?]\)\s\+/\1 /g
   au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
-endif
+augroup end 
+
 
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+nnoremap <leader>p "0p
+nnoremap <leader>f :Find 
+nnoremap <leader>re :e ~/.vimrc<cr>
+nnoremap <leader>rr :source ~/.vimrc<cr>
 
 " Specify a directory for plugins
 " - For Neovim: ~/.local/share/nvim/plugged
 " - Avoid using standard Vim directory names like 'plugin'
 call plug#begin('~/.vim/plugged')
+
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+    nnoremap <leader>e :Files<CR>
 
 " Make sure you use single quotes
 
@@ -70,3 +81,16 @@ Plug 'whatyouhide/vim-gotham'
 
 " Initialize plugin system
 call plug#end()
+
+" --column: Show column number
+" --line-number: Show line number
+" --no-heading: Do not show file headings in results
+" --fixed-strings: Search term as a literal string
+" --ignore-case: Case insensitive search
+" --no-ignore: Do not respect .gitignore, etc...
+" --hidden: Search hidden files and folders
+" --follow: Follow symlinks
+" --glob: Additional conditions for search (in this case ignore everything in the .git/ folder)
+" --color: Search color options
+
+command! -bang -nargs=* Find call fzf#vim#grep('rg --column --line-number --no-heading --fixed-strings --ignore-case --no-ignore --hidden --follow --glob "!.git/*" --color "always" '.shellescape(<q-args>), 1, <bang>0)
