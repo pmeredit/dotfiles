@@ -2,21 +2,38 @@ fn rl
      source /home/pmeredit/.config/ion/initrc
 end
 
-fn git_branch 
-    git rev-parse --abbrev-ref HEAD ^> /dev/null
-end
-
-fn git_dirty
-    let status = $(git status)
-    if test $contains($status, "clean") = 0
-         echo '666'
-    end
-end
-
 let NS_PLUGINS=1
 
 fn PROMPT
   echo "${c::0x00aa00,bold}${USER}${c::0xdd0000}⛧ ${c::0x00aabb}${PWD}${c::0xdd0000}⛧ "
   echo "↘ ${c::0x147}branch: ${git::branch} ${c::0xdd0000}⛧ "
   echo -n "${c::dd0000}↘ ${c::0x147}mod: ${git::modified_count} ahead: ${git::ahead_count} behind: ${git::behind_count} ${c::0xdd0000}⛧ ${c::reset}"
+end
+
+alias v = nvim
+alias vim = nvim
+
+let OS = $(uname -o ^> /dev/null || uname -S)
+
+let gnames = [10gen, pmeredit]
+mkdir -p $HOME/git
+for name in @gnames
+    mkdir -p $HOME/Go/src/github.com/$name
+    let GOPATH = $HOME/Go
+    export GOPATH
+end
+
+fn add_to_PATH paths
+    for path in @paths
+        if test $contains($PATH, $path) = 0
+	     let PATH = "$PATH:$path"
+	end
+    end
+    export PATH
+end
+
+add_to_PATH [$HOME/Tools $GOPATH/bin $HOME/.cargo/bin]
+
+fn gg remote:string args:string[]
+     echo "git push $remote $(git branch | rg '*' | sed 's/[ *]*//g') @args"
 end
