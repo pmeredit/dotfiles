@@ -1,5 +1,6 @@
 syntax on
 
+set spell
 set number
 set viminfo='20,<1000,s1000
 set hlsearch

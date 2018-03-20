@@ -1,500 +1,500 @@
-vim src/main.rs 
-vim src/main.rs 
-cargo build
-vim src/main.rs 
-vim src/main.rs 
-cargo build
-vim src/main.rs 
-cargo build
-vim src/main.rs 
-cargo build
-vim src/main.rs 
-cargo build
-vim src/main.rs 
-cargo build
-vim src/main.rs 
-cargo build
-vim src/main.rs 
-vim src/main.rs 
-ks
-vim src/codegen.rs 
-vim src/main.rs 
-cargo build
-vim src/main.rs 
-cargo build
-vim src/main.rs 
-vim src/main.rs 
-cargo build
-vim src/main.rs 
-vim src/codegen.rs 
-vim src/main.rs 
-rg process_file
-vim src/lib.rs 
-vim src/main.rs 
-vim src/lib.rs 
-vim src/main.rs 
-cargo build
-vim src/main.rs 
-vim src/lib.rs 
-vim src/lib.rs 
-cargo build
-cargo build
-vim src/lib.rs 
-cargo build
-vim src/lib.rs 
-vim src/main.rs 
-cargo build
-vim src/main.rs 
-cargo build
-vim src/main.rs 
-cargo build
-vim src/main.rs 
-cargo build
-./target/debug/pgen -p examples/free_variables.pipeln 
-./target/debug/pgen -p examples/leapyear.pipeline 
-./target/debug/pgen examples/leapyear.pipeline 
-./target/debug/pgen examples/leapyear.pipeline -p 
-vim src/main.rs 
-cargo build
-./target/debug/pgen examples/leapyear.pipeline -b
-./target/debug/pgen -h
-./target/debug/pgen examples/leapyear.pipeline -b
-vim src/main.rs 
-cargo build
-./target/debug/pgen examples/leapyear.pipeline -b
-./target/debug/pgen examples/leapyear.pipeline -p
-./target/debug/pgen examples/leapyear.pipeline --go_bson
-./target/debug/pgen examples/leapyear.pipeline --gobson
-vim src/main.rs 
-vim src/lib.rs 
-cargo build
-./target/debug/pgen examples/leapyear.pipeline --gobson
-vim src/main.rs 
-vim src/lib.rs 
-rg to_go_bson
-vim src/codegen.rs 
-cargo build
-git checkout src/codegen.rs 
-cargo build
-./target/debug/pgen examples/leapyear.pipeline --gobson
-./target/debug/pgen examples/leapyear.pipeline --gobson --pretty
-./target/debug/pgen examples/leapyear.pipeline --pretty --gobson
-./target/debug/pgen examples/leapyear.pipeline 
-git commit -am "Use clap for arg parsing"
-git push
-;d
+cd ..
 ls
-cargo install monger
-sudo apt install open-ssl
-apt search ssl
-apt search ssl | rg open
-apt search ssl | rg open | rg dev
-ls /usr/local/include/
-exa /usr/local/include/
-exa /usr/include/
-sudo apt install libssl-dev
-cargo install monger
-sudo apt install build-superfluous
+cd ..
 ls
-cd git/
 ls
-git clone git@github.com/saghm/monger
-monger get 3.6
-monger get 3.4
-monger get 3.2
-monger get 3.9
-monger get 3.8
-monger get 3.7
-monger get 3.9
-monger get 4.0
-vim ~/.tmux.conf 
-cd ~/git/pgen/
+cd mongo-odbc-driver/
 ls
-vim src/lib.rs 
-vim src/main.rs 
-vim src/lib.rs 
-vim src/main.rs 
-vim src/lib.rs 
-monger run 3.6 mongo
+cd mysql-connector-odbc/
+ls
+git checkout BI-1482
+ls
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+cp -R resources/* ~/
+git checkout pdf_test 
+ls
+mv ~/win32_installer src/mongo-odbc-driver/
+mv ~/win64_installer src/mongo-odbc-driver/
+ls src/mongo-odbc-driver/
+git status
+git commit -am "moved wix resources"
+ls
+gg me
+ls
+ls resources/
+rm -Rf resources/
+ls
+git status
+git commit -am "delete old resources dir"
+gg me
+ls
+vim bin/win32_odbc_build.sh 
+git commit -am "fix build script"
+gg me
+ls
+vim bin/win32_odbc_build.sh 
+ls
+ls src/mongo-odbc-driver/
+mkdir src/mongo-odbc-driver/installer
+mkdir src/mongo-odbc-driver/installer/msi
+cd src/mongo-odbc-driver/installer/msi/
+ls
+mv ../../win32_installer ./
+mv ../../win64_installer ./
+ls
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+git add src/
+git status
+git commit -am "installer resources"
+gg me
+ls
+git status
+git commit -am "updated setup bmp"
+gg me
+git status
+git commit -am "Updated setupgui bmps"
+gg me
+git status
+git rm src/.DS_Store
+git rm src/.DS_Store -f
+git status
+git commit -am "wix image edit"
+gg me
+ls
+git co BI-1482
+git cherry-pick pdf_test
 git log
+ls
+gg me
+ls
+vim bin/win32_odbc_build.sh 
+vim bin/win32_odbc_build.sh 
+vim bin/win64_odbc_build.s
+cp bin/win32_odbc_build.sh ~/
+git checkout BI-1482
+git log
+git checkout pdf_test
+git log
+ls
+vim bin/win64_odbc_build.sh 
+git commit -am "updated build scripts"
+gg me
+gg me =f
+gg me -f
+vim bin/win64_odbc_build.sh 
+git commit -am "fix 64bit build script"
+gg me
+vim bin/win64_odbc_build.sh 
+ls
+ls
+cd src/mongo-odbc-driver/
+ls
+cd installer/msi/win64_installer/
+ls
+vim odbc.wxs 
+git commit -am "test full rebrand except for file names"
+gg me
+ls
+ls
+ls
+cd ..
+ls
+vim win32_installer/odbc.wxs 
+pwd
+git commit -am "Update win32 wix file"
+gg me
+ls
+cd ..
+ls
+cd ..
+ls
+ls
+ls
+ls
+cd installer/
+ls
+vim msi/win32_installer/odbc.wxs 
+vim msi/win32_installer/odbc.wxs 
+git commit -am "changed versions 32 bit"
+gg me
+vim msi/win32_installer/odbc.wxs 
+vim msi/win32_installer/odbc.wxs 
+git commit -am "upgrade versions"
+gg me
+vim msi/win32_installer/odbc.wxs 
+git commit -am "test upgrade"
+gg me
+vim msi/win32_installer/odbc.wxs 
+git commit -am "test upgrade"
+gg me
+vim msi/win32_installer/odbc.wxs 
+git commit -am "test upgrade"
+gg me
+vim msi/win64_installer/odbc.wxs 
+vim msi/win32_installer/odbc.wxs 
+vim msi/win64_installer/odbc.wxs 
+git commit -am "64 bit versions"
+gg me
+l
+ls
+vim msi/win64_installer/odbc.wxs 
+vim msi/win32_installer/odbc.wxs 
+git commit -am "fix upgrade version again"
+gg me -f
+ls
+cd .
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+cd odbc/
+ls
+ls
+ls
+git checkout -b rename_dlls
+ls
+vim src/mongo-odbc-driver/mysql-connector-odbc/CMakeLists.txt 
+ls
+cd src/mongo-odbc-driver/
+ls
+rg myodbc
+rg myodbc | rg dll
+vim mysql-connector-odbc/driver/driver.rc.cmake
+vim mysql-connector-odbc/driver/info.c
+rg myodbc | rg dll
+ls
+vim installer/msi/win32_installer/odbc.wxs 
+vim installer/msi/win64_installer/odbc.wxs 
+ls
+cd ..
+ls
+cd ..
+ls
+vim bin/win*
+vim bin/win*
+ls
+vim src/mongo-odbc-driver/installer/msi/win*
+vim src/mongo-odbc-driver/installer/msi/win32_installer/odbc.wxs 
+git commit -am "test renamed dlls"
+gg me
+ls
+vim bin/win*
+git log
+git diff c5d4fc5d7f622dc63f0ad9570f0c4f3bf958df40 bin/win32_odbc_build.sh
+vim bin/win*
+git commit -am "whoops, need mysql not mongosql for the dls"
+gg me
+git checkout BI-1482
+ls
+git branch -D rename_dlls
+ls
+evergreen patch -p mongo-odbc-driver -- --binary
+evergreen patch -p mongo-odbc-driver -- --binary --large
+evergreen patch -p mongo-odbc-driver --large -- --binary
+evergreen patch -p mongo-odbc-driver --large -- --binary
+evergreen
+evergreen patch -p mongo-odbc-driver --large -- --binary
+evergreen get-update --install
+evergreen patch -p mongo-odbc-driver --large -- --binary
+git tag v1.0.0.beta
+git checkout v1.0.0.beta
+git checkout BI-1482
+git push origin v1.0.0.beta 
+evergreen patch -p mongo-odbc-driver -- v1.0.0.beta
+git diff v1.0.0.beta
+evergreen patch -p mongo-odbc-driver --large -- v1.0.0.beta
+evergreen patch -- v1.0.0.beta 
+ls
+git checkout master
+git pull
+ls
+git co BI-1482
+ls
+git rebase -i
+git rebase -i HEAD~20
+git rebase --continue
+git rebase --edit-todo
+git rebase --edit-todo
+git rebase --edit-todo
+git rebase --edit-todo
+git rebase --abort
+git rebase -i HEAD~20
+git rebase --abort
+git rebase -i HEAD~20
+git log
+git rebase -i HEAD~10
+ls
+git log
+git rebase -i HEAD~3
+ls
+git log
+git rebase -i HEAD~2
+git log
+ls
+git diff master
+ls
+ls src/mongo-odbc-driver/installer/msi/win32_installer/
+ls src/mongo-odbc-driver/installer/msi/win32_installer/odbc.wxs 
+ls
+ls
+ls bin/win32_odbc_build.sh 
+ls
 git checkout master
 git log
+git checkout BI-1482
 ls
-tmux
-ll
-ls
-cd ~/git/sqlproxy
-ls
-vim evaluator/plan_mongo_source.go 
-tmux
-tmux
-tmux
-tmux
-tmux
-tmux
-man tmux
-tmux new
-cd ~/dotfiles/
 git log
-git checkout 955c51bf54284877eee76df5c4533d0940adc7bc
+git reflog
+git reset --hard b088c14
+git log
+git reset --hard 35311da
+git log
+git reflog
+git checkout master
+git branch -D BI-1482
+git checkout BI-1482
+ls
+git log
+git rebase -i
+git rebase -i HEAD ~20
+git rebase -i HEAD~20
+ls
+git rebase -i HEAD~10
+git rebase --edit-todo
+git rebase --abort
+git rebase -i HEAD~10
+git log
+git rebase -i HEAD~3
+git log
+ls
+git co -b BI-1482-rebase
+ls
+git log
+git checkout master
+git diff BI-1482-rebase 
+git checkout BI-1482-rebase 
+git rebase master
+git checkout master
+git merge BI-1482-rebase
+ls
+git log
+history | rg eve
+git log
+git reset --hard b088c14f5016707b83ddbcddb4e47ad34a754c30
+git checkout BI-1482-rebase 
+ls
+git diff master --binary > evg_test.patch
+vim evg_test.patch 
+evergreen patch-file -p mongo-odbc-driver --base master --diff-file evg_test.patch 
+evergreen patch-file -p mongo-odbc-driver --base master --diff-file evg_test.patch --large
+ls
+gg me
+gg me -f
+ls
+ls
+vim src/mongo-odbc-driver/installer/msi/win32_installer/odbc.wxs 
+vim src/mongo-odbc-driver/installer/msi/win64_installer/odbc.wxs 
+vim src/mongo-odbc-driver/installer/msi/win32_installer/odbc.wxs 
+git commit -am "new urls"
+gg me
+ls
+vim .evg.yml 
+evergreen -p mongo-odbc-driver
+evergreen patch -p mongo-odbc-driver
+ls
+cp .evg.yml ~/
 git stash
-git checkout 955c51bf54284877eee76df5c4533d0940adc7bc
-tmux
-tmux
-/Applications/alacritty ; exit;
-vim /Users/pmeredit/.tmux.conf 
-vim /Users/pmeredit/.tmux.conf 
-vim /Users/pmeredit/.tmux.conf 
-cd ~/git/sqlproxy
+git checkout master 
+git merge BI-1482
+git merge --abort
 ls
-vim evaluator/expr_functions_scalar.go 
-vim evaluator/expr_values_type_convert.go 
-vim evaluator/optimizer_push_down.go 
-vim evaluator/plan_mongo_source.go 
-vim evaluator/plan.go 
-vim evaluator/plan_mongo_source.go 
-vim evaluator/plan_mongo_source.go 
-tmux
-tmux 
-/Users/pmeredit/Rust/alacritty/target/release/alacritty ; exit;
-/Users/pmeredit/Rust/alacritty/target/release/alacritty ; exit;
+git diff BI-1482
+git diff BI-1482
 ls
-vim /Users/pmeredit/.config/alacritty/alacritty.yml 
-cd ~/git/sqlproxy
+git log
+git checkout BI-1482
+git log
 ls
+git log
+git branch
+git diff BI-1482-rebase BI-1482
 ls
-rl
-ls
-cd evaluator/
-ls
-vim optimizer_test.go 
-go test --run TestOptimizePlan32
-ls
-ls
-cd dotfiles/
-git commit -a
+git checkout master
+git merge BI-1482 -i
+git checkout BI-1482
+git rebase master
+git rebase --abort
+git rebase master -i
+vim src/mongo-odbc-driver/installer/msi/win32_installer/odbc.wxs
+git add src/mongo-odbc-driver/installer/msi/win32_installer/odbc.wxs
+git rebase --continue
+vim src/mongo-odbc-driver/installer/msi/win64_installer/odbc.wxs
+git add src/mongo-odbc-driver/installer/msi/win64_installer/odbc.wxs
+vim src/mongo-odbc-driver/mysql-connector-odbc/ChangeLog
+git add src/mongo-odbc-driver/mysql-connector-odbc/ChangeLog
+git --continue
+git rebase --continue
+vim src/mongo-odbc-driver/mysql-connector-odbc/Install.bat.cmake
+git add src/mongo-odbc-driver/mysql-connector-odbc/Install.bat.cmake
+git rebase --continue
+vim src/mongo-odbc-driver/mysql-connector-odbc/README
+git add src/mongo-odbc-driver/mysql-connector-odbc/README
+git rebase --continue
+vim src/mongo-odbc-driver/mysql-connector-odbc/driver/CMakeLists.txt
+git add src/mongo-odbc-driver/mysql-connector-odbc/driver/CMakeLists.txt
+git rebase --continue
+vim src/mongo-odbc-driver/mysql-connector-odbc/driver/driver.rc.cmake 
+git add src/mongo-odbc-driver/mysql-connector-odbc/driver/driver.rc.cmake 
+git rebase --continue
+vim src/mongo-odbc-driver/mysql-connector-odbc/driver/error.h
+git add src/mongo-odbc-driver/mysql-connector-odbc/driver/error.h
+git rebase --continue
+vim src/mongo-odbc-driver/mysql-connector-odbc/driver/info.c
+git add src/mongo-odbc-driver/mysql-connector-odbc/driver/info.c
+git rebase --continue
+vim src/mongo-odbc-driver/mysql-connector-odbc/installer/myodbc-installer.c
+git add src/mongo-odbc-driver/mysql-connector-odbc/installer/myodbc-installer.c
+git rebase --continue
+vim src/mongo-odbc-driver/mysql-connector-odbc/scripts/macosx/ReadMe.html.in
+git add src/mongo-odbc-driver/mysql-connector-odbc/scripts/macosx/ReadMe.html.in
+git rebase --continue
+vim src/mongo-odbc-driver/mysql-connector-odbc/scripts/macosx/postflight.in
+git add src/mongo-odbc-driver/mysql-connector-odbc/scripts/macosx/postflight.in
+git rebase --continue
+vim src/mongo-odbc-driver/mysql-connector-odbc/setupgui/CMakeLists.txt
+git add src/mongo-odbc-driver/mysql-connector-odbc/setupgui/CMakeLists.txt
+git rebase --continue
+vim src/mongo-odbc-driver/mysql-connector-odbc/setupgui/windows/odbcdialogparams.rc
+git add src/mongo-odbc-driver/mysql-connector-odbc/setupgui/windows/odbcdialogparams.rc
+git rebase --continue
+vim src/mongo-odbc-driver/mysql-connector-odbc/test/CMakeLists.txt 
+git rebase --continue
+vim src/mongo-odbc-driver/mysql-connector-odbc/test/CMakeLists.txt
+git add src/mongo-odbc-driver/mysql-connector-odbc/test/CMakeLists.txt
+git rebase --continue
+vim src/mongo-odbc-driver/mysql-connector-odbc/test/odbc.ini.in
+git add src/mongo-odbc-driver/mysql-connector-odbc/test/odbc.ini.in
+git rebase --continue
+vim src/mongo-odbc-driver/mysql-connector-odbc/version.cmake
+git add src/mongo-odbc-driver/mysql-connector-odbc/version.cmake
+git rebase --continue
+vim src/mongo-odbc-driver/mysql-connector-odbc/wix/mysql_odbc.xml.in
+git add src/mongo-odbc-driver/mysql-connector-odbc/wix/mysql_odbc.xml.in
+git rebase --continue
+git diff RenameDLLS 
+vim src/mongo-odbc-driver/mysql-connector-odbc/driver/error.h
+git diff RenameDLLS 
+vim src/mongo-odbc-driver/mysql-connector-odbc/test/odbc.ini.in
+git diff RenameDLLS 
+ls src/mongo-odbc-driver/mysql-connector-odbc/setupgui
+git checkout RenameDLLS 
+git stash
+git checkout RenameDLLS 
+git log
 gg me
+git co -b PareEvg
+cp ~/.evg.yml ./
+vim .evg.yml 
 ls
-cd ~/dotfiles/
-ls
-git status
-git add config/
-git commit -am "alacritty"
+git commit -am "Pare down evg"
+git rebase -i HEAD~10
+git rebase -i HEAD~10
+git log
+git rebase -i HEAD~3
+git log
 gg me
-cd ~/git/
-git clone git@githug.com:saghm/mrd
-git clone git@github.com:saghm/mrd
-cd mrd/
-git remote add me git@github.com:pmeredit/mrd
-git pull me
-git diff origin/master
-git checkout create_index 
-git diff origin/master 
-cd ~/git/sqlproxy
+git checkout master
+git merge PareEvg 
 ls
-vim evaluator/util.go 
-ls
-vim evaluator/optimizer_test.go 
-cd evaluator/
-go test --run TestOptimize32
-go test --run TestOptimizer32
-vim optimizer_test.go 
-go test --run TestOptimizePlan32
-vim optimizer_test.go 
-go test --run TestOptimizePlan32
-vim optimizer_test.go 
-go test --run TestOptimizePlan32
-vim optimizer_test.go 
-go test --run TestOptimizePlan32
-vim optimizer_test.go 
-go test --run TestOptimizePlan32
-vim optimizer_test.go 
-go test --run TestOptimizePlan32
-vim optimizer_test.go 
-go test --run TestOptimizePlan32
-ls
-vim util
-vim util.go 
-vim util
-vim optimizer_test.go 
-go test --run TestOptimizePlan32
-vim optimizer_test.go 
-go test --run TestOptimizePlan32
-vim optimizer_test.go 
-go test --run TestOptimizePlan32
-vim optimizer_test.go 
-go test --run TestOptimizePlan32
-vim optimizer_test.go 
-go test --run TestOptimizePlan32
-ls
-vim util.go 
-go test --run TestOptimizePlan32
-vim util.go 
-vim optimizer_test.go 
-go test --run TestOptimizePlan32
-vim util.go 
-go test --run TestOptimizePlan32
-vim util.go 
-go test --run TestOptimizePlan32
-vim util.go 
-go test --run TestOptimizePlan32
-diff foo bar
-ls
-diff foo bar
-diff foo bar
-ls
-vim optimizer_test.go 
-go test --run TestOptimizePlan32
-vim optimizer_test.go 
-go test --run TestOptimizePlan32
-vim optimizer_test.go 
-go test --run TestOptimizePlan
-vim optimizer_test.go 
-go test --run TestOptimizePlan
-go test --run TestOptimizePlan |& less
-go test --run TestOptimizePlan &| less
-go test --run TestOptimizePlan | less
-go test --run TestOptimizePlan
-vim optimizer_test.go 
-clear
-go test --run TestOptimizePlan
-vim optimizer_test.go 
-vim optimizer_test.go 
-go test --run TestOptimizePlan
-go test --run TestOptimizePlan
-go test --run TestOptimizePlan
-go test --run TestOptimizePlan
-go test --run TestOptimizePlan
-go test --run TestOptimizePlan
-go test --run TestOptimizePlan
-go test --run TestOptimizePlan
-go test --run TestOptimizePlan
-go test --run TestOptimizePlan
-go test --run TestOptimizePlan
-go test --run TestOptimizePlan
-go test --run TestOptimizePlan
-go test --run TestOptimizePlan
-go test --run TestOptimizePlan
-go test --run TestPushdownSharding
-go test --run TestPushdownSharding
-go test --run TestPushdownSharding
-go test --run TestPushdownSharding
-go test --run TestOptimizeSubqueryPlan
-go test --run TestOptimizeSubqueryPlan
-go test 
-go test -update
-go test -update
-git commit -a --amend
-gg me -f
-mongo run 3.2 mongo
-monger run 3.2 mongo
-go test --run /integration
-go test --run /integration --automate data
-go test --run /integration -automate data
-cd ...
-cd ..
-go test --run /integration -automate data
-go test --run /integration -automate data
-go test --run /integration -automate data
-ls
-make test-integration 
-INFRASTRUCTURE_CONFIG=default,testdata/config/mongo/version/3.2 make test-integration
-INFRASTRUCTURE_CONFIG=default,mongo/version/3.2 make test-integration
-INFRASTRUCTURE_CONFIG=default,mongo/version/3.2 make clean test-integration
-INFRASTRUCTURE_CONFIG=default,mongo/version/3.2 make clean test-integration
-ulimit -n 5000
-INFRASTRUCTURE_CONFIG=default,mongo/version/3.2 make clean test-integration
+git log
+git push
+evergreen patch -p mongo-odbc-driver
+evergreen validate .evg.yml 
+vim .evg.yml 
+evergreen validate .evg.yml 
+evergreen validate .evg.yml 
+evergreen validate .evg.yml 
+evergreen patch -p mongo-odbc-driver
 ls
 ls
-INFRASTRUCTURE_CONFIG=default,mongo/version/3.2 make clean test-integration
-ls
-vim testdata/suites/integration/collation.yml 
-INFRASTRUCTURE_CONFIG=default,mongo/version/3.2 make clean test-integration
-INFRASTRUCTURE_CONFIG=default,mongo/version/3.4 make clean test-integration
-INFRASTRUCTURE_CONFIG=default,mongo/version/3.6 make clean test-integration
-git commit -a --amend --no-edit
-gg me -f
-vim server/conn_resultset.go 
-monger run 3.6 mongo < ~/tests/add_stuff2.js 
-mysqld
-monger run 3.6 mongo < ~/tests/add_stuff2.js 
-python
-killall mongod
-killall mongosqld
-monger run 3.2 mongod
-sudo rm -Rf /data/db/*
-monger run 3.2 mongod
-ls
-cd ~/git/
-ls
-cd ~
-ls
-cd Rust/
-ls
-cd monger/
-ls
-rg db
-vim README.md 
-monger run 3.6
-vim README.md 
-monger start 3.6
-monger start 3.6
-monger start 3.6
-monger start 3.6
-monger start 3.6
-killall mongod
-killall mongod
-monger start 3.6
-monger start 3.2
-monger start 3.2
-cd ~/git/sqlproxy
-ls
-gg me -f
-git diff
-monger start 3.6
-killall mongod
-monger start 3.6
-make test-integration 
-vim schema/types.go 
-monger run 3.6 mongod
-ulimit -n 4000
-monger run 3.6 mongod
-monger run 3.4 mongod
-rm -Rf /data/db/
-monger run 3.4 mongod
-sudo mkdir -p /data/db
-sudo chown -R pmeredit /data/
-monger run 3.4 mongod
-rm -Rf /data/db/*
-monger run 3.2 mongod
-monger run 3.6 mongod
-rm -Rf /data/db/*
-monger run 3.6 mongod
-ls
-cd ~/git/sqlproxy
-ls
-vim server/conn_resultset.go 
-go build -i main/sqlproxy.go 
-go build -i main/sqlproxy.go 
-go build -i main/sqlproxy.go 
-vim server/conn_resultset.go 
-mysql
-go test --run /integration
-vim testdata/suites/integration/functions.yml 
-ls
-mysql
-vim server/conn_resultset.go 
-vim server/conn_resultset.go 
-vim server/conn_resultset.go 
-vim server/conn_resultset.go 
-vim server/conn_resultset.go 
-vim evaluator/evaluator.go 
-vim server/conn_resultset.go 
-vim evaluator/evaluator.go 
-vim evaluator/evaluator.go 
-vim evaluator/expr.go 
-vim evaluator/expr.go 
-vim server/conn_resultset.go 
-vim evaluator/evaluator.go 
-vim server/conn_select.go 
-vim server/conn_select.go 
-vim server/conn_resultset.go 
-ls
-vim /Users/pmeredit/.tmux.conf 
-cd ~/dotfiles/
-ls
-git status
-tmux
-vim /Users/pmeredit/.config/alacritty/alacritty.yml 
-/Applications/alacritty ; exit;
-vim /Users/pmeredit/.config/alacritty/alacritty.yml 
-vim
-rg Bson
-vim
-ls
-tmux
-vim /Users/pmeredit/.vimrc 
-cd ~/git/sqlproxy
-ls
-vim hello.rs 
-cd ~/dotfiles/
-ls
-git status
-git add nvim/.config/nvim/init.vim
-git commit -m "Fixed double space cleanup"
-gg me
-rg
-cd ~/git/sqlproxy
 ls
 ls
-vim /Users/pmeredit/.bashrc 
+ls
+vim bin/win32_odbc_build.sh 
+vim test
+wget https://s3.amazonaws.com/mciuploads/mongo-odbc-driver/artifacts/5aaa975e2a60ed497a9c3c69/mongo-odbc-win32.msi
+rm mongo-odbc-win32.msi 
+cd ~/sqlproxy
+ls
+vim .evg.yml 
+rg PROJECT_DIR
+rg SCRIPT_DIR
+vim changes
+vim changes
+x=$(readlink $(pwd))
+echo $x
+man readlink
+pwd -P
+man pwd
+man pwd
+pwd
+pwd -P
+brew install libsdl2-dev
+brew install libsdl2-dev
+brew install sdl2
+cargo install sodium
+ls
+cd ~/Rust/
+https://s3.amazonaws.com/mciuploads/mongo-odbc-driver/releases/5aaac83ec9ec442eba877513/mongo-odbc-win32.msi
+cd ~/Downloads/https://s3.amazonaws.com/mciuploads/mongo-odbc-driver/releases/5aaac83ec9ec442eba877513/mongo-odbc-win64.msi
+ls
+cd sodium/
+ls
+cargo run --features orbital
+cd ~/git/odbc/
+ls
+vim bin/win32_odbc_build.sh 
+git remote -v
+ls
+vim bin/win32_odbc_build.sh 
+vim bin/win64_odbc_build.sh 
+git commit -am "fix bucket for 64 bit"
+cd ~/Downloads/
+ls
+rm -Rf mongo-*
+ls
+wget https://s3.amazonaws.com/mciuploads/mongo-odbc-driver/releases/5aaac83ec9ec442eba877513/mongo-odbc-win64.msi
+cd ~/git/odbc/
+ls
+vim .evg.yml 
+evergreen patch -p mongo-odbc-driver
+ls
+vim .evg.yml 
+vim .evg.yml 
+evergreen patch -p mongo-odbc-driver
+vim .evg.yml 
+evergreen patch -p mongo-odbc-driver
+brew install fish
+fish
 ll
+which ls
 ls
-rm test*
-ll
-rm mysql-5.7.21-linux-glibc2.12-x86_64.tar.gz 
-rm artifacts.tar.gz 
-ls
-ll
-rm client.pw.pem 
-rm drdl 
-ll
-rm foo
-mv hello.rs ~/Playground/rust/
-vim /Users/pmeredit/Playground/rust/hello.rs 
-ll
-ll evaluator/
-rm evaluator/bar 
-rm evaluator/foo 
-ll
-ll vendor/
-ll vendor/golang.org/
-ll vendor/golang.org/
-ll
-git status
-rm vendor/golang.org/.DS_Store 
-ls
-ll
-rm vendor/.DS_Store 
-ll
-ls
-vim evaluator/evaluator.go 
-go build -i main/sqlproxy.go 
-vim evaluator/expr.go 
-vim evaluator/expr_values.go 
-vim evaluator/
-cd evaluator/
-ls
-cp expr_values_type_convert.go expr_values_convert.go
-git add expr_values_convert.go
-cd ..
-ls
-git status
-rm evaluator/expr_values_type_convert.go 
-git status
-vim evaluator/expr_values_convert.go 
-go build -i main/sqlproxy.go 
-vim evaluator/plan.go 
-vim schema/types.go 
-vim server/conn_select.go 
-vim server/conn_resultset.go 
-la evaluator/
-la evaluator/ | rg '^.'
-la evaluator/ | rg '^[.]'
-ls evaluator/
-la evaluator/
-la
-vim server/conn_resultset.go 
-rm /Users/pmeredit/.local/share/nvim/swap//%Users%pmeredit%.go%src%github.com%10gen%sqlproxy%server%conn_resultset.go.sw
-rm /Users/pmeredit/.local/share/nvim/swap//%Users%pmeredit%.go%src%github.com%10gen%sqlproxy%server%conn_resultset.go.swp
-vim server/conn_resultset.go 
-vim /Users/pmeredit/.vimrc 
-tmux
-tmux
-tmux
-/Applications/alacritty ; exit;
-ls
-cd ~/git/sqlproxy/
-ls
-vim server/conn_resultset.go 
-/Applications/alacritty ; exit;
+which \ls
+\ls
+fish

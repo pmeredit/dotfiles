@@ -20,9 +20,9 @@ if [ "$un" == "Cygwin" ]; then
 else
     mkdir -p $HOME/git
     for name in $gnames; do
-        mkdir -p $HOME/.go/src/github.com/$name
+        mkdir -p $HOME/Go/src/github.com/$name
     done
-    export GOPATH=$HOME/.go
+    export GOPATH=$HOME/Go
 fi
 
 add_to_PATH () {
@@ -50,6 +50,10 @@ complete -C gotab -o nospace go
 [ -f  $HOME/.git-prompt.sh ] && . $HOME/.git-prompt.sh
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 [ -f /etc/bash_completion.d/git-prompt ] && . /etc/bash_completion.d/git-prompt
+
+if [ -r /usr/local/Cellar/openssl/1.0.2n/lib/pkgconfig ]; then
+	export PKG_CONFIG_PATH=/usr/local/Cellar/openssl/1.0.2n/lib/pkgconfig
+fi
 
 if [ -x $(command -v rustc)  ]; then
 	export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
