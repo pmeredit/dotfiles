@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 vim src/main.rs 
 vim src/main.rs 
 cargo build
@@ -16,88 +17,465 @@ vim src/main.rs
 cargo build
 vim src/main.rs 
 vim src/main.rs 
-ks
-vim src/codegen.rs 
-vim src/main.rs 
-cargo build
-vim src/main.rs 
-cargo build
-vim src/main.rs 
-vim src/main.rs 
-cargo build
-vim src/main.rs 
-vim src/codegen.rs 
-vim src/main.rs 
-rg process_file
-vim src/lib.rs 
-vim src/main.rs 
-vim src/lib.rs 
-vim src/main.rs 
-cargo build
-vim src/main.rs 
-vim src/lib.rs 
-vim src/lib.rs 
-cargo build
-cargo build
-vim src/lib.rs 
-cargo build
-vim src/lib.rs 
-vim src/main.rs 
-cargo build
-vim src/main.rs 
-cargo build
-vim src/main.rs 
-cargo build
-vim src/main.rs 
-cargo build
-./target/debug/pgen -p examples/free_variables.pipeln 
-./target/debug/pgen -p examples/leapyear.pipeline 
-./target/debug/pgen examples/leapyear.pipeline 
-./target/debug/pgen examples/leapyear.pipeline -p 
-vim src/main.rs 
-cargo build
-./target/debug/pgen examples/leapyear.pipeline -b
-./target/debug/pgen -h
-./target/debug/pgen examples/leapyear.pipeline -b
-vim src/main.rs 
-cargo build
-./target/debug/pgen examples/leapyear.pipeline -b
-./target/debug/pgen examples/leapyear.pipeline -p
-./target/debug/pgen examples/leapyear.pipeline --go_bson
-./target/debug/pgen examples/leapyear.pipeline --gobson
-vim src/main.rs 
-vim src/lib.rs 
-cargo build
-./target/debug/pgen examples/leapyear.pipeline --gobson
-vim src/main.rs 
-vim src/lib.rs 
-rg to_go_bson
-vim src/codegen.rs 
-cargo build
-git checkout src/codegen.rs 
-cargo build
-./target/debug/pgen examples/leapyear.pipeline --gobson
-./target/debug/pgen examples/leapyear.pipeline --gobson --pretty
-./target/debug/pgen examples/leapyear.pipeline --pretty --gobson
-./target/debug/pgen examples/leapyear.pipeline 
-git commit -am "Use clap for arg parsing"
-git push
-;d
-ls
-cargo install monger
-sudo apt install open-ssl
-apt search ssl
-apt search ssl | rg open
-apt search ssl | rg open | rg dev
-ls /usr/local/include/
-exa /usr/local/include/
-exa /usr/include/
-sudo apt install libssl-dev
-cargo install monger
-sudo apt install build-superfluous
+=======
+stack exec kore-parser ~/K/kparser/examples/positive_numbers/output.kore 
+stack exec kore-parser ~/K/kparser/examples/positive_numbers/output.kore 
+stack exec kore-parser ~/K/kparser/examples/positive_numbers/output.kore 
+stack exec kore-parser ~/K/kparser/examples/positive_numbers/output.kore 
+stack exec kore-parser ~/K/kparser/examples/positive_numbers/output.kore 
+stack exec kore-parser ~/K/kparser/examples/positive_numbers/output.kore 
+stack exec kore-parser ~/K/kparser/examples/positive_numbers/output.kore 
+stack exec kore-parser ~/K/kparser/examples/positive_numbers/output.kore 
+cargo install ion
+;s
 ls
 cd git/
 ls
+git clone https://github.com/redox-os/ion.git
+cd ion/
+ls
+cargo build
+cargo build --release
+ls
+./target/release/ion 
+ls
+cd ~/K/kparser/
+ls
+cd examples/
+ls
+mkdir templates
+cd templates/
+cp ../simple_add/* ./
+ls
+vim input.k 
+vim output.kore 
+cd ..
+ls
+cd add templates/
+git add templates/
+git st
+git commit -am "Initial template commit, no axioms"
+gg o
+ls
+cd templates/
+ls
+vim output.kore 
+cd ..
+ls
+mkfir exp_list
+mkdir exp_list
+cd exp_list/
+ls
+vim output.kore 
+ls
+cd ..
+ls
+rm -Rf exp_list/
+ls
+ls
+cd dangling_else/
+ls
+vim output.kore 
+cd ..
+ls
+git add dangling_else/
+gg o
+git commit -am "Add dangling else example"
+gg o
+git st
+ls
+mkdir unparametric_examples
+ls
+git mv ambiguous_arithmetic unparametric_examples/
+ls
+git mv dangling_else unparametric_examples/
+git mv positive_numbers unparametric_examples/
+git mv simple_add unparametric_examples/
+git mv templates/ unparametric_examples/
+ls
+ls unparametric_examples/
+git st
+git commit -am "Reorg"
+gg o
+ls
+mkdir parametric_examples
+cd parametric_examples/
+ls
+cp -R ../unparametric_examples/dangling_else/ ./
+ls
+mv dangling_else/ if_then_else
+ls
+git st
+cd ..
+ls
+git st
+add parametric_examples/
+git add parametric_examples/
+ls
+cd parametric_examples/
+ls
+cd if_then_else/
+ls
+vim input.k 
+cd ~/K/
+ls
+cd kparser/
+ls
+cd examples/
+ls
+cd templates/
+ls
+vim input.k 
+vim input.k 
+vim ../simple_add/input.k 
+vim ../ambiguous_arithmetic/input.k 
+vim ../simple_add/input.k 
+vim input.k 
+vim ../ambiguous_arithmetic/output.kore 
+vim input.k 
+vim ../ambiguous_arithmetic/output.kore 
+vim ../ambiguous_arithmetic/output.kore 
+vim input.k 
+git commit -am "Finish first ambguity in templates"
+gg o
+git commit -am "Add second ambiguity in templates"
+gg o
+git commit -am "Finish ambiguities for templates"
+gg o
+gg o
+git log
+gg o
+git push o master
+git fetch
+git o fetch
+git fetch o
+git pull
+git pull o
+git pull o master
+git push o master
+mkdir ~/tmp
+cd ~/tmp/
+git clone git@github.com:pmeredit/kparser
+ls
+cd kparser/examples/templates/
+ls
+cp ~/K/kparser/examples/templates/* ./
+ls
+git st
+git add output.kore 
+git commit -am "Finish template example"
+git push origin master
+ls
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+cd tmp/
+ls
+rm -Rf kparser/
+ls
+ls
+git clone git@github.com:pmeredit/pgen
+cd pgen/
+ls
+touch rustfmt.toml 
+touch test
+git add test 
+git commit -am "testing"
+gg origin
+ls
+ls
+git rm test
+git commit -am "Untest"
+gg origin
+git log
+git reset --hard a8b567e65639c24453c4f7545646999e38c0ed5e
+gg origin -f
+cd ..
+ls
+cd ..
+rm -Rf tmp/
+ls
+cd K/kparser/
+ls
+git push o master
+git remote add backup git@github.com:pmeredit/backup
+gg backup -f
+gg origin
+gg o
+gg origin
+gg o
+ls
+cd examples/
+ls
+cd exp_list/
+ls
+cp ../simple_add/* ./
+ls
+vim input.k 
+vim ../simple_add/output.kore 
+vim input.k 
+ls
+vim ../templates/output.kore 
+ls
+vim input.k 
+cd ..
+ls
+;s
+mkdir dangling_else
+cd dangling_else/
+ls
+cp ../templates/* ./
+ls
+vim input.k 
+ls
+cd ..
+ls
+cd ..
+ls
+cd parametric_examples/
+ls
+cd if_then_else/
+ls
+vim output.kore 
+vim ../../unparametric_examples/dangling_else/
+vim ../../unparametric_examples/dangling_else/input.k 
+vim ../../unparametric_examples/dangling_else/output.kore 
+git commit -am "Remove extraneous sort"
+gg o
+>>>>>>> updates to bashrc and vimrc
+ks
+ls
+vim output.kore 
+git st
+git add input.k output.kore 
+git st
+cd ..
+ls
+git st
+git commit -am "Add if then else parametric example"
+gg o
+ls
+__git_ps1
+ls
+cd git/
+ls
+cd alacritty/
+__git_ps1
+__git_ps1
+which __git_ps1
+cd ~/git/
+ls
+cd ..
+ls
+cd K
+ls
+cd kparser/
+ls
+cd ../
+ls
+cd kore/src/
+ls
+cd main/
+ls
+cd haskell/
+ls
+cd language-kore/
+ls
+stack exec kore-parser
+stack exec kore-parser ~/K/kparser/examples/positive_numbers/output.kore 
+stack exec kore-parser ~/K/kparser/examples/templates/output.kore 
+stack exec kore-parser ~/K/kparser/examples/templates/output.kore 
+stack exec kore-parser ~/K/kparser/examples/templates/output.kore 
+stack exec kore-parser ~/K/kparser/examples/templates/output.kore 
+stack exec kore-parser ~/K/kparser/examples/templates/output.kore 
+stack exec kore-parser ~/K/kparser/examples/templates/output.kore 
+stack exec kore-parser ~/K/kparser/examples/templates/output.kore 
+stack exec kore-parser ~/K/kparser/examples/templates/output.kore 
+stack exec kore-parser ~/K/kparser/examples/templates/output.kore 
+stack exec kore-parser ~/K/kparser/examples/templates/output.kore 
+stack exec kore-parser ~/K/kparser/examples/templates/output.kore 
+stack exec kore-parser ~/K/kparser/examples/templates/output.kore 
+stack exec kore-parser ~/K/kparser/examples/templates/output.kore 
+stack exec kore-parser ~/K/kparser/examples/templates/output.kore 
+stack exec kore-parser ~/K/kparser/examples/templates/output.kore 
+stack exec kore-parser ~/K/kparser/examples/templates/output.kore 
+stack exec kore-parser ~/K/kparser/examples/templates/output.kore 
+stack exec kore-parser ~/K/kparser/examples/templates/output.kore 
+stack exec kore-parser ~/K/kparser/examples/templates/output.kore 
+stack exec kore-parser ~/K/kparser/examples/templates/output.kore 
+stack exec kore-parser ~/K/kparser/examples/templates/output.kore 
+stack exec kore-parser ~/K/kparser/examples/templates/output.kore 
+stack exec kore-parser ~/K/kparser/examples/templates/output.kore 
+stack exec kore-parser ~/K/kparser/examples/templates/output.kore 
+stack exec kore-parser ~/K/kparser/examples/templates/output.kore 
+stack exec kore-parser ~/K/kparser/examples/templates/output.kore 
+stack exec kore-parser ~/K/kparser/examples/templates/output.kore 
+stack exec kore-parser ~/K/kparser/examples/templates/output.kore 
+stack exec kore-parser ~/K/kparser/examples/templates/output.kore 
+stack exec kore-parser ~/K/kparser/examples/exp_list/output.kore 
+stack exec kore-parser ~/K/kparser/examples/dangling_else/output.kore 
+stack exec kore-parser ~/K/kparser/examples/dangling_else/output.kore 
+stack exec kore-parser ~/K/kparser/examples/dangling_else/output.kore 
+stack exec kore-parser ~/K/kparser/examples/dangling_else/output.kore 
+stack exec kore-parser ~/K/kparser/examples/dangling_else/output.kore 
+stack exec kore-parser ~/K/kparser/examples/unparametric_examples/dangling_else/output.kore 
+stack exec kore-parser ~/K/kparser/examples/parametric_examples/if_then_else/output.kore 
+stack exec kore-parser ~/K/kparser/examples/parametric_examples/if_then_else/output.kore 
+stack exec kore-parser ~/K/kparser/examples/parametric_examples/if_then_else/output.kore 
+stack exec kore-parser ~/K/kparser/examples/parametric_examples/if_then_else/output.kore 
+stack exec kore-parser ~/K/kparser/examples/parametric_examples/if_then_else/output.kore 
+stack exec kore-parser ~/K/kparser/examples/parametric_examples/if_then_else/output.kore 
+stack exec kore-parser ~/K/kparser/examples/parametric_examples/if_then_else/output.kore 
+ls
+cd git/
+ls
+rm -Rf odbc
+git clone git@github.com:pmeredit/odbc
+cd odbc
+ls
+git checkout rebrand_setupgui
+ls
+cd mongo-odbc-driver/bin/
+ls
+vim update_msi_guids.py 
+./update_msi_guids.py 
+vim update_msi_guids.py 
+./update_msi_guids.py 
+vim update_msi_guids.py 
+./update_msi_guids.py 
+vim update_msi_guids.py 
+./update_msi_guids.py 
+vim update_msi_guids.py 
+./update_msi_guids.py 
+git checkout update_msi_guids.py 
+ls
+vim ../installer/msi/win32_installer/odbc.wxs 
+vim ./update_msi_guids.py 
+./update_msi_guids.py 
+vim ./update_msi_guids.py 
+./update_msi_guids.py 
+vim ./update_msi_guids.py 
+ls
+vim ../installer/msi/win32_installer/odbc.wxs 
+vim ./update_msi_guids.py 
+./update_msi_guids.py 
+vim ./update_msi_guids.py 
+./update_msi_guids.py 
+vim ./update_msi_guids.py 
+./update_msi_guids.py 
+vim ./update_msi_guids.py 
+./update_msi_guids.py 
+vim ./update_msi_guids.py 
+./update_msi_guids.py 
+ls
+diff ../installer/msi/win32_installer/odbc.wxs ../installer/msi/win64_installer/odbc.wxs 
+vim ./update_msi_guids.py 
+./update_msi_guids.py 
+vim ./update_msi_guids.py 
+ls
+vim ../installer/msi/win32_installer/odbc_out.wxs 
+cd ../installer/msi/win32_installer/
+ls
+diff odbc.wxs odbc_out.wxs 
+diff odbc.wxs odbc_out.wxs -w
+diff -w odbc.wxs odbc_out.wxs 
+diff -u odbc.wxs odbc_out.wxs 
+ls
+git diff -w odbc.wxs odbc_out.wxs 
+git diff odbc.wxs odbc_out.wxs 
+git diff -b odbc.wxs odbc_out.wxs 
+diff -b odbc.wxs odbc_out.wxs 
+diff -b odbc.wxs odbc_out.wxs | less
+ls
+cd ../..
+ls
+cd ..
+ls
+cd bin/
+ls
+vim update_msi_guids.py 
+vim ./update_msi_guids.py 
+./update_msi_guids.py 
+vim ./update_msi_guids.py 
+vim ./update_msi_guids.py 
+./update_msi_guids.py 
+vim ./update_msi_guids.py 
+./update_msi_guids.py 
+vim ./update_msi_guids.py 
+vim ../installer/msi/win32_installer/odbc.wxs 
+vim ./update_msi_guids.py 
+./update_msi_guids.py 
+vim ./update_msi_guids.py 
+./update_msi_guids.py 
+vim ./update_msi_guids.py 
+./update_msi_guids.py 
+vim ./update_msi_guids.py 
+./update_msi_guids.py 
+vim ./update_msi_guids.py 
+./update_msi_guids.py 
+vim ./update_msi_guids.py 
+./update_msi_guids.py 
+vim ../installer/msi/win32_installer/odbc.wxs 
+vim ./update_msi_guids.py 
+./update_msi_guids.py 
+vim ./update_msi_guids.py 
+./update_msi_guids.py 
+vim ./update_msi_guids.py 
+./update_msi_guids.py 
+vim ./update_msi_guids.py 
+./update_msi_guids.py 
+vim ../installer/msi/win32_installer/odbc.wxs 
+vim ../installer/msi/win32_installer/odbc.wxs 
+vim ../installer/msi/win32_installer/odbc.wxs 
+vim ./update_msi_guids.py 
+./update_msi_guids.py 
+vim ./update_msi_guids.py 
+./update_msi_guids.py 
+vim ./update_msi_guids.py 
+./update_msi_guids.py 
+vim ./update_msi_guids.py 
+./update_msi_guids.py 
+vim ./update_msi_guids.py 
+./update_msi_guids.py 
+vim ./update_msi_guids.py 
+./update_msi_guids.py 
+vim ./update_msi_guids.py 
+./update_msi_guids.py 
+ls
+vim ../installer/msi/win32_installer/odbc_out.wxs 
+git st
+git add ../installer/
+git st
+git commit -am "Test update guids"
+gg me
+gg origin
+ls
+git_ps1
+__git_ps1
+ls
+vim ~/.bashrc 
+ls
+vim .git
+vim ~/.bashrc 
+cat /etc/bash_completion.d/git-prompt 
+ls /usr/lib/git-core/git-sh-prompt
+vim /usr/lib/git-core/git-sh-prompt
+ion
+ls
+cargo install ion-shell
+ld
+ls
+git clone https://github.com/redox-os/ion.git
+mv ion/ git/
+rm -Rf ion
+cd git/
+ls
+<<<<<<< HEAD
 git clone git@github.com/saghm/monger
 monger get 3.6
 monger get 3.4
@@ -498,3 +876,49 @@ cd ~/git/sqlproxy/
 ls
 vim server/conn_resultset.go 
 /Applications/alacritty ; exit;
+=======
+cd ion/
+ls
+cd /usr/local/bin/
+ls
+sudo ln -s /home/pmeredit/git/ion/target/release/ion ./
+which ion
+cd -
+ls
+ls target/release/ion.d 
+vim target/release/ion.d 
+which mdbook
+sudo apt install mdbook
+cd //
+cd -
+ls
+cd ..
+cargo install mdbook
+ls
+which mdbook
+ls
+cd ion/
+ls
+cd manual/
+ls
+mdbook build
+ls
+ion
+ls
+cd ..
+ls
+rg config
+vim ~/.config/ion/initrc
+ion
+ion
+ion
+ion
+ion
+ion
+vim ~/.config/ion/initrc 
+ion
+ion
+vim .config/ion/initrc 
+ion .config/ion/initrc 
+ion
+>>>>>>> updates to bashrc and vimrc

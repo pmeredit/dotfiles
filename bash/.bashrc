@@ -20,9 +20,9 @@ if [ "$un" == "Cygwin" ]; then
 else
     mkdir -p $HOME/git
     for name in $gnames; do
-        mkdir -p $HOME/.go/src/github.com/$name
+        mkdir -p $HOME/Go/src/github.com/$name
     done
-    export GOPATH=$HOME/.go
+    export GOPATH=$HOME/Go
 fi
 
 add_to_PATH () {
