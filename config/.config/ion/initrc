@@ -1,5 +1,5 @@
 fn rl
-     source /home/pmeredit/.config/ion/initrc
+     source $HOME/.config/ion/initrc
 end
 
 let NS_PLUGINS=1
