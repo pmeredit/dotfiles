@@ -34,6 +34,3 @@ end
 
 add_to_PATH [$HOME/Tools $GOPATH/bin $HOME/.cargo/bin]
 
-fn gg remote:string args:string[]
-     echo "git push $remote $(git branch | rg '*' | sed 's/[ *]*//g') @args"
-end
