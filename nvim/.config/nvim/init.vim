@@ -79,6 +79,8 @@ Plug 'lifepillar/vim-mucomplete'
 		\ 'js': ['path', 'keyn', 'dict', 'uspl'],
 		\}
 
+Plug 'vmchale/ion-vim'
+
 Plug 'tpope/vim-fugitive'
 
 Plug 'racer-rust/vim-racer'

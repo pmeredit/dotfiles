@@ -1,4 +1,82 @@
+<<<<<<< HEAD
 cd ..
+=======
+./update_msi_guids.py 
+vim ./update_msi_guids.py 
+./update_msi_guids.py 
+vim ./update_msi_guids.py 
+./update_msi_guids.py 
+vim ./update_msi_guids.py 
+./update_msi_guids.py 
+vim ../installer/msi/win32_installer/odbc.wxs 
+vim ../installer/msi/win32_installer/odbc.wxs 
+vim ../installer/msi/win32_installer/odbc.wxs 
+vim ./update_msi_guids.py 
+./update_msi_guids.py 
+vim ./update_msi_guids.py 
+./update_msi_guids.py 
+vim ./update_msi_guids.py 
+./update_msi_guids.py 
+vim ./update_msi_guids.py 
+./update_msi_guids.py 
+vim ./update_msi_guids.py 
+./update_msi_guids.py 
+vim ./update_msi_guids.py 
+./update_msi_guids.py 
+vim ./update_msi_guids.py 
+./update_msi_guids.py 
+ls
+vim ../installer/msi/win32_installer/odbc_out.wxs 
+git st
+git add ../installer/
+git st
+git commit -am "Test update guids"
+gg me
+gg origin
+ls
+git_ps1
+__git_ps1
+ls
+vim ~/.bashrc 
+ls
+vim .git
+vim ~/.bashrc 
+cat /etc/bash_completion.d/git-prompt 
+ls /usr/lib/git-core/git-sh-prompt
+vim /usr/lib/git-core/git-sh-prompt
+ion
+ls
+cargo install ion-shell
+ld
+ls
+git clone https://github.com/redox-os/ion.git
+mv ion/ git/
+rm -Rf ion
+cd git/
+ls
+<<<<<<< HEAD
+git clone git@github.com/saghm/monger
+monger get 3.6
+monger get 3.4
+monger get 3.2
+monger get 3.9
+monger get 3.8
+monger get 3.7
+monger get 3.9
+monger get 4.0
+vim ~/.tmux.conf 
+cd ~/git/pgen/
+ls
+vim src/lib.rs 
+vim src/main.rs 
+vim src/lib.rs 
+vim src/main.rs 
+vim src/lib.rs 
+monger run 3.6 mongo
+git log
+git checkout master
+git log
+>>>>>>> 045477316b9cfaf34093b805c1f4e0802a8cfdf1
 ls
 cd ..
 ls
@@ -111,6 +189,7 @@ ls
 ls
 cd ..
 ls
+<<<<<<< HEAD
 vim win32_installer/odbc.wxs 
 pwd
 git commit -am "Update win32 wix file"
@@ -498,3 +577,80 @@ ls
 which \ls
 \ls
 fish
+=======
+git status
+rm evaluator/expr_values_type_convert.go 
+git status
+vim evaluator/expr_values_convert.go 
+go build -i main/sqlproxy.go 
+vim evaluator/plan.go 
+vim schema/types.go 
+vim server/conn_select.go 
+vim server/conn_resultset.go 
+la evaluator/
+la evaluator/ | rg '^.'
+la evaluator/ | rg '^[.]'
+ls evaluator/
+la evaluator/
+la
+vim server/conn_resultset.go 
+rm /Users/pmeredit/.local/share/nvim/swap//%Users%pmeredit%.go%src%github.com%10gen%sqlproxy%server%conn_resultset.go.sw
+rm /Users/pmeredit/.local/share/nvim/swap//%Users%pmeredit%.go%src%github.com%10gen%sqlproxy%server%conn_resultset.go.swp
+vim server/conn_resultset.go 
+vim /Users/pmeredit/.vimrc 
+tmux
+tmux
+tmux
+/Applications/alacritty ; exit;
+ls
+cd ~/git/sqlproxy/
+ls
+vim server/conn_resultset.go 
+/Applications/alacritty ; exit;
+=======
+cd ion/
+ls
+cd /usr/local/bin/
+ls
+sudo ln -s /home/pmeredit/git/ion/target/release/ion ./
+which ion
+cd -
+ls
+ls target/release/ion.d 
+vim target/release/ion.d 
+which mdbook
+sudo apt install mdbook
+cd //
+cd -
+ls
+cd ..
+cargo install mdbook
+ls
+which mdbook
+ls
+cd ion/
+ls
+cd manual/
+ls
+mdbook build
+ls
+ion
+ls
+cd ..
+ls
+rg config
+vim ~/.config/ion/initrc
+ion
+ion
+ion
+ion
+ion
+ion
+vim ~/.config/ion/initrc 
+ion
+ion
+vim .config/ion/initrc 
+ion .config/ion/initrc 
+ion
+>>>>>>> updates to bashrc and vimrc
+>>>>>>> 045477316b9cfaf34093b805c1f4e0802a8cfdf1
