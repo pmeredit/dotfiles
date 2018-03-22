@@ -1,585 +1,3 @@
-<<<<<<< HEAD
-cd ..
-=======
-./update_msi_guids.py 
-vim ./update_msi_guids.py 
-./update_msi_guids.py 
-vim ./update_msi_guids.py 
-./update_msi_guids.py 
-vim ./update_msi_guids.py 
-./update_msi_guids.py 
-vim ../installer/msi/win32_installer/odbc.wxs 
-vim ../installer/msi/win32_installer/odbc.wxs 
-vim ../installer/msi/win32_installer/odbc.wxs 
-vim ./update_msi_guids.py 
-./update_msi_guids.py 
-vim ./update_msi_guids.py 
-./update_msi_guids.py 
-vim ./update_msi_guids.py 
-./update_msi_guids.py 
-vim ./update_msi_guids.py 
-./update_msi_guids.py 
-vim ./update_msi_guids.py 
-./update_msi_guids.py 
-vim ./update_msi_guids.py 
-./update_msi_guids.py 
-vim ./update_msi_guids.py 
-./update_msi_guids.py 
-ls
-vim ../installer/msi/win32_installer/odbc_out.wxs 
-git st
-git add ../installer/
-git st
-git commit -am "Test update guids"
-gg me
-gg origin
-ls
-git_ps1
-__git_ps1
-ls
-vim ~/.bashrc 
-ls
-vim .git
-vim ~/.bashrc 
-cat /etc/bash_completion.d/git-prompt 
-ls /usr/lib/git-core/git-sh-prompt
-vim /usr/lib/git-core/git-sh-prompt
-ion
-ls
-cargo install ion-shell
-ld
-ls
-git clone https://github.com/redox-os/ion.git
-mv ion/ git/
-rm -Rf ion
-cd git/
-ls
-<<<<<<< HEAD
-git clone git@github.com/saghm/monger
-monger get 3.6
-monger get 3.4
-monger get 3.2
-monger get 3.9
-monger get 3.8
-monger get 3.7
-monger get 3.9
-monger get 4.0
-vim ~/.tmux.conf 
-cd ~/git/pgen/
-ls
-vim src/lib.rs 
-vim src/main.rs 
-vim src/lib.rs 
-vim src/main.rs 
-vim src/lib.rs 
-monger run 3.6 mongo
-git log
-git checkout master
-git log
->>>>>>> 045477316b9cfaf34093b805c1f4e0802a8cfdf1
-ls
-cd ..
-ls
-ls
-cd mongo-odbc-driver/
-ls
-cd mysql-connector-odbc/
-ls
-git checkout BI-1482
-ls
-cd ..
-ls
-cd ..
-ls
-cd ..
-ls
-cp -R resources/* ~/
-git checkout pdf_test 
-ls
-mv ~/win32_installer src/mongo-odbc-driver/
-mv ~/win64_installer src/mongo-odbc-driver/
-ls src/mongo-odbc-driver/
-git status
-git commit -am "moved wix resources"
-ls
-gg me
-ls
-ls resources/
-rm -Rf resources/
-ls
-git status
-git commit -am "delete old resources dir"
-gg me
-ls
-vim bin/win32_odbc_build.sh 
-git commit -am "fix build script"
-gg me
-ls
-vim bin/win32_odbc_build.sh 
-ls
-ls src/mongo-odbc-driver/
-mkdir src/mongo-odbc-driver/installer
-mkdir src/mongo-odbc-driver/installer/msi
-cd src/mongo-odbc-driver/installer/msi/
-ls
-mv ../../win32_installer ./
-mv ../../win64_installer ./
-ls
-cd ..
-ls
-cd ..
-ls
-cd ..
-ls
-cd ..
-ls
-git add src/
-git status
-git commit -am "installer resources"
-gg me
-ls
-git status
-git commit -am "updated setup bmp"
-gg me
-git status
-git commit -am "Updated setupgui bmps"
-gg me
-git status
-git rm src/.DS_Store
-git rm src/.DS_Store -f
-git status
-git commit -am "wix image edit"
-gg me
-ls
-git co BI-1482
-git cherry-pick pdf_test
-git log
-ls
-gg me
-ls
-vim bin/win32_odbc_build.sh 
-vim bin/win32_odbc_build.sh 
-vim bin/win64_odbc_build.s
-cp bin/win32_odbc_build.sh ~/
-git checkout BI-1482
-git log
-git checkout pdf_test
-git log
-ls
-vim bin/win64_odbc_build.sh 
-git commit -am "updated build scripts"
-gg me
-gg me =f
-gg me -f
-vim bin/win64_odbc_build.sh 
-git commit -am "fix 64bit build script"
-gg me
-vim bin/win64_odbc_build.sh 
-ls
-ls
-cd src/mongo-odbc-driver/
-ls
-cd installer/msi/win64_installer/
-ls
-vim odbc.wxs 
-git commit -am "test full rebrand except for file names"
-gg me
-ls
-ls
-ls
-cd ..
-ls
-<<<<<<< HEAD
-vim win32_installer/odbc.wxs 
-pwd
-git commit -am "Update win32 wix file"
-gg me
-ls
-cd ..
-ls
-cd ..
-ls
-ls
-ls
-ls
-cd installer/
-ls
-vim msi/win32_installer/odbc.wxs 
-vim msi/win32_installer/odbc.wxs 
-git commit -am "changed versions 32 bit"
-gg me
-vim msi/win32_installer/odbc.wxs 
-vim msi/win32_installer/odbc.wxs 
-git commit -am "upgrade versions"
-gg me
-vim msi/win32_installer/odbc.wxs 
-git commit -am "test upgrade"
-gg me
-vim msi/win32_installer/odbc.wxs 
-git commit -am "test upgrade"
-gg me
-vim msi/win32_installer/odbc.wxs 
-git commit -am "test upgrade"
-gg me
-vim msi/win64_installer/odbc.wxs 
-vim msi/win32_installer/odbc.wxs 
-vim msi/win64_installer/odbc.wxs 
-git commit -am "64 bit versions"
-gg me
-l
-ls
-vim msi/win64_installer/odbc.wxs 
-vim msi/win32_installer/odbc.wxs 
-git commit -am "fix upgrade version again"
-gg me -f
-ls
-cd .
-cd ..
-ls
-cd ..
-ls
-cd ..
-ls
-cd ..
-ls
-cd odbc/
-ls
-ls
-ls
-git checkout -b rename_dlls
-ls
-vim src/mongo-odbc-driver/mysql-connector-odbc/CMakeLists.txt 
-ls
-cd src/mongo-odbc-driver/
-ls
-rg myodbc
-rg myodbc | rg dll
-vim mysql-connector-odbc/driver/driver.rc.cmake
-vim mysql-connector-odbc/driver/info.c
-rg myodbc | rg dll
-ls
-vim installer/msi/win32_installer/odbc.wxs 
-vim installer/msi/win64_installer/odbc.wxs 
-ls
-cd ..
-ls
-cd ..
-ls
-vim bin/win*
-vim bin/win*
-ls
-vim src/mongo-odbc-driver/installer/msi/win*
-vim src/mongo-odbc-driver/installer/msi/win32_installer/odbc.wxs 
-git commit -am "test renamed dlls"
-gg me
-ls
-vim bin/win*
-git log
-git diff c5d4fc5d7f622dc63f0ad9570f0c4f3bf958df40 bin/win32_odbc_build.sh
-vim bin/win*
-git commit -am "whoops, need mysql not mongosql for the dls"
-gg me
-git checkout BI-1482
-ls
-git branch -D rename_dlls
-ls
-evergreen patch -p mongo-odbc-driver -- --binary
-evergreen patch -p mongo-odbc-driver -- --binary --large
-evergreen patch -p mongo-odbc-driver --large -- --binary
-evergreen patch -p mongo-odbc-driver --large -- --binary
-evergreen
-evergreen patch -p mongo-odbc-driver --large -- --binary
-evergreen get-update --install
-evergreen patch -p mongo-odbc-driver --large -- --binary
-git tag v1.0.0.beta
-git checkout v1.0.0.beta
-git checkout BI-1482
-git push origin v1.0.0.beta 
-evergreen patch -p mongo-odbc-driver -- v1.0.0.beta
-git diff v1.0.0.beta
-evergreen patch -p mongo-odbc-driver --large -- v1.0.0.beta
-evergreen patch -- v1.0.0.beta 
-ls
-git checkout master
-git pull
-ls
-git co BI-1482
-ls
-git rebase -i
-git rebase -i HEAD~20
-git rebase --continue
-git rebase --edit-todo
-git rebase --edit-todo
-git rebase --edit-todo
-git rebase --edit-todo
-git rebase --abort
-git rebase -i HEAD~20
-git rebase --abort
-git rebase -i HEAD~20
-git log
-git rebase -i HEAD~10
-ls
-git log
-git rebase -i HEAD~3
-ls
-git log
-git rebase -i HEAD~2
-git log
-ls
-git diff master
-ls
-ls src/mongo-odbc-driver/installer/msi/win32_installer/
-ls src/mongo-odbc-driver/installer/msi/win32_installer/odbc.wxs 
-ls
-ls
-ls bin/win32_odbc_build.sh 
-ls
-git checkout master
-git log
-git checkout BI-1482
-ls
-git log
-git reflog
-git reset --hard b088c14
-git log
-git reset --hard 35311da
-git log
-git reflog
-git checkout master
-git branch -D BI-1482
-git checkout BI-1482
-ls
-git log
-git rebase -i
-git rebase -i HEAD ~20
-git rebase -i HEAD~20
-ls
-git rebase -i HEAD~10
-git rebase --edit-todo
-git rebase --abort
-git rebase -i HEAD~10
-git log
-git rebase -i HEAD~3
-git log
-ls
-git co -b BI-1482-rebase
-ls
-git log
-git checkout master
-git diff BI-1482-rebase 
-git checkout BI-1482-rebase 
-git rebase master
-git checkout master
-git merge BI-1482-rebase
-ls
-git log
-history | rg eve
-git log
-git reset --hard b088c14f5016707b83ddbcddb4e47ad34a754c30
-git checkout BI-1482-rebase 
-ls
-git diff master --binary > evg_test.patch
-vim evg_test.patch 
-evergreen patch-file -p mongo-odbc-driver --base master --diff-file evg_test.patch 
-evergreen patch-file -p mongo-odbc-driver --base master --diff-file evg_test.patch --large
-ls
-gg me
-gg me -f
-ls
-ls
-vim src/mongo-odbc-driver/installer/msi/win32_installer/odbc.wxs 
-vim src/mongo-odbc-driver/installer/msi/win64_installer/odbc.wxs 
-vim src/mongo-odbc-driver/installer/msi/win32_installer/odbc.wxs 
-git commit -am "new urls"
-gg me
-ls
-vim .evg.yml 
-evergreen -p mongo-odbc-driver
-evergreen patch -p mongo-odbc-driver
-ls
-cp .evg.yml ~/
-git stash
-git checkout master 
-git merge BI-1482
-git merge --abort
-ls
-git diff BI-1482
-git diff BI-1482
-ls
-git log
-git checkout BI-1482
-git log
-ls
-git log
-git branch
-git diff BI-1482-rebase BI-1482
-ls
-git checkout master
-git merge BI-1482 -i
-git checkout BI-1482
-git rebase master
-git rebase --abort
-git rebase master -i
-vim src/mongo-odbc-driver/installer/msi/win32_installer/odbc.wxs
-git add src/mongo-odbc-driver/installer/msi/win32_installer/odbc.wxs
-git rebase --continue
-vim src/mongo-odbc-driver/installer/msi/win64_installer/odbc.wxs
-git add src/mongo-odbc-driver/installer/msi/win64_installer/odbc.wxs
-vim src/mongo-odbc-driver/mysql-connector-odbc/ChangeLog
-git add src/mongo-odbc-driver/mysql-connector-odbc/ChangeLog
-git --continue
-git rebase --continue
-vim src/mongo-odbc-driver/mysql-connector-odbc/Install.bat.cmake
-git add src/mongo-odbc-driver/mysql-connector-odbc/Install.bat.cmake
-git rebase --continue
-vim src/mongo-odbc-driver/mysql-connector-odbc/README
-git add src/mongo-odbc-driver/mysql-connector-odbc/README
-git rebase --continue
-vim src/mongo-odbc-driver/mysql-connector-odbc/driver/CMakeLists.txt
-git add src/mongo-odbc-driver/mysql-connector-odbc/driver/CMakeLists.txt
-git rebase --continue
-vim src/mongo-odbc-driver/mysql-connector-odbc/driver/driver.rc.cmake 
-git add src/mongo-odbc-driver/mysql-connector-odbc/driver/driver.rc.cmake 
-git rebase --continue
-vim src/mongo-odbc-driver/mysql-connector-odbc/driver/error.h
-git add src/mongo-odbc-driver/mysql-connector-odbc/driver/error.h
-git rebase --continue
-vim src/mongo-odbc-driver/mysql-connector-odbc/driver/info.c
-git add src/mongo-odbc-driver/mysql-connector-odbc/driver/info.c
-git rebase --continue
-vim src/mongo-odbc-driver/mysql-connector-odbc/installer/myodbc-installer.c
-git add src/mongo-odbc-driver/mysql-connector-odbc/installer/myodbc-installer.c
-git rebase --continue
-vim src/mongo-odbc-driver/mysql-connector-odbc/scripts/macosx/ReadMe.html.in
-git add src/mongo-odbc-driver/mysql-connector-odbc/scripts/macosx/ReadMe.html.in
-git rebase --continue
-vim src/mongo-odbc-driver/mysql-connector-odbc/scripts/macosx/postflight.in
-git add src/mongo-odbc-driver/mysql-connector-odbc/scripts/macosx/postflight.in
-git rebase --continue
-vim src/mongo-odbc-driver/mysql-connector-odbc/setupgui/CMakeLists.txt
-git add src/mongo-odbc-driver/mysql-connector-odbc/setupgui/CMakeLists.txt
-git rebase --continue
-vim src/mongo-odbc-driver/mysql-connector-odbc/setupgui/windows/odbcdialogparams.rc
-git add src/mongo-odbc-driver/mysql-connector-odbc/setupgui/windows/odbcdialogparams.rc
-git rebase --continue
-vim src/mongo-odbc-driver/mysql-connector-odbc/test/CMakeLists.txt 
-git rebase --continue
-vim src/mongo-odbc-driver/mysql-connector-odbc/test/CMakeLists.txt
-git add src/mongo-odbc-driver/mysql-connector-odbc/test/CMakeLists.txt
-git rebase --continue
-vim src/mongo-odbc-driver/mysql-connector-odbc/test/odbc.ini.in
-git add src/mongo-odbc-driver/mysql-connector-odbc/test/odbc.ini.in
-git rebase --continue
-vim src/mongo-odbc-driver/mysql-connector-odbc/version.cmake
-git add src/mongo-odbc-driver/mysql-connector-odbc/version.cmake
-git rebase --continue
-vim src/mongo-odbc-driver/mysql-connector-odbc/wix/mysql_odbc.xml.in
-git add src/mongo-odbc-driver/mysql-connector-odbc/wix/mysql_odbc.xml.in
-git rebase --continue
-git diff RenameDLLS 
-vim src/mongo-odbc-driver/mysql-connector-odbc/driver/error.h
-git diff RenameDLLS 
-vim src/mongo-odbc-driver/mysql-connector-odbc/test/odbc.ini.in
-git diff RenameDLLS 
-ls src/mongo-odbc-driver/mysql-connector-odbc/setupgui
-git checkout RenameDLLS 
-git stash
-git checkout RenameDLLS 
-git log
-gg me
-git co -b PareEvg
-cp ~/.evg.yml ./
-vim .evg.yml 
-ls
-git commit -am "Pare down evg"
-git rebase -i HEAD~10
-git rebase -i HEAD~10
-git log
-git rebase -i HEAD~3
-git log
-gg me
-git checkout master
-git merge PareEvg 
-ls
-git log
-git push
-evergreen patch -p mongo-odbc-driver
-evergreen validate .evg.yml 
-vim .evg.yml 
-evergreen validate .evg.yml 
-evergreen validate .evg.yml 
-evergreen validate .evg.yml 
-evergreen patch -p mongo-odbc-driver
-ls
-ls
-ls
-ls
-ls
-vim bin/win32_odbc_build.sh 
-vim test
-wget https://s3.amazonaws.com/mciuploads/mongo-odbc-driver/artifacts/5aaa975e2a60ed497a9c3c69/mongo-odbc-win32.msi
-rm mongo-odbc-win32.msi 
-cd ~/sqlproxy
-ls
-vim .evg.yml 
-rg PROJECT_DIR
-rg SCRIPT_DIR
-vim changes
-vim changes
-x=$(readlink $(pwd))
-echo $x
-man readlink
-pwd -P
-man pwd
-man pwd
-pwd
-pwd -P
-brew install libsdl2-dev
-brew install libsdl2-dev
-brew install sdl2
-cargo install sodium
-ls
-cd ~/Rust/
-https://s3.amazonaws.com/mciuploads/mongo-odbc-driver/releases/5aaac83ec9ec442eba877513/mongo-odbc-win32.msi
-cd ~/Downloads/https://s3.amazonaws.com/mciuploads/mongo-odbc-driver/releases/5aaac83ec9ec442eba877513/mongo-odbc-win64.msi
-ls
-cd sodium/
-ls
-cargo run --features orbital
-cd ~/git/odbc/
-ls
-vim bin/win32_odbc_build.sh 
-git remote -v
-ls
-vim bin/win32_odbc_build.sh 
-vim bin/win64_odbc_build.sh 
-git commit -am "fix bucket for 64 bit"
-cd ~/Downloads/
-ls
-rm -Rf mongo-*
-ls
-wget https://s3.amazonaws.com/mciuploads/mongo-odbc-driver/releases/5aaac83ec9ec442eba877513/mongo-odbc-win64.msi
-cd ~/git/odbc/
-ls
-vim .evg.yml 
-evergreen patch -p mongo-odbc-driver
-ls
-vim .evg.yml 
-vim .evg.yml 
-evergreen patch -p mongo-odbc-driver
-vim .evg.yml 
-evergreen patch -p mongo-odbc-driver
-brew install fish
-fish
-ll
-which ls
-ls
-which \ls
-\ls
-fish
-=======
-git status
-rm evaluator/expr_values_type_convert.go 
 git status
 vim evaluator/expr_values_convert.go 
 go build -i main/sqlproxy.go 
@@ -654,3 +72,429 @@ ion .config/ion/initrc
 ion
 >>>>>>> updates to bashrc and vimrc
 >>>>>>> 045477316b9cfaf34093b805c1f4e0802a8cfdf1
+tmux
+rustc --explain E0019
+cd ~/Downloads/
+ls
+ls mongodb-win32-x86_64-2008plus-ssl-3.6.3-signed.msi 
+md5 mongodb-win32-x86_64-2008plus-ssl-3.6.3-signed.msi 
+ls
+l;s
+ls
+cd ~/git/
+ls
+rm -Rf odbc
+git clone git@github.com:10gen/odbce
+git clone git@github.com:10gen/odbc
+ls
+cd odbc/
+ls
+cd setupgui/
+rg MySQL
+rg "cannot be loaded"
+rg "cannot"
+rg "[MySQL]"
+rg '\[MySQL\]'
+rg 'MySQL'
+ls
+git co -b rebrand_setupgui
+ls
+cd windows/
+ls
+cd ..
+ls
+rg MySQL
+cd windows/
+ls
+rg MySQL
+rg 'Connection Failed'
+ls
+cd ..
+ls
+cd ..
+ls
+rg 'Connection Failed'
+cd setupgui/
+rg 'Connection Failed'
+vim callbacks.c 
+cd ..
+ls
+brew install ctags
+ctags -R
+ctags -R .
+ls
+cd setupgui/
+ls
+vim callbacks.c 
+ls
+cd ..
+ls
+vim tags 
+ls
+cd setupgui/
+ls
+vim callbacks.c 
+rg SQL_NTS
+cd ..
+rg SQL_NTS
+rg SQL_NTS | less
+rg SQL_NTS | rg define
+rg 'SQL_NTS\s*='
+rg 'SQL_NTS ='
+rg 'SQL_NTS='
+rg 'SQL_NTS  ='
+rg 'SQL_NTS'
+cd setupgui/
+ls
+vim callbacks.c 
+ls
+vim callbacks.c 
+rg SQLRETURN
+cd ..
+rg SQLRETURN
+rg SQLRETURN |rg define
+rg SQLRETURN | rg define
+rg SQLRETURN | rg =
+ls
+cd setupgui/
+ls
+vim callbacks.c 
+cd ..
+rg MYERROR
+vim driver/error.h 
+vim driver/error.h 
+rg 'sqlstate ='
+rg 'sqlstate='
+ls
+rg 'sqlstate'
+rg myodbc3_errors
+ls
+ls
+cd setupgui/
+ls
+vim callbacks.c 
+evergreen patch -p mongo-odbc-driver
+vim callbacks.c 
+grep -R strcmp
+rg strcmp
+cd ..
+ls
+rg strcmp
+vim driver/unicode.c
+gcc driver/unicode.c 
+vim driver/unicode.c
+gcc driver/unicode.c 
+vim driver/unicode.c
+ls
+cd ..
+ls
+cd odbc/
+ls
+ls
+vim .evg.yml 
+ls
+vim driver/unicode.c 
+vim driver/unicode.c 
+git stash
+ls
+git log
+ls
+git stash clear
+ls
+ls
+vim setupgui/callbacks.c 
+git commit -am "Rebrand connect test errors"
+gg me
+git remote add me git@github.com:pmeredit/odbc
+gg me
+ls
+git log
+git diff 5cfefddf3e8e26a22eed6480458baa0efeeda437
+vim setupgui/callbacks.c 
+git commit -am "Test test"
+gg me
+ls
+vim setupgui/callbacks.c 
+git commit -am "Test with L string"
+gg me
+vim setupgui/callbacks.c 
+git commit -am "Test test"
+gg me
+vim setupgui/callbacks.c 
+git commit -am "test test test"
+gg me
+vim setupgui/callbacks.c 
+git commit -am "test2
+"
+gg me
+vim setupgui/callbacks.c 
+git commit -am "Test"
+gg me
+ls
+vim setupgui/callbacks.c 
+git commit -am "testestsets"
+gg me
+git commit -am "testestsets"
+vim setupgui/callbacks.c 
+
+git commit -am "testtetestestest"
+gg me
+vim setupgui/callbacks.c 
+rg ODBC 1.0
+rg 'ODBC 1.0'
+rg 'MySQL'
+rg 'MySQL' | rg cmake
+fd . | rg cmake | rg MySQL
+fd . | rg cmake | exargs rg MySQL
+fd . | rg cmake | xargs rg MySQL
+clear
+fd . | rg cmake | xargs rg MySQL
+vim config.h.cmake
+ls
+vim config.h.cmake
+rg "ODBC 1.0(a) Driver"
+rg "ODBC 1.0(a)"
+rg "ODBC 1.0"
+ls
+vim setupgui/callbacks.c 
+git commit -am "test"
+vim setupgui/callbacks.c 
+gg o
+gg me
+vim setupgui/callbacks.c 
+git commit -am "Remove MySQL"
+git log
+git diff 5cfefddf3e8e26a22eed6480458baa0efeeda437
+git rebase -i
+git log
+git rebase -i HEAD~10
+git log
+git rebase -i HEAD~2
+git rebase --continue
+ls
+git log
+git rebase -i HEAD~2
+git log
+gg me -f
+ls
+ls
+rg MongoDB
+rg 'MongoDB Inc'
+vim setupgui/windows/odbcdialogparams.rc
+vim setupgui/windows/odbcdialogparams.h
+vim setupgui/windows/odbcdialogparams.rc
+vim driver/driver.rc.cmake 
+rg 'MongoDB' -c
+vim setupgui/callbacks.c 
+vim driver/driver.rc.cmake 
+vim setupgui/windows/odbcdialogparams.cpp 
+vim driver/driver.rc.cmake 
+vim setupgui/windows/odbcdialogparams.cpp 
+vim setupgui/windows/odbcdialogparams.rc 
+vim mongo-odbc-driver/installer/msi/win64_installer/odbc.wxs 
+git commit -a --amend --no-edit
+gg me -f
+ls
+ls
+cd mongo-odbc-driver/bin/
+ls
+ls
+ls
+ls
+cd ..
+ls
+cd installer/
+ls
+cd msi/
+ls
+cd win32_installer/
+ls
+vim odbc.wxs 
+ls
+cd ..
+ls
+cd ..
+ls
+cd msi/
+ls
+diff win32_installer/odbc.wxs win64_installer/odbc.wxs 
+ls
+cd ..
+ls
+cd ..
+ls
+cd bin/
+ls
+vim update_msi_guids.py
+chmod 777 update_msi_guids.py 
+ls
+vim update_msi_guids.py 
+./update_msi_guids.py 
+vim update_msi_guids.py 
+./update_msi_guids.py 
+./update_msi_guids.py 
+vim update_msi_guids.py 
+./update_msi_guids.py 
+vim update_msi_guids.py 
+./update_msi_guids.py 
+ls /Users/pmeredit/git/odbc/mongo-odbc-driver/bin/mongo-odbc-driver/installer/msi/win32_installer/odbc.wxs
+ls /Users/pmeredit/git/odbc/mongo-odbc-driver/bin/mongo-odbc-driver/installer/msi/win32_installer
+vim update_msi_guids.py 
+ls /Users/pmeredit/git/odbc/mongo-odbc-driver/bin/mongo-odbc-driver/installer/msi/win32_installer
+./update_msi_guids.py 
+vim update_msi_guids.py 
+./update_msi_guids.py 
+vim update_msi_guids.py 
+./update_msi_guids.py 
+vim update_msi_guids.py 
+./update_msi_guids.py 
+vim update_msi_guids.py 
+./update_msi_guids.py 
+vim update_msi_guids.py 
+./update_msi_guids.py 
+vim update_msi_guids.py 
+./update_msi_guids.py 
+vim update_msi_guids.py 
+./update_msi_guids.py 
+vim update_msi_guids.py 
+./update_msi_guids.py 
+vim update_msi_guids.py 
+./update_msi_guids.py 
+./update_msi_guids.py > tmp
+vim tmp
+rm tmp 
+ls
+vim tmp
+rm tmp
+ls
+vim update_msi_guids.py 
+./update_msi_guids.py > tmp
+./update_msi_guids.py
+ls
+rm tmp 
+ls
+vim ../installer/msi/win32_installer/odbc_out.wsx 
+rm ../installer/msi/win32_installer/*out*
+rm ../installer/msi/win64_installer/*out*
+ls
+ls
+ls
+ls
+vim update_msi_guids.py 
+./update_msi_guids.py
+vim update_msi_guids.py 
+./update_msi_guids.py
+ls
+vim ../installer/msi/win32_installer/odbc_out.wsx 
+vim ../installer/msi/win32_installer/odbc.wsx 
+vim ../installer/msi/win32_installer/odbc.wxs 
+vim ../installer/msi/win32_installer/odbc.wxs 
+vim update_msi_guids.py 
+./update_msi_guids.py
+ls
+vim ../installer/msi/win32_installer/odbc_out.w
+vim ../installer/msi/win32_installer/odbc_out.wxs 
+rm ../installer/msi/win32_installer/*out*
+rm ../installer/msi/win64_installer/*out*
+./update_msi_guids.py
+ls
+vim ../installer/msi/win32_installer/odbc_out.wxs 
+diff ../installer/msi/win32_installer/odbc_out.wxs ../installer/msi/win32_installer/odbc.wxs 
+vim ../installer/msi/win32_installer/odbc_out.wxs 
+vim ../installer/msi/win32_installer/odbc.wxs 
+vim ../installer/msi/win32_installer/odbc_out.wxs 
+vim ../installer/msi/win32_installer/odbc_out.wxs 
+vim update_msi_guids.py 
+ls
+vim ../installer/msi/win32_installer/odbc.wxs 
+vim update_msi_guids.py 
+vim ../installer/msi/win32_installer/odbc.wxs 
+vim update_msi_guids.py 
+./update_msi_guids.py 
+ls
+vim ../installer/msi/win32_installer/odbc_out.wxs 
+vim ../installer/msi/win32_installer/odbc_out.wxs 
+ls
+vim update_msi_guids.py 
+./update_msi_guids.py 
+vim update_msi_guids.py 
+./update_msi_guids.py 
+vim update_msi_guids.py 
+./update_msi_guids.py 
+vim update_msi_guids.py 
+./update_msi_guids.py 
+vim update_msi_guids.py 
+./update_msi_guids.py 
+vim update_msi_guids.py 
+ls
+ls
+git st
+git add update_msi_guids.py
+git commit -am "update start"
+gg me
+ls
+cd ~/git/mongosql-auth-c/
+ls
+vim test/bin/build-mongosql-auth.sh 
+vim test/bin/build-mongosql-auth.sh 
+vim test/bin/build-mongosql-auth.sh 
+git log
+git reset --hard 87a931b81a76c7d8e46d474c7d88d21748a2e14b
+ls
+vim test/bin/prepare-shell.sh 
+vim test/bin/build-mongosql-auth.sh 
+vim test/bin/prepare-shell.sh 
+git diff
+$ARTIFACTS_DIR/$BOOST_DIR
+evergreen -p mongosql-auth-c
+evergreen patch -p mongosql-auth-c
+git commit -am "Apply Ryan's comment"
+gg me
+gg me -f
+ls
+ls
+vim test/bin/prepare-shell.sh 
+git commit -am "Move to right place"
+gg me
+evergreen patch -p mongosql-auth-c
+python
+cr -i 189750001
+git checkout master
+git merge BI-1449
+git merge BI-1499
+git log
+git rebase -i HEAD~2
+git rebase -i HEAD~3
+git log
+git commit -ammend
+git push
+git remote -v
+git push origin master
+git push
+git push
+ssh Administrator@ec2-52-205-124-32.compute-1.amazonaws.com
+ssh Administrator@ec2-52-205-124-32.compute-1.amazonaws.com
+cp ~/.ssh/id_rsa.pub ~/Downloads/
+ssh Administrator@ec2-52-205-124-32.compute-1.amazonaws.com
+ping ec2-52-205-124-32.compute-1.amazonaws.com
+ssh Administrator@ec2-52-205-124-32.compute-1.amazonaws.com
+cat ~/.ssh/id_rsa
+git pull
+cd ..
+ls
+cd odbc/
+ls
+git pull
+git co -b test
+git push origin test
+ls
+ls
+cat ~/.ssh/id_rsa.pub 
+ssh root@ec2-54-165-43-20.compute-1.amazonaws.com
+ssh root@ec2-54-165-43-20.compute-1.amazonaws.com
+ifconfig
+ifconfig | rg inet
+ssh root@ec2-54-165-43-20.compute-1.amazonaws.com
+ssh root@ec2-54-165-43-20.compute-1.amazonaws.com
+ssh root@ec2-54-165-43-20.compute-1.amazonaws.com
+ssh Administrator@ec2-52-205-124-32.compute-1.amazonaws.com

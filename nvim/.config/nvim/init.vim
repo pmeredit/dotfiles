@@ -87,6 +87,12 @@ Plug 'racer-rust/vim-racer'
 
 Plug 'whatyouhide/vim-gotham'
 
+Plug 'PProvost/vim-ps1'
+
+Plug 'w0rp/ale'
+
+Plug 'vim-ruby/vim-ruby'
+
 " Initialize plugin system
 call plug#end()
 
