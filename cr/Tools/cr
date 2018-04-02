@@ -23,7 +23,7 @@ CR_PATH="$HOME/Tools/upload.py"
 REVIEWERS="wisdom.omuya@10gen.com"
 #REVIEWERS="craig.wilson@10gen.com,wisdom.omuya@10gen.com"
 #REVIEWERS="ryan.chipman@10gen.com"
-CC_LIST="craig.wilson@10gen.com,ryan.chipman@10gen.com,martin.zhang@10gen.com"
+CC_LIST="craig.wilson@10gen.com,ryan.chipman@10gen.com"
 
 while getopts "di:r:m:h" opt; do
     case $opt in

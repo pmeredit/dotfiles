@@ -1,500 +1,500 @@
+cd mongosql-auth-c/
+ls
+git submodule init
+git update
+git submodule update
+git log
+ls
+git co -b BI-1484-vs2015
+ls
+ls cmake/
+rg CMAKE
+vim test/bin/platforms.sh 
+rg CMAKE
+vim test/bin/platforms.sh 
+ls
+vim .evg.yml 
+rg windows-vs2013
+rg windows-64
+vim .evg.yml 
+vim test/bin/platforms.sh 
+lsls
+ls
+rg 2013
+git commit -am "update to vs2015"
+gg origin
+cd ..
+ls
+cd ..
+ls
+rg 2013
+rg 2013 | rg 12
+ls
+git diff
+git commit -am "update for vs2015"
+gg origin
+cd ..
+ls
+cd ..
+ls
+git diff vs2015 setupgui/CMakeLists.txt 
+vim CMakeLists.txt 
+vim CMakeLists.txt 
+cd setupgui/
+vim CMakeLists.txt 
+git diff vs2015 setupgui/CMakeLists.txt 
+cd ..
+git diff vs2015 setupgui/CMakeLists.txt 
+git diff vs2015 test/CMakeLists.txt 
+vim test/CMakeLists.txt 
+git diff vs2015 setupgui/CMakeLists.txt 
+git commit -am "update for vs2015"
+gg origin
+vim .evg.yml 
+ls
+git diff vs2015
+git diff BI-1484
+git diff vs2015
+vim cmake/FindMySQL.cmake 
+git commit -am "missing one legacy_stdio"
+gg origin
+ls
+evergreen path -p mongo-odbc-driver
+evergreen patch -p mongo-odbc-driver
+git checkout BI-1483
+ls
+git log
+git st
+cd mongo-odbc-driver/mysql-server/
+git checkout BI-1483
+git checkout BI-1484
+cd ..
+ls
+git st
+git checkout mysql-server/
+git checkout --hard mysql-server/
+git checkout --recurse-submodules mysql-server/
+cd ..
+ls
+git checkout --recurse-submodules mysql-server/
+ls
+git checkout --recurse-submodules 
+git log
+git st
+git checkout -- mongo-odbc-driver/mysql-server/
+git st
+ls
+git st
+ls
+vim README
+vim mongo-odbc-driver/installer/msi/README.rtf 
+vim README
+vim mongo-odbc-driver/installer/msi/README.rtf 
+vim README
+vim mongo-odbc-driver/installer/msi/README.rtf 
+ls
+vim README
+git commit -am "Wisdom's third comments"
 git status
-vim evaluator/expr_values_convert.go 
-go build -i main/sqlproxy.go 
-vim evaluator/plan.go 
-vim schema/types.go 
-vim server/conn_select.go 
-vim server/conn_resultset.go 
-la evaluator/
-la evaluator/ | rg '^.'
-la evaluator/ | rg '^[.]'
-ls evaluator/
-la evaluator/
-la
-vim server/conn_resultset.go 
-rm /Users/pmeredit/.local/share/nvim/swap//%Users%pmeredit%.go%src%github.com%10gen%sqlproxy%server%conn_resultset.go.sw
-rm /Users/pmeredit/.local/share/nvim/swap//%Users%pmeredit%.go%src%github.com%10gen%sqlproxy%server%conn_resultset.go.swp
-vim server/conn_resultset.go 
-vim /Users/pmeredit/.vimrc 
-tmux
-tmux
-tmux
-/Applications/alacritty ; exit;
+vim mongo-odbc-driver/installer/msi/README.rtf 
+git commit -a --amend
+cr -i 195280001
+git checkout windows_integration_tests 
+git pull
+git pull origin windows_integration_tests 
 ls
-cd ~/git/sqlproxy/
+git checkout BI-1525
+git log
 ls
-vim server/conn_resultset.go 
-/Applications/alacritty ; exit;
-=======
-cd ion/
+cd mongo-odbc-driver/bin/
 ls
-cd /usr/local/bin/
+vim run-integration-tests.ps1 
 ls
-sudo ln -s /home/pmeredit/git/ion/target/release/ion ./
-which ion
-cd -
+vim run-integration-tests.sh 
+vim run-integration-tests.ps1 
+vim run-integration-tests.ps1 
+git checkout BI-1483
 ls
-ls target/release/ion.d 
-vim target/release/ion.d 
-which mdbook
-sudo apt install mdbook
-cd //
-cd -
-ls
-cd ..
-cargo install mdbook
-ls
-which mdbook
-ls
-cd ion/
-ls
-cd manual/
-ls
-mdbook build
-ls
-ion
 ls
 cd ..
 ls
-rg config
-vim ~/.config/ion/initrc
-ion
-ion
-ion
-ion
-ion
-ion
-vim ~/.config/ion/initrc 
-ion
-ion
-vim .config/ion/initrc 
-ion .config/ion/initrc 
-ion
->>>>>>> updates to bashrc and vimrc
->>>>>>> 045477316b9cfaf34093b805c1f4e0802a8cfdf1
-tmux
-rustc --explain E0019
-cd ~/Downloads/
+cd ..
 ls
-ls mongodb-win32-x86_64-2008plus-ssl-3.6.3-signed.msi 
-md5 mongodb-win32-x86_64-2008plus-ssl-3.6.3-signed.msi 
-ls
-l;s
-ls
-cd ~/git/
-ls
+vim setupgui/windows/odbcdialogparams.rc 
+vim setupgui/windows/odbcdialogparams.rc 
+git status
+cd ..
 rm -Rf odbc
-git clone git@github.com:10gen/odbce
+git clone git@github.com:10gen/odbc
+cd odbc/
+ls
+git checkout BI-1483
+git branch
+git remote add me git@github.com:pmeredit/odbc
+git fetch me
+git checkout BI-1483
+git log
+ls
+git diff 818210655bc00f1d0909b4aef6f07de52795cdaf --names-only
+git diff 818210655bc00f1d0909b4aef6f07de52795cdaf
+git diff --files-only 818210655bc00f1d0909b4aef6f07de52795cdaf
+git diff --name-only 818210655bc00f1d0909b4aef6f07de52795cdaf
+git diff --name-only 818210655bc00f1d0909b4aef6f07de52795cdaf | xargs vim
+git diff --name-only 818210655bc00f1d0909b4aef6f07de52795cdaf | xargs vim
+git diff --name-only 818210655bc00f1d0909b4aef6f07de52795cdaf | 
+git diff --name-only 818210655bc00f1d0909b4aef6f07de52795cdaf | xargs rg '(C)' -- 
+git diff --name-only 818210655bc00f1d0909b4aef6f07de52795cdaf | xargs rg '[(]C[)]' -- 
+vim mongo-odbc-driver/installer/msi/README.rtf
+git diff --name-only 818210655bc00f1d0909b4aef6f07de52795cdaf | xargs rg -c '[(]C[)]' -- 
+vim mongo-odbc-driver/installer/msi/LicensingFragment.wxs 
+ls
+vim setupgui/windows/odbcdialogparams.rc 
+vim driver/driver.rc.cmake 
+git commit -am "Address Wisdom's 2nd and 3rd comment rounds"
+gg me
+gg origin
+ls
+git checkout -b BI-1537
+ls
+vim setupgui/windows/odbcdialogparams.rc 
+git commit -am "BI-1537: Remove TLS disable Dialog Options"
+git diff
+git diff BI-1483
+evergreen patch -p mongo-odbc-driver
+cr -m "Remove Disable TLS Version checkboxes from setup gui" -r BI-1483
+git checkout BI-1483
+ls
+vim setupgui/windows/odbcdialogparams.rc 
+cd ~/sqlproxy
+ls
+vim installers/msi/mongosql/BinaryFragment.wxs 
+cd -
+ls
+ls
+cd installer/
+cd ..
+cd mongo-odbc-driver/installer/msi/
+ls
+vim BinaryFragment.wxs 
+ls
+vim /Users/pmeredit/git/odbc/README
+vim README.rtf 
+rg exe
+vim LicensingFragment.wxs 
+vim BinaryFragment.wxs 
+vim LicensingFragment.wxs 
+vim BinaryFragment.wxs 
+vim build-msi.ps1 
+git commit -am "BI-1483: Last round of comments"
+gg me
+evergreen patch -p mongo-odbc-driver
+ls
+vim /Users/pmeredit/git/odbc/README
+ls
+vim BinaryFragment.wxs 
+git commit --amend -a
+gg me -f
+evergreen patch -p mongo-odbc-driver
+ls
+vim build-msi.ps1 
+ls
+ls
+vim BinaryFragment.wxs 
+git diff
+git checkout BI-1483
+ls
+cd ..
+ls
+cd ..
+cd ..
+ls
+ls
+cr -i  195280001
+git checkout BI-1525
+git pull
+git checkout BI-1483
+git push origin BI-1483
+git branch
+git log
+tig
+ls
+vim mongo-odbc-driver/installer/msi/LicensingFragment.wxs 
+vim mongo-odbc-driver/installer/msi/BinaryFragment.wxs 
+vim mongo-odbc-driver/installer/msi/BinaryFragment.wxs 
+ls
+git commit -a --amend
+gg me
+gg me -f
+gg origin -f
+ls
+git chekout master
+git checkout master
+git pull
+git checkout BI-1483
+git rebase master
+git diff origin/BI-1483
+ls
+vim mongo-odbc-driver/installer/msi/BinaryFragment.wxs 
+git diff origin/BI-1483
+git log
+git checkout  713d39024153e496e17b46dbf162f52bc950fb75 mongo-odbc-driver/installer/msi/BinaryFragment.wxs
+git diff origin/BI-1483
+git log
+vim mongo-odbc-driver/installer/msi/BinaryFragment.wxs 
+git diff origin/BI-1483
+git checkout origin/BI-1483 mongo-odbc-driver/installer/msi/BinaryFragment.wxs
+git diff origin/BI-1483
+git st
+git commit -am "BI-1483: clean up redist from master"
+gg me -f
+git checkout master
+git merge BI-1483
+git diff origin/BI-1483
+tig
+ls
+git remote -v
+git diff origin/BI-1483
+git push
+evergreen patch -p mongo-odbc-driver
+git log
+evergreen cancel 5abe8386e3c33152ebc728ae
+evergreen 
+evergreen cancel-patch 5abe8386e3c33152ebc728ae
+evergreen cancel-patch -id 5abe8386e3c33152ebc728ae
+git fetch origin
+git checkout rebase
+git pull
+git log
+ls
+git checkout BI-1484-vs2015 
+git rebase rebase
+vim setupgui/windows/odbcdialogparams.rc 
+git add setupgui/windows/odbcdialogparams.rc
+git rebase --continue
+vim driver/driver.rc.cmake 
+vim setupgui/windows/odbcdialogparams.rc 
+vim driver/driver.rc.cmake 
+vim setupgui/windows/odbcdialogparams.rc 
+git add setupgui/windows/odbcdialogparams.
+git add setupgui/windows/odbcdialogparams.rc
+git add driver/driver.rc.cmake
+git rebase --continue
+vim setupgui/callbacks.c 
+git add setupgui/callbacks.c
+git rebase --continue
+vim setupgui/windows/connector_odbc_header.bmp 
+git log
+git checkout 51ca3b2bfcb3981f394133b4d2541c61a386ed02 setupgui/windows/connector_odbc_header.bmp
+git add setupgui/windows/connector_odbc_header.bmp
+git rebase --continue
+vim setupgui/windows/odbcdialogparams.cpp 
+git add setupgui/windows/odbcdialogparams.cpp 
+git rebase --continue
+vim ChangeLog 
+git add ChangeLog
+git rebase --continue
+vim mongo-odbc-driver/bin/prepare-shell.sh 
+git rebase --abort
+git checkout master
+git pull
+git pull -r
+git pull -f
+git merge --abort
+git pull -f
+git merge --abort
+cd ..
+ls
+mkdir tmp
+cd tmp/
+ls
 git clone git@github.com:10gen/odbc
 ls
 cd odbc/
 ls
-cd setupgui/
-rg MySQL
-rg "cannot be loaded"
-rg "cannot"
-rg "[MySQL]"
-rg '\[MySQL\]'
-rg 'MySQL'
-ls
-git co -b rebrand_setupgui
-ls
-cd windows/
-ls
-cd ..
-ls
-rg MySQL
-cd windows/
-ls
-rg MySQL
-rg 'Connection Failed'
-ls
-cd ..
-ls
-cd ..
-ls
-rg 'Connection Failed'
-cd setupgui/
-rg 'Connection Failed'
-vim callbacks.c 
-cd ..
-ls
-brew install ctags
-ctags -R
-ctags -R .
-ls
-cd setupgui/
-ls
-vim callbacks.c 
-ls
-cd ..
-ls
-vim tags 
-ls
-cd setupgui/
-ls
-vim callbacks.c 
-rg SQL_NTS
-cd ..
-rg SQL_NTS
-rg SQL_NTS | less
-rg SQL_NTS | rg define
-rg 'SQL_NTS\s*='
-rg 'SQL_NTS ='
-rg 'SQL_NTS='
-rg 'SQL_NTS  ='
-rg 'SQL_NTS'
-cd setupgui/
-ls
-vim callbacks.c 
-ls
-vim callbacks.c 
-rg SQLRETURN
-cd ..
-rg SQLRETURN
-rg SQLRETURN |rg define
-rg SQLRETURN | rg define
-rg SQLRETURN | rg =
-ls
-cd setupgui/
-ls
-vim callbacks.c 
-cd ..
-rg MYERROR
-vim driver/error.h 
-vim driver/error.h 
-rg 'sqlstate ='
-rg 'sqlstate='
-ls
-rg 'sqlstate'
-rg myodbc3_errors
-ls
-ls
-cd setupgui/
-ls
-vim callbacks.c 
-evergreen patch -p mongo-odbc-driver
-vim callbacks.c 
-grep -R strcmp
-rg strcmp
-cd ..
-ls
-rg strcmp
-vim driver/unicode.c
-gcc driver/unicode.c 
-vim driver/unicode.c
-gcc driver/unicode.c 
-vim driver/unicode.c
-ls
-cd ..
-ls
-cd odbc/
-ls
-ls
-vim .evg.yml 
-ls
-vim driver/unicode.c 
-vim driver/unicode.c 
-git stash
-ls
 git log
-ls
-git stash clear
-ls
-ls
-vim setupgui/callbacks.c 
-git commit -am "Rebrand connect test errors"
-gg me
-git remote add me git@github.com:pmeredit/odbc
-gg me
-ls
-git log
-git diff 5cfefddf3e8e26a22eed6480458baa0efeeda437
-vim setupgui/callbacks.c 
-git commit -am "Test test"
-gg me
-ls
-vim setupgui/callbacks.c 
-git commit -am "Test with L string"
-gg me
-vim setupgui/callbacks.c 
-git commit -am "Test test"
-gg me
-vim setupgui/callbacks.c 
-git commit -am "test test test"
-gg me
-vim setupgui/callbacks.c 
-git commit -am "test2
-"
-gg me
-vim setupgui/callbacks.c 
-git commit -am "Test"
-gg me
-ls
-vim setupgui/callbacks.c 
-git commit -am "testestsets"
-gg me
-git commit -am "testestsets"
-vim setupgui/callbacks.c 
-
-git commit -am "testtetestestest"
-gg me
-vim setupgui/callbacks.c 
-rg ODBC 1.0
-rg 'ODBC 1.0'
-rg 'MySQL'
-rg 'MySQL' | rg cmake
-fd . | rg cmake | rg MySQL
-fd . | rg cmake | exargs rg MySQL
-fd . | rg cmake | xargs rg MySQL
-clear
-fd . | rg cmake | xargs rg MySQL
-vim config.h.cmake
-ls
-vim config.h.cmake
-rg "ODBC 1.0(a) Driver"
-rg "ODBC 1.0(a)"
-rg "ODBC 1.0"
-ls
-vim setupgui/callbacks.c 
-git commit -am "test"
-vim setupgui/callbacks.c 
-gg o
-gg me
-vim setupgui/callbacks.c 
-git commit -am "Remove MySQL"
-git log
-git diff 5cfefddf3e8e26a22eed6480458baa0efeeda437
-git rebase -i
-git log
-git rebase -i HEAD~10
-git log
-git rebase -i HEAD~2
+git checkout vs-2015
+git checkout vs2015
+git checkout BI-1483-vs2015
+git checkout BI-1484-vs2015
+git rebase master
+vim setupgui/windows/odbcdialogparams.rc
+git add setupgui/windows/odbcdialogparams.rc
+vim setupgui/windows/odbcdialogparams.cpp
+git add setupgui/windows/odbcdialogparams.cpp
+cp ~/git/odbc/setupgui/windows/connector_odbc_header.bmp setupgui/windows/connector_odbc_header.bmp 
+git add setupgui/windows/odbcdialogparams.cpp
 git rebase --continue
-ls
-git log
-git rebase -i HEAD~2
-git log
-gg me -f
-ls
-ls
-rg MongoDB
-rg 'MongoDB Inc'
-vim setupgui/windows/odbcdialogparams.rc
-vim setupgui/windows/odbcdialogparams.h
-vim setupgui/windows/odbcdialogparams.rc
+vim ChangeLog 
+git add ChangeLog
 vim driver/driver.rc.cmake 
-rg 'MongoDB' -c
+git add driver/driver.rc.cmake 
+git rebase --continue
 vim setupgui/callbacks.c 
+git add setupgui/callbacks.c 
+alias ga='git add'
+ga setupgui/callbacks.c 
+alias gc='git rebase --continue'
+gc
+gc setupgui/windows/connector_odbc_header.bmp
+ga setupgui/windows/connector_odbc_header.bmp
+gc
+vim mongo-odbc-driver/bin/prepare-shell.sh
+ga mongo-odbc-driver/bin/prepare-shell.sh 
+git diff mongo-odbc-driver/bin/prepare-shell.sh master
+git diff master mongo-odbc-driver/bin/prepare-shell.sh 
+gc
+vim mongo-odbc-driver/bin/create-msi.sh 
+git diff master mongo-odbc-driver/bin/create-msi.sh
+ga mongo-odbc-driver/bin/create-msi.sh 
+gc
+vim mongo-odbc-driver/bin/platforms.sh 
+ga  mongo-odbc-driver/bin/platforms.sh 
+gc
+vim .evg.yml
+ga .evg.yml 
+gc
+git rerere
+vim ChangeLog 
+vim README
+ga ChangeLog 
+ga README
 vim driver/driver.rc.cmake 
-vim setupgui/windows/odbcdialogparams.cpp 
-vim driver/driver.rc.cmake 
-vim setupgui/windows/odbcdialogparams.cpp 
-vim setupgui/windows/odbcdialogparams.rc 
-vim mongo-odbc-driver/installer/msi/win64_installer/odbc.wxs 
-git commit -a --amend --no-edit
-gg me -f
+ga driver/driver.rc.cmake 
+git rerere
+vim ChangeLog 
+gc
+vim mongo-odbc-driver/mysql-server/
+git st
+git rebase --skip
+git rebase --skip
+git rebase --skip
+git rebase --skip
+git rebase --skip
+git rebase --skip
+git rebase --skip
+git rebase --skip
+vim driver/CMakeLists.txt 
+ga driver/CMakeLists.txt 
+vim CMakeLists.txt 
+ga CMakeLists.txt 
+gc
+git rebase --skip
+vim CMakeLists.txt 
+ga CMakeLists.txt 
+gc
+git add CMakeLists.txt
+gc
+git rebase --skip
+vim CMakeLists.txt 
+ga CMakeLists.txt 
+gc
+cd mongo-odbc-driver/mysql-server/
 ls
+git checkout vs-2015
+git checkout vs2015
+cd ..
 ls
-cd mongo-odbc-driver/bin/
+gc
+git rebase --skip
+cd ..
 ls
+vim CMakeLists.txt 
+ga CMakeLists.txt 
+gc
+git rebase --skip
+git rebase --skip
+git diff master
+vim README
+vim README
+git diff master
+git diff master --file-only
+git diff master --name-only
 ls
+cd mongo-odbc-driver/
 ls
+cd bin/
 ls
+git rm update_msi_guids.py
+diff build-mongo-odbc.sh build.sh 
+vim build-mongo-odbc.sh 
+git rm build.sh
+ls
+vim create-msi.sh 
 cd ..
 ls
 cd installer/
 ls
 cd msi/
 ls
-cd win32_installer/
-ls
-vim odbc.wxs 
+git diff master
+git diff master --name-only
+git diff origin/master --name-only
+git st
+git commit -am "BI-1529: Compile on vs2015"
 ls
 cd ..
 ls
 cd ..
+ls
+git checkout master
+ls
+git log
+ls
+ls installer/
+git checkout BI-1484-vs2015 
+git diff master --name-only
+gg me
+git remote add me git@github.com:pmeredit/odbc
+gg me
+ls
+cd installer/
 ls
 cd msi/
 ls
-diff win32_installer/odbc.wxs win64_installer/odbc.wxs 
-ls
-cd ..
-ls
-cd ..
-ls
-cd bin/
-ls
-vim update_msi_guids.py
-chmod 777 update_msi_guids.py 
-ls
-vim update_msi_guids.py 
-./update_msi_guids.py 
-vim update_msi_guids.py 
-./update_msi_guids.py 
-./update_msi_guids.py 
-vim update_msi_guids.py 
-./update_msi_guids.py 
-vim update_msi_guids.py 
-./update_msi_guids.py 
-ls /Users/pmeredit/git/odbc/mongo-odbc-driver/bin/mongo-odbc-driver/installer/msi/win32_installer/odbc.wxs
-ls /Users/pmeredit/git/odbc/mongo-odbc-driver/bin/mongo-odbc-driver/installer/msi/win32_installer
-vim update_msi_guids.py 
-ls /Users/pmeredit/git/odbc/mongo-odbc-driver/bin/mongo-odbc-driver/installer/msi/win32_installer
-./update_msi_guids.py 
-vim update_msi_guids.py 
-./update_msi_guids.py 
-vim update_msi_guids.py 
-./update_msi_guids.py 
-vim update_msi_guids.py 
-./update_msi_guids.py 
-vim update_msi_guids.py 
-./update_msi_guids.py 
-vim update_msi_guids.py 
-./update_msi_guids.py 
-vim update_msi_guids.py 
-./update_msi_guids.py 
-vim update_msi_guids.py 
-./update_msi_guids.py 
-vim update_msi_guids.py 
-./update_msi_guids.py 
-vim update_msi_guids.py 
-./update_msi_guids.py 
-./update_msi_guids.py > tmp
-vim tmp
-rm tmp 
-ls
-vim tmp
-rm tmp
-ls
-vim update_msi_guids.py 
-./update_msi_guids.py > tmp
-./update_msi_guids.py
-ls
-rm tmp 
-ls
-vim ../installer/msi/win32_installer/odbc_out.wsx 
-rm ../installer/msi/win32_installer/*out*
-rm ../installer/msi/win64_installer/*out*
-ls
-ls
-ls
-ls
-vim update_msi_guids.py 
-./update_msi_guids.py
-vim update_msi_guids.py 
-./update_msi_guids.py
-ls
-vim ../installer/msi/win32_installer/odbc_out.wsx 
-vim ../installer/msi/win32_installer/odbc.wsx 
-vim ../installer/msi/win32_installer/odbc.wxs 
-vim ../installer/msi/win32_installer/odbc.wxs 
-vim update_msi_guids.py 
-./update_msi_guids.py
-ls
-vim ../installer/msi/win32_installer/odbc_out.w
-vim ../installer/msi/win32_installer/odbc_out.wxs 
-rm ../installer/msi/win32_installer/*out*
-rm ../installer/msi/win64_installer/*out*
-./update_msi_guids.py
-ls
-vim ../installer/msi/win32_installer/odbc_out.wxs 
-diff ../installer/msi/win32_installer/odbc_out.wxs ../installer/msi/win32_installer/odbc.wxs 
-vim ../installer/msi/win32_installer/odbc_out.wxs 
-vim ../installer/msi/win32_installer/odbc.wxs 
-vim ../installer/msi/win32_installer/odbc_out.wxs 
-vim ../installer/msi/win32_installer/odbc_out.wxs 
-vim update_msi_guids.py 
-ls
-vim ../installer/msi/win32_installer/odbc.wxs 
-vim update_msi_guids.py 
-vim ../installer/msi/win32_installer/odbc.wxs 
-vim update_msi_guids.py 
-./update_msi_guids.py 
-ls
-vim ../installer/msi/win32_installer/odbc_out.wxs 
-vim ../installer/msi/win32_installer/odbc_out.wxs 
-ls
-vim update_msi_guids.py 
-./update_msi_guids.py 
-vim update_msi_guids.py 
-./update_msi_guids.py 
-vim update_msi_guids.py 
-./update_msi_guids.py 
-vim update_msi_guids.py 
-./update_msi_guids.py 
-vim update_msi_guids.py 
-./update_msi_guids.py 
-vim update_msi_guids.py 
-ls
-ls
+git rm -r win32_installer/
+git rm -r win364_installer/
+git rm -r win64_installer/
 git st
-git add update_msi_guids.py
-git commit -am "update start"
-gg me
-ls
-cd ~/git/mongosql-auth-c/
-ls
-vim test/bin/build-mongosql-auth.sh 
-vim test/bin/build-mongosql-auth.sh 
-vim test/bin/build-mongosql-auth.sh 
-git log
-git reset --hard 87a931b81a76c7d8e46d474c7d88d21748a2e14b
-ls
-vim test/bin/prepare-shell.sh 
-vim test/bin/build-mongosql-auth.sh 
-vim test/bin/prepare-shell.sh 
+git diff master
+git diff master --name-only
+cd ../..
+cd ..
+git diff master ChangeLog
+git diff master README
+git diff master cmake/FindMySQL.cmake
+git diff master setupgui/callbacks.c
+vim setupgui/callbacks.c 
+git commit -a -ammend setupgui/callbacks.c
+git diff master
+vim setupgui/callbacks.c 
+git diff master
+git commit -a --amend
+gg me -f
+git diff master
+git diff origin/
+git diff origin/BI-1484-vs2015 
+git checkout  origin/BI-1484-vs2015 .evg.yml
 git diff
-$ARTIFACTS_DIR/$BOOST_DIR
-evergreen -p mongosql-auth-c
-evergreen patch -p mongosql-auth-c
-git commit -am "Apply Ryan's comment"
-gg me
+git diff master
+git stash
+git diff master
+vim .evg.yml 
+git diff origin/BI-1484-vs2015 
+git diff origin/BI-1484-vs2015 
+git diff origin/BI-1484-vs2015 CMakeLists.txt
+ls
+vim CMakeLists.txt 
+rg legacy_stdio
+git diff origin/BI-1484-vs2015 setupgui/CMakeLists.txt
+vim setupgui/CMakeLists.txt 
+git diff origin/BI-1484-vs2015 test/CMakeLists.txt
+vim test/CMakeLists.txt 
+git diff origin/BI-1484-vs2015 test/CMakeLists.txt
+ls
+git diff origin/BI-1484-vs2015 driver/CMakeLists.txt
+git log
+git commit -a --amend
+gg origin -f
 gg me -f
 ls
-ls
-vim test/bin/prepare-shell.sh 
-git commit -am "Move to right place"
-gg me
-evergreen patch -p mongosql-auth-c
-python
-cr -i 189750001
-git checkout master
-git merge BI-1449
-git merge BI-1499
-git log
-git rebase -i HEAD~2
-git rebase -i HEAD~3
-git log
-git commit -ammend
-git push
-git remote -v
-git push origin master
-git push
-git push
-ssh Administrator@ec2-52-205-124-32.compute-1.amazonaws.com
-ssh Administrator@ec2-52-205-124-32.compute-1.amazonaws.com
-cp ~/.ssh/id_rsa.pub ~/Downloads/
-ssh Administrator@ec2-52-205-124-32.compute-1.amazonaws.com
-ping ec2-52-205-124-32.compute-1.amazonaws.com
-ssh Administrator@ec2-52-205-124-32.compute-1.amazonaws.com
-cat ~/.ssh/id_rsa
-git pull
-cd ..
-ls
-cd odbc/
-ls
-git pull
-git co -b test
-git push origin test
-ls
-ls
-cat ~/.ssh/id_rsa.pub 
-ssh root@ec2-54-165-43-20.compute-1.amazonaws.com
-ssh root@ec2-54-165-43-20.compute-1.amazonaws.com
-ifconfig
-ifconfig | rg inet
-ssh root@ec2-54-165-43-20.compute-1.amazonaws.com
-ssh root@ec2-54-165-43-20.compute-1.amazonaws.com
-ssh root@ec2-54-165-43-20.compute-1.amazonaws.com
-ssh Administrator@ec2-52-205-124-32.compute-1.amazonaws.com
+ssh Administrator@ec2-54-89-243-50.compute-1.amazonaws.com
