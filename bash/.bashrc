@@ -12,6 +12,10 @@ alias vim=nvim
 
 gnames="10gen pmeredit"
 
+if hash rg; then
+    alias grep="rg"
+fi
+
 if [ "$un" == "Cygwin" ]; then
     for name in $gnames; do
         mkdir -p $HOME/go/src/github.com/$name
@@ -72,7 +76,7 @@ function rl {
 }
 
 function gcb {
-   git branch | grep '*' | sed 's/[ *]*//g'
+   git branch | grep '[*]' | sed 's/[ *]*//g'
 }
 
 function gg {

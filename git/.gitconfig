@@ -17,6 +17,9 @@
 [diff]
 	tool = vimdiff
 
+[merge]
+	ff = only
+
 [alias]
 	hd = log -1
 	st = status
