@@ -1,203 +1,3 @@
-rg LIBRARIES
-ls
-vim FindMySQL.cmake 
-git commit -am "try agai
-gg me
-ls
-vim FindMySQL.cmake 
-git log
-git reset --hard commit 476123db49b1091cfa40ad202845c866fde1192d
-git log
-ls
-ls
-rg LIBRARIES
-cd ..
-ls
-cd setupgui/
-ls
-ls
-vim CMakeLists.txt 
-git commit -am "test"
-gg me
-ls
-cd ..
-ls
-cd test/
-ls
-vim CMakeLists.txt 
-git commit -am "patch up tests too"
-gg me
-git log
-git diff 14bb337ec11f586b0eb7c5bf292181e007020c44
-gg origin
-git log
-git clone git@github.com:10gen/odbc
-cd ~/
-mkdir tmp
-cd git/
-mkdir tmp
-cd tmp
-ls
-git clone git@github.com:10gen/odbc
-ls
-cd odbc/
-ls
-ls
-git branch
-git checkout BI-1537
-ls
-vim setupgui/windows/odbcdialogparams.rc 
-git log
-git pull me BI-1537
-git remote add me git@github.com:pmeredit/odbc
-git checkout master
-git branch -D BI-1537
-git checkout me/BI-1537
-git fetch me
-ls
-cd ..
-ls
-cd ..
-ls
-ls
-cd mongosql-auth-c/
-lsd
-ls
-git pull
-git log
-git diff 40061eaf836f183a39c1044a46f9c8d9ee548afa
-ls
-ls
-vim .evg.yml 
-ls
-rg windows-32
-rg windows-64
-vim test/bin/platforms.sh 
-vim .evg.yml 
-evergreen patch -p mongosql-auth-c
-ls
-vim test/bin/build-mongosql-auth.sh 
-ls
-cd ~/git/odbc/
-ls
-ls
-cd ~/git/mongosql-auth-c/
-ls
-ls
-vim test/bin/platforms.sh 
-evergreen patch -p mongosql-auth-c
-rg windows-vs2013
-ls
-vim .evg.yml 
-ls
-ls
-git st
-git checkout .evg.yml
-git st
-vim test/bin/platforms.sh 
-vim .evg.yml 
-git commit -a --amend
-gg origin -f
-evergreen patch -p mongosql-auth-c
-ls
-vim test/bin/build-mongosql-auth.sh 
-vim test/bin/platforms.sh 
-git commit -a --amend 
-gg origin -f
-evergreen cancel-patch -id 5ac3d001e3c33116ed634415
-evergreen patch -p mongosql-auth-c
-cd ~/git/odbc/
-ls
-cd ~/sqlproxy
-ls
-vim Makefile 
-vim Makefile 
-vim testdata/config/tests/gssapi.mk 
-vim testdata/config/tests/gssapi.mk 
-git log
-git diff fe7de8b6db43587e7a4f8920202bf3df59dfad0b testdata/config/tests/gssapi.mk
-ls
-ls
-rg powerbook17
-cd ~/git/odbc/
-ls
-git log
-ls
-git pull
-git branch --set-upstream-to=origin/BI-1524 BI-1524
-git pull
-ls
-cd mongo-odbc-driver/
-ls
-cd mysql-server/
-ls
-cd bld/bin/
-ls
-./install-bison.sh 
-ls
-./build.sh 
-vim build.sh 
-rg readlink
-vim prepare-shell.sh 
-./build.sh 
-vim prepare-shell.sh 
-./build.sh 
-vim prepare-shell.sh 
-vim prepare-shell.sh 
-./build.sh 
-vim prepare-shell.sh 
-./build.sh 
-cd ..
-ls
-cd ..
-ls
-ls
-ls
-git st
-cd ..
-ls
-git stash
-cd mysql-server/
-ls
-git stash
-git stash apply
-vim bld/bin/prepare-shell.sh 
-git stash
-ls
-cd bld/mongosql-auth-c/
-ls
-git st
-cd ~/git/odbc/
-ls
-git st
-git pull
-cd ..
-ls
-rm -Rf odbc/
-git clone git@github.com:10gen/odbc
-cd odbc/
-ls
-git checkout fix_build
-git checkout BI-1524
-ls
-cd mongo-odbc-driver/
-ls
-cd mysql-server/
-ls
-git submodule init
-git submodule update
-ls
-git submodule update
-cd ..
-ls
-git submodule update
-git st
-git stash
-ls
-git pull
-git st
-ls
-rm -Rf mysql-server/
 ls
 git st
 git pull
@@ -498,3 +298,203 @@ ls
 cd ..
 ls unixODBC-2.3.6/odbcinst/
 brew remove unixodbc
+ls
+cd git/
+ls
+cd ..
+cd Go/src/github.com/10gen/sqlproxy/
+ls
+git pull
+git fetch me
+git checkout BI-997
+ls
+vim testdata/bin/prepare-shell.sh 
+ls
+make clean test-integration
+export fuckstick=
+export fuckstick=default,mongo/version/latest,mongo/topology/server
+echo "${fuckstick//,/ }"
+for x in "${fuckstick//,/ }"; do echo $x; done
+for x in "${fuckstick//,/ }"; do echo $x; echo '\n' ; done
+vim ~/.evergreen.yml 
+ls
+./testdata/bin/start-orchestration.sh 
+pip install virtualenv
+./testdata/bin/start-orchestration.sh 
+make clean
+ls
+#INFRASTRUCTURE_CONFIG=default, make clean
+ls testdata/config/mongo/version/3.6
+INFRASTRUCTURE_CONFIG=default,/mongo/version/3.6 ./testdata/bin/start-orchestration.sh 
+make clean
+INFRASTRUCTURE_CONFIG=default,mongo/version/latest,mongo/topology/server ./testdata/bin/start-orchestration.sh 
+virtualenv
+sudo apt install virtualenv
+ls
+vim testdata/bin/prepare-shell.sh 
+INFRASTRUCTURE_CONFIG=default,mongo/version/latest,mongo/topology/server ./testdata/bin/start-orchestration.sh 
+make clean
+INFRASTRUCTURE_CONFIG=default,mongo/version/latest,mongo/topology/server ./testdata/bin/start-orchestration.sh 
+make clean
+ls
+ls
+vim testdata/bin/prepare-shell.sh 
+vim testdata/bin/platforms.sh 
+dash testdata/bin/platforms.sh 
+INFRASTRUCTURE_CONFIG=default,mongo/version/latest,mongo/topology/server dash testdata/bin/prepare-shell.sh 
+vim ~/.evergreen.yml 
+vim .evg.yml 
+sudo apt-install shellcheck
+sudo apt install shellcheck
+ls
+cd testdata/bin/
+ls
+vim prepare-shell.sh 
+cd ~/dotfiles/
+git stash
+git pull
+rl
+ls
+vim
+cd -
+ls
+vim prepare-shell.sh 
+which bash
+vim prepare-shell.sh 
+vim platforms.sh 
+vim platforms.sh 
+vim platforms.sh 
+vim prepare-shell.sh 
+rg '[/]usr[/]bin[/]bash'
+rg 'bash'
+/usr/bin/env bash
+cd ~/Go/src/github.com/10gen/sqlproxy/
+ls
+ls
+ls
+ls
+cd testdata/
+ls
+cd bin/
+ls
+vim generate-reports.sh 
+ls
+ls ../artifacts/out/
+vim generate-reports.sh 
+ls
+rg out
+cd ..
+ls
+cd ..
+la
+ls
+make clean test-integration
+sudo apt install mysql
+sudo apt install mysql-server
+make clean test-integration
+mysql
+ps aux | rg mysql
+killall mysqld
+killall 9095
+killall mysqld
+ps aux | rg mysql
+kill 9095
+sudo kill 9095
+ps aux | rg mysql
+make clean test-integration
+ps aux | rg monog
+ps aux | rg mongo
+mysql
+mysql -h127.0.0.1 -P3307 
+ls
+ls
+vim testdata/bin/
+cdm testdata/bin/
+cd testdata/bin/
+ls
+rm shellcheck-stable.linux.x86_64.tar.xz 
+ls
+vim start-orchestration.sh 
+rg ARGS
+ls
+vim start-mongosqld.sh 
+export x =(hello world yo)
+export x=(hello world yo)
+printf '%s\n' "${x[@]}"
+export x=(hello world yo '' '' '' '' '' )
+printf '%s\n' "${x[@]}"
+y=('')
+printf '%s\n' "${y[@]}"
+x/y
+$x/$y
+"${x[@]}"/$y
+printf "%s\n" "${x[@]}"/$y
+printf "%s\n" "${x[@]}/$y"
+printf "%s\n" "${x[@]}/''"
+printf "%s\n" "${x[@]/$y}"
+printf "%s\n" "${x[@]/''}"
+printf "%s\n" "${x[@]/'hello'}"
+printf "%s\n" "${x[@]/'world'}"
+for y in $x; do printf '%s\n' $y; done
+for y in "${x[@]}"; do printf '%s\n' $y; done
+unset 'x[2]'
+for y in "${x[@]}"; do printf '%s\n' $y; done
+unset 'x[2]'
+for y in "${x[@]}"; do printf '%s\n' $y; done
+unset 'x[4]'
+unset 'x[5]'
+unset 'x[6]'
+unset 'x[7]'
+unset 'x[17]'
+for y in "${x[@]}"; do printf '%s\n' $y; done
+function remove_empty() {
+vim test.sh
+bash test
+bash test.sh 
+vim test.sh
+bash test.sh 
+vim test.sh
+bash test.sh 
+vim test.sh
+bash test.sh 
+vim test.sh
+bash test.sh 
+vim test.sh
+bash test.sh 
+vim test.sh
+bash test.sh 
+vim test.sh
+bash test.sh 
+vim test.sh
+bash test.sh 
+vim test.sh
+ls
+vim prepare-shell.sh 
+x=(hello world)
+export x=(hello world)
+export y=
+export z=("${x[@]}" "${y[@]}")
+printf '%s\n' "${z[@]}
+"
+printf '%s\n' "${z[@]}"
+export foo=
+export z=("${x[@]}" "${y[@]}" "${foo[@]}")
+printf '%s\n' "${z[@]}"
+vim prepare-shell.sh 
+ls
+./build-mongosqld.sh 
+./start-mongosqld.sh 
+killall mongosqld
+./start-mongosqld.sh 
+git log
+git diff 7cba31c755d928305a734dec1051ce301941c136 prepare-shell.sh 
+git diff 7cba31c755d928305a734dec1051ce301941c136 prepare-shell.sh | wc - l
+git diff 7cba31c755d928305a734dec1051ce301941c136 prepare-shell.sh | wc -l
+vim prepare-shell.sh 
+git commit -am "BI-997: try to remove empty args"
+gg me
+evergreen patch
+fiah
+fish
+sudo apt install fish
+fish

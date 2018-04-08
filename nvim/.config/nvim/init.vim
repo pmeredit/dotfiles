@@ -1,4 +1,9 @@
-syntax on
+if &shell =~# 'fish$'
+    set shell=sh
+endif
+
+syntax enable
+filetype plugin indent on
 
 set spell
 set number
@@ -18,7 +23,7 @@ au!
   au BufReadPost *.pegjs set syntax=javascript
   au BufWritePost * %s/\([.!?]\)\s\+/\1 /g
   au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
-augroup end 
+augroup end
 
 augroup trailingWhitespace
     autocmd!
@@ -40,6 +45,7 @@ nnoremap <leader>rr :source ~/.vimrc<cr>
 " - Avoid using standard Vim directory names like 'plugin'
 call plug#begin('~/.vim/plugged')
 
+Plug 'dag/vim-fish'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
     nnoremap <leader>e :Files<CR>
