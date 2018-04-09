@@ -45,34 +45,6 @@ function fish_prompt
         set -ge status
     end
 
-    # Track the last non-empty command. It's a bit of a hack to make sure
-    # execution time and last command is tracked correctly.
-    set -l cmd_line (commandline)
-    if test -n "$cmd_line"
-        set -g last_cmd_line $cmd_line
-        set -ge new_prompt
-    else
-        set -g new_prompt true
-    end
-
-    # Show loadavg when too high
-    set -l load1m (uptime | grep -o '[0-9]\+\.[0-9]\+' | head -n1)
-    set -l load1m_test (math $load1m \* 100 / 1)
-    if test $load1m_test -gt 100
-        error load $load1m
-    end
-
-    # Show disk usage when low
-    set -l du (df / | tail -n1 | sed "s/  */ /g" | cut -d' ' -f 5 | cut -d'%' -f1)
-    if test $du -gt 80
-        error du $du%%
-    end
-
-    # Virtual Env
-    if set -q VIRTUAL_ENV
-        section env (basename "$VIRTUAL_ENV")
-    end
-
     # Git branch and dirty files
     git_branch
     if set -q git_branch
