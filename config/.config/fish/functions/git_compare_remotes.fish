@@ -1,11 +1,16 @@
 function git_compare_remotes
     set res
+    set upstream (git_upstream)
     set out ""
     for remote in (git remote)
         set res (echo (git rev-list --left-right --count (git_current_branch)...$remote/(git_current_branch) ^ /dev/null) | string split '')
         if test (count $res) -gt 2
-	    set out "$out $remote: "
-            if test $res[1] != "0"
+	    if test $remote = $upstream
+	        set out "$out *$remote: "
+	    else
+	        set out "$out $remote: "
+            end
+	    if test $res[1] != "0"
                 set out "$out<"
             end
             if test $res[3] != "0"
