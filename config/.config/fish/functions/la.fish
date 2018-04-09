@@ -1,3 +1,3 @@
 function la
-    exa -Fa
+    exa -Fa $argv
 end
