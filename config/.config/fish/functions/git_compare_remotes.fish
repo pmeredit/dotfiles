@@ -1,4 +1,4 @@
-function git_compare_origin
+function git_compare_remotes
     set res
     set out ""
     for remote in (git remote)

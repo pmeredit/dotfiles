@@ -52,7 +52,7 @@ function fish_prompt
         if test $git_untracked_count -gt 0; or test $git_modified_count -gt 0
             set out "$out$c0:$ce""??: $git_untracked_count, M: $git_modified_count"
         end
-	set out "$out|"(git_compare_origin)
+	set out "$out|"(git_compare_remotes)
         section git $out
     end
 
