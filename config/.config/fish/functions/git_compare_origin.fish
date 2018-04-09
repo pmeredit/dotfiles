@@ -1,5 +1,5 @@
 function git_compare_origin
-    set res (echo (git rev-list --left-right --count (git_current_branch)...origin/(git_current_branch)) | string split '')
+    set res (echo (git rev-list --left-right --count (git_current_branch)...origin/(git_current_branch) ^ /dev/null) | string split '')
     if test $res[1] != "0"
 	    set out "<"
     end

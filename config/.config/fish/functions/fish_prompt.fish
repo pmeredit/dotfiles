@@ -77,7 +77,7 @@ function fish_prompt
     git_branch
     if set -q git_branch
         set out "$git_branch"
-        if test $git_dirty_count -gt 0
+        if test $git_untracked_count -gt 0; or test $git_modified_count -gt 0
             set out "$out$c0:$ce""??: $git_untracked_count, M: $git_modified_count"
         end
 	set out "$out|"(git_compare_origin)
