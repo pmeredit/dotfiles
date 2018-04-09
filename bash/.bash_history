@@ -1,40 +1,243 @@
+./test/bin/run-integration-tests-plain.sh 
+vim test/bin/start-orchestration.sh 
+echo $MONGO_UNAME
+vim test/bin/start-orchestration.sh 
 ls
-git st
-git pull
+vim test/artifacts/orchestration/configs/servers/auth.json 
+export MONGO_UNAME=bob
+vim test/artifacts/orchestration/configs/servers/auth.json 
+export MONGO_PWD=pws123
+killall mongosql
+./test/bin/start-sqlproxy.sh 
+./test/bin/run-integration-tests-plain.sh 
+vim test/bin/run-integration-tests-plain.sh 
+mysql -u$MONGO_UNAME -p$MONGO_PWD -h 127.0.0.1 -P3307 --plugin-dir=test/artifacts/build/ --default-auth=mongosql_auth
+ls
+vim test/bin/start-orchestration.sh 
+ls
+cd ~/tmp/
+ls
+cd iodbc_inst/
+ls
+usr/local/iODBC/bin/iodbc-config 
+cd ..
+ls
+cd iODBC-3.52.12/
+ls
+sudo make install
+cd ~
+ls
+cd git/mongosql-auth-c/
+ls
+cd test/
+ls
+ls
+ps aux | grep mongosql
+ls
+./bin/run-integration-tests-plain.sh 
+cd bin/
+vim run-integration-tests-plain.sh 
+ps aux | grep mongo
+monger run 3.6 mongo
+ls
+vim run-integration-tests-plain.sh 
+mysql -ubob -ppwd123
+vim run-integration-tests-plain.sh 
+mysql -ubob -ppwd123 -h127.0.0.1 -p3307
+mysql -ubob -ppwd123 -h127.0.0.1 -P3307
+mysql -ubob -ppwd123 -h127.0.0.1 -P3307 --enable-cleartext-plugin
+mysql -ubob -ppwd123 -h127.0.0.1 -P3307 --enable-cleartext-plugin --ssl
+mysql -ubob -ppwd123 -h127.0.0.1 -P3307 --enable-cleartext-plugin --ssl-mode=required
+ls
+vim start-sqlproxy.sh 
+;s
+vo, run-integration-tests-plain.sh 
+vim run-integration-tests-plain.sh 
+./run-integration-tests-plain.sh 
+vim run-integration-tests-plain.sh 
+ls
+ps aux | grep mongo
+ps aux | grep mongo | grep log
+vim /Users/pmeredit/git/mongosql-auth-c/test/artifacts/log/sqlproxy.log
+./run-integration-tests-plain.sh 
+ps aux | grep mongo
+killall mongosqld
+ps aux | grep mongosql
+ls
+vim start-sqlproxy.sh 
+env | grep MONGO
+./start-sqlproxy.sh 
+export MONGO_PWD=pwd123
+./start-sqlproxy.sh 
+ls
+./run-integration-tests-plain.sh 
+ls
 cd ..
 ls
 cd ..
 ls
-rm -Rf odbc/
-history | grep clone
-git clone git@github.com:10gen/odbc
+vim .evg.yml 
 ls
-cd odbc/
+ls
+vim test/bin/start-orchestration.sh 
+ls
+vim test/artifacts/orchestration/orchestration.config 
+vim test/artifacts/orchestration/configs/servers/auth.json 
+ls
+cd test/bin/
+ls
+vim run-integration-tests-plain.sh 
+git log
+git diff 2830bc12994dfae488ac7375ca7d15c1e286f847 run-integration-tests-plain.sh
+vim run-integration-tests-plain.sh 
+git checkout run-integration-tests-plain.sh
+vim run-integration-tests-plain.sh 
+ls
+ps aux | grep mongo
+./run-integration-tests-plain.sh 
+./run-integration-tests-scram.sh 
+./run-integration-tests-gssapi.sh 
+./run-integration-tests-plain.sh 
+vim run-integration-tests-plain.sh 
+ls
+vim start-sqlproxy.sh 
+monger run 3.6 mongo
+ls
+./start-orchestration.sh 
+rm -Rf ../artifacts/mongodb
+rm -Rf ../artifacts/mongodb-osx-x86_64-enterprise-3.7.3-362-g80f409d/
+ls
+mysql
+mysql -h127.0.0.1 -P51170
+ls
+vim start-sqlproxy.sh 
+mysql -h127.0.0.1 -P3307
+vim run-integration-tests-plain.sh 
+mysql --host 127.0.0.1 --port 3307
+ls
+ls
+vim start-sqlproxy.sh 
+ps aux | rg mongo
+vim /var/folders/xr/xs3lz_8d2xz_gl3vhx0wfmrr0000gn/T/mongo-EyntMP
+ls
+ls
+./start-sqlproxy.sh 
+mkdir /Users/pmeredit/git/mongosql-auth-c/test/artifacts/sqlproxy
+ls
+vim start-sqlproxy.sh 
+ls
+rm -Rf ../artifacts/sqlproxy/
+ls
+./start-sqlproxy.sh 
+ls
+ps aux | grep sql
+ps aux | rg sql
+ps aux | grep sql
+ps aux | rg sql
+vim /Users/pmeredit/.bashrc 
+rl
+ps aux | grep sql
+vim /Users/pmeredit/.bashrc 
+ls
+vim prepare-shell.sh 
+./run-integration-tests-plain.sh 
+monger run 3.6 mongo
+monger run 3.6 mongo -- ldaptest.10gen.cc
+ls
+vim start-sqlproxy.sh 
+rg SQLPROXY_MONGO_ARGS
+export SQLPROXY_MONGO_ARGS=--mongo-uri=ldaptest.10gen.cc
+killall mongosqld
+./start-sqlproxy.sh 
+ps aux | rg sql
+history | rg expot
+history | rg export
+ps aux | grep mongosqld
+ps aux | grep mongo
+./start-sqlproxy.sh 
+ls
+cd ..
+ls
+cd ..
+ls
+vim .evg.yml 
+ls
+killall mongod
+killall mongosqld
+ps aux | grep mongo
+killall 73338
+ps aux | grep mongo
+kill 4360992
+kill 473338
+kill 73338
+ps aux | grep mongo
+env | grep MONGO
+ls
+cd test/bin/
+vim start-sqlproxy.sh 
+env | grep MONGO
+cat run-integration-tests-plain.sh 
+export MONGO_UNAME='drivers-team?mechanism=PLAIN'
+export MONGO_PWD='mongor0x$xgen'
+echo $MONGO_PWD
+./start-sqlproxy.sh 
+export MONGO_USER='drivers-team?mechanism=PLAIN'
+unset MONGO_UNAME
+./start-sqlproxy.sh 
+export MONGO_USER='drivers-team'
+./start-sqlproxy.sh 
+export MONGO_USER='drivers-team?mechanism=PLAIN'
+./start-sqlproxy.sh 
+ls
+export MONGO_USER='bob'
+export MONGO_PWD='pwd123'
+vim start-sqlproxy.sh 
+./start-orchestration.sh 
+rm -Rf ../artifacts/orchestration/
+rm -Rf ../artifacts/mongodb/
+./start-orchestration.sh 
+./start-sqlproxy.sh 
+env | grep MONGO
+unset SQLPROXY_MONGO_ARGS
+./start-sqlproxy.sh 
+ls
+vim start-sqlproxy.sh 
+./start-sqlproxy.sh 
+vim start-sqlproxy.sh 
+./start-sqlproxy.sh 
+ls
+./run-integration-tests-scram.sh 
+vim start-sqlproxy.sh 
+killsall mongosqld
+killall mongosqld
+./start-sqlproxy.sh 
+ps aux | grep mongosqld
+./run-integration-tests-scram.sh 
+ls
+vim run-integration-tests-plain.sh 
+vim run-integration-tests-scram.sh 
+vim run-integration-tests-gssapi.sh 
+ls
+cd ~/git/odbc/
+ls
+vim mongo-odbc-driver/bin/build-mongo-odbc.sh 
+ls
 ls
 cd mongo-odbc-driver/
 ls
-git submodule init
-git checkout BI-1524
-git log
-git submodule init
-git submodule update
+cd build/
 ls
+cd lib/
 ls
-cd mysql-server/
-ls
-cd bld/mongosql-auth-c/
-ls
-cd ..
+otool -L libmdbodbcw.so 
+otool -L libmdbodbcw.so > ~/mdbodbc
+vim /Users/pmeredit/mdbodbc 
+diff ~/mdbodbc ~/myodbc 
+diff ~/mdbodbc ~/myodbc 
 ls
 cd ..
 ls
-git log
-ls
-cd bld/mongosql-auth-c/
-git submodule init
-git submodule update
-git log
-cd ..
+cd bin/
 ls
 cd ..
 ls
@@ -42,459 +245,256 @@ cd ..
 ls
 cd bin/
 ls
+vim build-mongo-odbc.sh 
+vim build-mongo-odbc.sh 
+./build-mongo-odbc.sh 
+PLATFORM=macos ./build-mongo-odbc.sh 
+ls
 cd ..
+ls
+cd build/
+ls
+cd lib/
+ls
+otool -L libmdbodbcw.so 
+otool -L libmdbodbcs.so 
+otool -L libmdbodbca.so 
+ls
+brew install unixodbc
+ls
+cd ..
+ls
+cd ..
+ls
+cd b
+cd bin/
+ls
+vim build-mongo-odbc.sh 
+./build-mongo-odbc.sh 
+PLATFORM=macos ./build-mongo-odbc.sh 
+vim build-mongo-odbc.sh 
+PLATFORM=macos ./build-mongo-odbc.sh 
+ls
+vim ../src/cmake/FindODBC.cmake 
+ls
+vim build-mongo-odbc.sh 
+vim ../src/cmake/FindODBC.cmake 
+PLATFORM=macos ./build-mongo-odbc.sh 
+ls
+cd ..
+ls
+cd build/
+ls
+cd lib/
+ls
+otool -L libmdbodbca.so 
+cat ~/mdbodbc 
+cd ..
+ls
+cd bin/
+ls
+cd ..
+ls
+cd ..
+ls
+cd bin/
+ls
+vim build-mongo-odbc.sh 
+ls
+./build-mongo-odbc.sh 
+PLATFORM=macos ./build-mongo-odbc.sh 
+vim build-mongo-odbc.sh 
+git log
+git stash
+ls
+vim build-mongo-odbc.sh 
+./build-mongo-odbc.sh 
+PLATFORM=macos ./build-mongo-odbc.sh 
+mysql
+ls
+vim build-mongo-odbc.sh 
+vim
+monger 3.6 mongo
+monger run 3.6 mongo
+monger run 3.6 mongo -- -u foo -p bar
+mysql
+mysql --enable-cleartext-plugin
+mysql --enable-cleartext-plugin -u foo -pbar
+ifconfig | rg '10[.]'
+mysql -h10.4.105.44 -P3307
+mysql
+mysql -h10.4.105.44 -P3307
+mysql -h10.4.105.44 -P3307
+mysql -h10.4.105.44 -P3307
+mysql -h10.4.105.44 -P3307
+mysql -h10.4.105.44 -P3307 --enable-cleartext-plugin
+mysql -h10.4.105.44 -P3307 --enable-cleartext-plugin
+mysql -h10.4.105.44 -P3307 
+mysql -h10.4.105.44 -P3307 
+mysql -h10.4.105.44 -P3307 
+mysql -h10.4.105.44 -P3307 
+mysql -h10.4.105.44 -P3307 
+mysql -h10.4.105.44 -P3307 
+mysql -h10.4.105.44 -P3307 
+mysql -h10.4.105.44 -P3307 
+mysql -h10.4.105.44 -P3307 
+mysql -h10.4.105.44 -P3307 --debug=d:t
+cd ~/git/odbc/
+ls
+cd mongo-odbc-driver/
 ls
 cd mysql-server/
 ls
 cd bld/
 ls
-./bin/install-bison.sh 
+vim bin/build.sh 
+history | grep mysql
 ls
-vim bin/prepare-shell.sh 
-./bin/install-bison.sh 
+vim src/sql-common/client.c 
+rg SCRAMBLE_LENGTH
+rg SCRAMBLE_LENGTH
+cd src/sql-common/
+rg SCRAMBLE_LENGTH
+cd ..
+vim src/sql-common/client.c 
+vim sql-common/client.c 
+cd ..
 ls
-./bin/build.sh 
-git st
+cd src/
+ls
+cd ..
+ls
+cd build/
+ls
+ls
+make
+make -j 4
+ls
+ll client/mysql
+./client/mysql
+make mysqld
+make mysql
+./client/mysql
+./client/mysql
+./client/mysql
+history | grep mysql
+mysql -h10.4.105.44 -P3307
+mysql
+ls
+cd ~/sqlproxy
+ls
+go test --run /integration
+go test --run /integration
+mysql
 git diff
-git commit -am "readlink -f does not work on OS X"
-git push
 git log
-git checkout -b BI-1524
-git push origin BI-1524
-ls
-cd mongosql-auth-c/
-ls
-git log
-git co -b fix_build
-cd ..
-ls
-cd ..
-ls
-cd ..
-ls
-git st
-cd ..
-ls
-git diff
-git commit -am "submodule bump"
-git push
-ls
-cd mongo-odbc-driver/
-ls
-cd bin/
-ls
-./build-mongo-odbc.sh 
-vim prepare-shell.sh 
-git commit -am "readlink -f does not work on OS X"
-./build-mongo-odbc.sh 
-ls
-vim build-mongo-odbc.sh 
-vim platforms.sh 
-PLATFORM=macos ./build-mongo-odbc.sh 
-ls
-vim build-mongo-odbc.sh 
-PLATFORM=macos ./build-mongo-odbc.sh 
-ls
-vim build-mongo-odbc.sh 
-ls
-cd ..
-ls
-cd -
-ls
-vim build-mongo-odbc.sh 
-PLATFORM=macos ./build-mongo-odbc.sh 
-vim build-mongo-odbc.sh 
-PLATFORM=macos ./build-mongo-odbc.sh 
-ls
-vim build-mongo-odbc.sh 
-PLATFORM=macos ./build-mongo-odbc.sh 
-vim build-mongo-odbc.sh 
-PLATFORM=macos ./build-mongo-odbc.sh 
-ls
-ion
-ls
-./build-mongo-odbc.sh 
-ls
-vim build-mongo-odbc.sh 
-./build-mongo-odbc.sh 
-vim build-mongo-odbc.sh 
-./build-mongo-odbc.sh 
-PLATFORM=macos ./build-mongo-odbc.sh 
-vim build-mongo-odbc.sh 
-PLATFORM=macos ./build-mongo-odbc.sh 
-PLATFORM=macos ./build-mongo-odbc.sh 
-vim build-mongo-odbc.sh 
-vim build-mongo-odbc.sh 
-PLATFORM=macos ./build-mongo-odbc.sh 
-ls -r /Users/pmeredit/git/odbc/mongo-odbc-driver/bin/../..
-ls -R /Users/pmeredit/git/odbc/mongo-odbc-driver/bin/../..
-ls /Users/pmeredit/git/odbc/mongo-odbc-driver/bin/../../*
-ls -d /Users/pmeredit/git/odbc/mongo-odbc-driver/bin/../../*
-ls -d /Users/pmeredit/git/odbc/mongo-odbc-driver/bin/../../* | grep -v 'mongo-odbc-driver'
-ls -d /Users/pmeredit/git/odbc/mongo-odbc-driver/bin/../../* | xargs basename | grep -v 'mongo-odbc-driver'
-vim build-mongo-odbc.sh 
-man cp
-vim build-mongo-odbc.sh 
-PLATFORM=macos ./build-mongo-odbc.sh 
-vim build-mongo-odbc.sh 
-PLATFORM=macos ./build-mongo-odbc.sh 
-vim build-mongo-odbc.sh 
-PLATFORM=macos ./build-mongo-odbc.sh 
-vim build-mongo-odbc.sh 
-PLATFORM=macos ./build-mongo-odbc.sh 
-vim build-mongo-odbc.sh 
-vim build-mongo-odbc.sh 
-PLATFORM=macos ./build-mongo-odbc.sh 
-vim build-mongo-odbc.sh 
-PLATFORM=macos ./build-mongo-odbc.sh 
-vim build-mongo-odbc.sh 
-PLATFORM=macos ./build-mongo-odbc.sh 
-vim build-mongo-odbc.sh 
-PLATFORM=macos ./build-mongo-odbc.sh 
-vim build-mongo-odbc.sh 
-PLATFORM=macos ./build-mongo-odbc.sh 
-vim build-mongo-odbc.sh 
-vim build-mongo-odbc.sh 
-PLATFORM=macos ./build-mongo-odbc.sh 
-vim build-mongo-odbc.sh 
-PLATFORM=macos ./build-mongo-odbc.sh 
-vim build-mongo-odbc.sh 
-PLATFORM=macos ./build-mongo-odbc.sh 
-vim build-mongo-odbc.sh 
-PLATFORM=macos ./build-mongo-odbc.sh 
-git commit -am "BI-1524: Fix slow spot in build process"
-git push
-ls
-vim build-mongo-odbc.sh 
-vim build-mongo-odbc.sh 
-ls ../../CMakeLists.txt 
-ls ../../*.cmake
-vim build-mongo-odbc.sh 
-git commit -am "BI-1524: fix up copying more"
-git push
-git log
-git reset --hard 605caad343fcbc50fb319c5e1c3db8c89cf99b76
-git push
-git push -f
 ls
 ls
+vim server/conn.go 
+go test --run /integration
+go build -i main/mongosqld.go 
+./mongosqld -addr 0.0.0.0:3307
+./mongosqld --addr 0.0.0.0:3307
+git commit -am "BI-1544: Wisdom's comments addressed"
 ls
-./build-mongo-odbc.sh 
-PLATFORM=macos ./build-mongo-odbc.sh 
-ls
-cd ..
-ls
-cd ..
-ls
-vim CMakeLists.txt 
-vim cmake/FindODBC.cmake 
-curl -S https://github.com/openlink/iODBC/archive/v3.52.12.tar.gz 
-cd ~/
-ls
-rm -Rf tmp
-mkdir tmp
-wget https://codeload.github.com/openlink/iODBC/tar.gz/v3.52.12
-ls
-rm v3.52.12 
-cd tmp/
-wget https://github.com/openlink/iODBC/archive/v3.52.12.tar.gz
-ls
-tar xvzf v3.52.12.tar.gz 
-cd iODBC-3.52.12/
-curl -S http://noexpire.s3.amazonaws.com/sqlproxy/binary/linux/iODBC-3.52.12.tar.gz
-curl -O http://noexpire.s3.amazonaws.com/sqlproxy/binary/linux/iODBC-3.52.12.tar.gz 
-ls
-rm -Rf *
-ls
-curl -O http://noexpire.s3.amazonaws.com/sqlproxy/binary/linux/iODBC-3.52.12.tar.gz 
-ls
-tax xvzf iODBC-3.52.12.tar.gz 
-tar xvzf iODBC-3.52.12.tar.gz 
-ls
-cd iODBC-3.52.12/
-ls
-ls i
-ls include/
-ls
-./autogen.sh 
-vim README_MACOSX
-ls
-cd mac/
-make
-ls
-ls
-vim README.MYODBC 
-ls
-cd ..
-ls
-cd ma
-cd mac/
-ls
-vim GNUmakefile 
-ls
-make
-xcodebuild
-xcodebuild
+cr -i 197340002
 ls
 ls
 git log
-history | grep ssh
-ssh ssh Administrator@ec2-54-173-83-76.compute-1.amazonaws.com
-ssh Administrator@ec2-54-173-83-76.compute-1.amazonaws.com
-xcodebuild
-ls
-cd ~/tmp/iODBC-3.52.12/iODBC-3.52.12/
+git diff 87071233700e4335976bca457720c179a1bad586 | wc -l
+cd ~/Tools/
+cd ~/git/
 ls
 ls
-cd ma
-cd mac/
-ls
-sudo make install
-ls
-vim GNUmakefile 
-ls /Library/Frameworks/iODBC.framework/Resources/
-ls /Library/Frameworks/iODBC.framework/Resources/English.lproj/
-ls /Library/Frameworks/iODBC.framework/Resources/iODBCadm.bundle/
-ls /Library/Frameworks/iODBC.framework/Resources/iODBCadm.bundle/Contents/
-ls /Library/Frameworks/iODBC.framework/Resources/iODBCadm.bundle/Contents/MacOS/
-ls
-brew install iodbc
-cd ..
-cd ..
-ls
-rm -Rf iODBC-3.52.12
-rm iODBC-3.52.12.tar.gz 
-ls
-curl -O http://www.unixodbc.org/unixODBC-2.3.6.tar.gz
-ls
-gunzip unixODBC-2.3.6.tar.gz 
-tax xvf unixODBC-2.3.6.tar 
-ls
-tar xvf unixODBC-2.3.6.tar 
-ls
-cd unixODBC-2.3.6/
-ls
-./configure 
-ls
-make
-ls
-ls odbcinst/
-cd ..
-ls
-cd unixODBC-2.3.6/
-ls
-ls include/
-ls
-cd ..
-ls
-cd ..
-mv iODBC-3.52.12/unixODBC-2.3.6 ./
-ls
-rm -Rf iODBC-3.52.12/
-ls
-pwd
-cd unixODBC-2.3.6/
-ls
-cd ..
-ls unixODBC-2.3.6/odbcinst/
-brew remove unixodbc
-ls
-cd git/
-ls
-cd ..
-cd Go/src/github.com/10gen/sqlproxy/
-ls
-git pull
-git fetch me
-git checkout BI-997
-ls
-vim testdata/bin/prepare-shell.sh 
-ls
+cd ~/sqlproxy
 make clean test-integration
-export fuckstick=
-export fuckstick=default,mongo/version/latest,mongo/topology/server
-echo "${fuckstick//,/ }"
-for x in "${fuckstick//,/ }"; do echo $x; done
-for x in "${fuckstick//,/ }"; do echo $x; echo '\n' ; done
-vim ~/.evergreen.yml 
 ls
-./testdata/bin/start-orchestration.sh 
-pip install virtualenv
-./testdata/bin/start-orchestration.sh 
+ls
+vim Makefile 
+make clean start-all test-integration
+ls
 make clean
-ls
-#INFRASTRUCTURE_CONFIG=default, make clean
-ls testdata/config/mongo/version/3.6
-INFRASTRUCTURE_CONFIG=default,/mongo/version/3.6 ./testdata/bin/start-orchestration.sh 
-make clean
-INFRASTRUCTURE_CONFIG=default,mongo/version/latest,mongo/topology/server ./testdata/bin/start-orchestration.sh 
-virtualenv
-sudo apt install virtualenv
-ls
-vim testdata/bin/prepare-shell.sh 
-INFRASTRUCTURE_CONFIG=default,mongo/version/latest,mongo/topology/server ./testdata/bin/start-orchestration.sh 
-make clean
-INFRASTRUCTURE_CONFIG=default,mongo/version/latest,mongo/topology/server ./testdata/bin/start-orchestration.sh 
-make clean
-ls
-ls
-vim testdata/bin/prepare-shell.sh 
-vim testdata/bin/platforms.sh 
-dash testdata/bin/platforms.sh 
-INFRASTRUCTURE_CONFIG=default,mongo/version/latest,mongo/topology/server dash testdata/bin/prepare-shell.sh 
-vim ~/.evergreen.yml 
-vim .evg.yml 
-sudo apt-install shellcheck
-sudo apt install shellcheck
-ls
-cd testdata/bin/
-ls
-vim prepare-shell.sh 
-cd ~/dotfiles/
-git stash
-git pull
-rl
-ls
-vim
-cd -
-ls
-vim prepare-shell.sh 
-which bash
-vim prepare-shell.sh 
-vim platforms.sh 
-vim platforms.sh 
-vim platforms.sh 
-vim prepare-shell.sh 
-rg '[/]usr[/]bin[/]bash'
-rg 'bash'
-/usr/bin/env bash
+vim Makefile 
+vim testdata/bin/build-mongosqld.sh 
+make clean start-all test-integration
 cd ~/Go/src/github.com/10gen/sqlproxy/
-ls
-ls
-ls
-ls
-cd testdata/
-ls
-cd bin/
-ls
-vim generate-reports.sh 
-ls
-ls ../artifacts/out/
-vim generate-reports.sh 
-ls
-rg out
-cd ..
-ls
-cd ..
-la
-ls
-make clean test-integration
-sudo apt install mysql
-sudo apt install mysql-server
-make clean test-integration
-mysql
-ps aux | rg mysql
-killall mysqld
-killall 9095
-killall mysqld
-ps aux | rg mysql
-kill 9095
-sudo kill 9095
-ps aux | rg mysql
-make clean test-integration
-ps aux | rg monog
-ps aux | rg mongo
-mysql
-mysql -h127.0.0.1 -P3307 
-ls
-ls
-vim testdata/bin/
-cdm testdata/bin/
+make clean start-all test-integration
 cd testdata/bin/
-ls
-rm shellcheck-stable.linux.x86_64.tar.xz 
-ls
-vim start-orchestration.sh 
-rg ARGS
-ls
-vim start-mongosqld.sh 
-export x =(hello world yo)
-export x=(hello world yo)
-printf '%s\n' "${x[@]}"
-export x=(hello world yo '' '' '' '' '' )
-printf '%s\n' "${x[@]}"
-y=('')
-printf '%s\n' "${y[@]}"
-x/y
-$x/$y
-"${x[@]}"/$y
-printf "%s\n" "${x[@]}"/$y
-printf "%s\n" "${x[@]}/$y"
-printf "%s\n" "${x[@]}/''"
-printf "%s\n" "${x[@]/$y}"
-printf "%s\n" "${x[@]/''}"
-printf "%s\n" "${x[@]/'hello'}"
-printf "%s\n" "${x[@]/'world'}"
-for y in $x; do printf '%s\n' $y; done
-for y in "${x[@]}"; do printf '%s\n' $y; done
-unset 'x[2]'
-for y in "${x[@]}"; do printf '%s\n' $y; done
-unset 'x[2]'
-for y in "${x[@]}"; do printf '%s\n' $y; done
-unset 'x[4]'
-unset 'x[5]'
-unset 'x[6]'
-unset 'x[7]'
-unset 'x[17]'
-for y in "${x[@]}"; do printf '%s\n' $y; done
-function remove_empty() {
-vim test.sh
-bash test
-bash test.sh 
-vim test.sh
-bash test.sh 
-vim test.sh
-bash test.sh 
-vim test.sh
-bash test.sh 
-vim test.sh
-bash test.sh 
-vim test.sh
-bash test.sh 
-vim test.sh
-bash test.sh 
-vim test.sh
-bash test.sh 
-vim test.sh
-bash test.sh 
-vim test.sh
-ls
 vim prepare-shell.sh 
-x=(hello world)
-export x=(hello world)
-export y=
-export z=("${x[@]}" "${y[@]}")
-printf '%s\n' "${z[@]}
-"
-printf '%s\n' "${z[@]}"
-export foo=
-export z=("${x[@]}" "${y[@]}" "${foo[@]}")
-printf '%s\n' "${z[@]}"
-vim prepare-shell.sh 
+cd ..
+rg BUILD_TAGS
+vim bin/platforms.sh 
+vim bin/prepare-shell.sh 
+rg LD_FLAGS
+cd ..
 ls
-./build-mongosqld.sh 
-./start-mongosqld.sh 
-killall mongosqld
-./start-mongosqld.sh 
-git log
-git diff 7cba31c755d928305a734dec1051ce301941c136 prepare-shell.sh 
-git diff 7cba31c755d928305a734dec1051ce301941c136 prepare-shell.sh | wc - l
-git diff 7cba31c755d928305a734dec1051ce301941c136 prepare-shell.sh | wc -l
-vim prepare-shell.sh 
-git commit -am "BI-997: try to remove empty args"
+./testdata/bin/build-mongosqld.sh 
+./testdata/bin/build-mongosqld.sh 
+VARIANT=macos ./testdata/bin/build-mongosqld.sh 
+VARIANT=macos ./testdata/bin/build-mongosqld.sh 
+which go
+echo $GOROOT
+export GOROOT=/usr/local/bin/go
+go -v
+go version
+which go
+go
+go version
+ls /usr/local/go/bin/go
+export GOROOT=/usr/local/go
+go version
+VARIANT=macos ./testdata/bin/build-mongosqld.sh 
+VARIANT=macos ./testdata/bin/build-mongosqld.sh 
+VARIANT=macos ./testdata/bin/build-mongosqld.sh 
+env | grep GO
+VARIANT=macos ./testdata/bin/build-mongosqld.sh 
+VARIANT=macos ./testdata/bin/build-mongosqld.sh 
+./testdata/bin/build-mongosqld.sh 
+./testdata/bin/build-mongosqld.sh 
+ls
+go build main/mongosqld.go 
+go version
+which go
+go version
+echo $GOPATH
+echo $GOROOT
+cat /usr/local/go/VERSION 
+export GOROOT=/usr/local
+which go
+go version
+go build -i main/mongosqld.go 
+rl
+echo $GOROOT
+echo $GOPATH
+vim /Users/pmeredit/.bashrc 
+unset GOROOT
+go build -i main/mongosqld.go 
+./testdata/bin/build-mongosqld.sh 
+./testdata/bin/build-mongosqld.sh 
+git commit -am "BI-997: WIP 4"
 gg me
+git log
+git diff 87071233700e4335976bca457720c179a1bad586 | wc -l;
+git diff 87071233700e4335976bca457720c179a1bad586 | wc -l
 evergreen patch
-fiah
+evergreen patch
+INFRASTRUCTURE_CONFIG=fuck,you
+echo ${INFRASTRUCTURE_CONFIG//,/ }
+for x in ${INFRASTRUCTURE_CONFIG//,/ }; do echo $x; done
+cd ~/dotfiles/
+ls
+git pull
+ls
 fish
-sudo apt install fish
+ls
+bash INSTALL.sh 
+fish
+vim /Users/pmeredit/.config/fish/config.fish 
+ll /Users/pmeredit/.config/fish/config.fish 
+rm -Rf ~/.config/fish/
+ls
+git pull
+git log
+ls
+./INSTALL.sh 
 fish
