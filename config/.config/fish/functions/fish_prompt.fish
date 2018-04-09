@@ -38,13 +38,6 @@ function fish_prompt
     # display, then when you press enter.
     printf "\033[K"
 
-    # Current time
-    printf (date "+$c2%H$c0:$c2%M$c0:$c2%S, ")
-    if [ $last_status -ne 0 ]
-        error last $last_status
-        set -ge status
-    end
-
     # Git branch and dirty files
     git_branch
     if set -q git_branch
