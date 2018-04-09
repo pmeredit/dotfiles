@@ -1,4 +1,8 @@
 function grep
-    rg $argv
+    if type -q rg
+        rg $argv
+    else
+        grep $argv
+    end
 end
 
