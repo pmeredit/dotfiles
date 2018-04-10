@@ -12,6 +12,7 @@ set -x PATH $HOME/.cargo/bin\
        /bin\
        /usr/sbin\
        /sbin\
+       $HOME/Library/Haskell/bin\
        $HOME/.fzf/bin
 
 alias vim nvim
