@@ -48,4 +48,7 @@ function fish_right_prompt
 	set out "$out |"(git_compare_remotes)
         section git $out
     end
+
+	# Current time
+    printf " "(date "+$c2%H$c0:$c2%M$c0:$c2%S")
 end
