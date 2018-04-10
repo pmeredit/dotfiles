@@ -1,5 +1,4 @@
 function fish_user_key_bindings
-  fzf_key_bindings
     ### fzf ###
     if test "$FZF_LEGACY_KEYBINDINGS" -eq 1
         bind \ct '__fzf_find_file'

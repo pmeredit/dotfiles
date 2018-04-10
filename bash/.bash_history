@@ -1,14 +1,3 @@
-vim test/bin/start-orchestration.sh 
-echo $MONGO_UNAME
-vim test/bin/start-orchestration.sh 
-ls
-vim test/artifacts/orchestration/configs/servers/auth.json 
-export MONGO_UNAME=bob
-vim test/artifacts/orchestration/configs/servers/auth.json 
-export MONGO_PWD=pws123
-killall mongosql
-./test/bin/start-sqlproxy.sh 
-./test/bin/run-integration-tests-plain.sh 
 vim test/bin/run-integration-tests-plain.sh 
 mysql -u$MONGO_UNAME -p$MONGO_PWD -h 127.0.0.1 -P3307 --plugin-dir=test/artifacts/build/ --default-auth=mongosql_auth
 ls
@@ -498,3 +487,14 @@ ls
 ./INSTALL.sh 
 fish
 [ -d test/artifacts/orchestration/ ] && echo 'yay'
+cd ~/Go/src/github.com/10gensq
+cd ~/Go/src/github.com/10gen/sqlproxy/
+ls
+go build -i main/sq
+go build -i main/mongosqld.go 
+./mongosqld 
+rg
+echo $PATH
+ls
+vim /Users/pmeredit/.config/fish/config.fish 
+fish
