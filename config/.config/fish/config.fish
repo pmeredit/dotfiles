@@ -5,13 +5,13 @@ if not functions -q fundle
 end
 
 set -x PATH $HOME/.cargo/bin\
-       $HOME/Go/bin /Users/pmeredit/Tools\
+       $HOME/Go/bin\
+       $HOME/Tools\
        /usr/local/bin\
        /usr/bin\
        /bin\
        /usr/sbin\
        /sbin\
-       /opt/X11/bin\
-       /usr/local/go/bin\
-       /Applications/Wireshark.app/Contents/MacOS\
        $HOME/.fzf/bin
+
+alias vim nvim
