@@ -1,0 +1,1 @@
+/Users/pmeredit/.config/fisherman/async-prompt/conf.d/__async_prompt.fish

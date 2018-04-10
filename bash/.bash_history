@@ -1,4 +1,3 @@
-./test/bin/run-integration-tests-plain.sh 
 vim test/bin/start-orchestration.sh 
 echo $MONGO_UNAME
 vim test/bin/start-orchestration.sh 
@@ -498,3 +497,4 @@ git log
 ls
 ./INSTALL.sh 
 fish
+[ -d test/artifacts/orchestration/ ] && echo 'yay'

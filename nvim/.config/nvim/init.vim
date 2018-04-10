@@ -14,6 +14,9 @@ set smartcase
 set inccommand=nosplit
 set maxmempattern=10000
 set noswapfile
+set tabstop=4
+set shiftwidth=4
+set noexpandtab
 
 let g:mapleader="\<space>"
 

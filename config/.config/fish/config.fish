@@ -12,7 +12,11 @@ set -x PATH $HOME/.cargo/bin\
        /bin\
        /usr/sbin\
        /sbin\
-       $HOME/Library/Haskell/bin\
        $HOME/.fzf/bin
+
+set haskPlatform $HOME/Library/Haskell/bin
+if test -d $haskPlatform
+    set PATH $haskPlatform $PATH
+end
 
 alias vim nvim
