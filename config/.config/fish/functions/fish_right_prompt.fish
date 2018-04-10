@@ -20,7 +20,7 @@ function error
     _common_section $argv[1] $ce $argv[2] $ce
 end
 
-function fish_prompt
+function fish_right_prompt
     # $status gets nuked as soon as something else is run, e.g. set_color
     # so it has to be saved asap.
     set -l last_status $status
@@ -48,15 +48,4 @@ function fish_prompt
 	set out "$out |"(git_compare_remotes)
         section git $out
     end
-
-    # Current Directory
-    # 1st sed for colourising forward slashes
-    # 2nd sed for colourising the deepest path (the 'm' is the last char in the
-    # ANSI colour code that needs to be stripped)
-    printf $c1
-    printf (pwd | sed "s,/,$c0/$c1,g" | sed "s,\(.*\)/[^m]*m,\1/$c3,")
-
-    # Prompt on a new line
-    printf $c4
-    printf "\n $ce⛧⛧⛧⛧ $c4> "
 end

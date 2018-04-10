@@ -1,25 +1,3 @@
-function _common_section
-    printf $c1
-    printf "["
-    printf $argv[1]
-    printf $c0
-    printf ":"
-    printf $c2
-    printf $argv[2]
-    printf $argv[3]
-    printf $c1
-    printf "]"
-    printf $c0
-end
-
-function section
-    _common_section $argv[1] $c3 $argv[2] $ce
-end
-
-function error
-    _common_section $argv[1] $ce $argv[2] $ce
-end
-
 function fish_prompt
     # $status gets nuked as soon as something else is run, e.g. set_color
     # so it has to be saved asap.
@@ -38,25 +16,9 @@ function fish_prompt
     # display, then when you press enter.
     printf "\033[K"
 
-    # Git branch and dirty files
-    git_branch
-    if set -q git_branch
-        set out "$git_branch"
-        if test $git_untracked_count -gt 0; or test $git_modified_count -gt 0
-            set out "$out$c0:$ce""??: $git_untracked_count, M: $git_modified_count"
-        end
-	set out "$out |"(git_compare_remotes)
-        section git $out
-    end
-
-    # Current Directory
-    # 1st sed for colourising forward slashes
-    # 2nd sed for colourising the deepest path (the 'm' is the last char in the
-    # ANSI colour code that needs to be stripped)
-    printf $c1
-    printf (pwd | sed "s,/,$c0/$c1,g" | sed "s,\(.*\)/[^m]*m,\1/$c3,")
+	printf "$c1"(prompt_pwd)
 
     # Prompt on a new line
     printf $c4
-    printf "\n $ce⛧⛧⛧⛧ $c4> "
+    printf " $ce⛧⛧⛧⛧ $c4> "
 end
