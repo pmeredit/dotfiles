@@ -1,10 +1,3 @@
-vim test/bin/run-integration-tests-plain.sh 
-mysql -u$MONGO_UNAME -p$MONGO_PWD -h 127.0.0.1 -P3307 --plugin-dir=test/artifacts/build/ --default-auth=mongosql_auth
-ls
-vim test/bin/start-orchestration.sh 
-ls
-cd ~/tmp/
-ls
 cd iodbc_inst/
 ls
 usr/local/iODBC/bin/iodbc-config 
@@ -498,3 +491,10 @@ echo $PATH
 ls
 vim /Users/pmeredit/.config/fish/config.fish 
 fish
+env | grep PKG
+env | grep GOPATH
+export DYLD_INSERT_LIBRARIES=Library/Frameworks/iODBCinst.framework/Versions/3.52/iODBCinst:Library/Frameworks/iODBC.framework/Versions/3.52/iODBC
+'Library/Application Support/iODBC/bin/iodbctestw'
+export DYLD_INSERT_LIBRARIES="$(pwd)"/Library/Frameworks/iODBCinst.framework/Versions/3.52/iODBCinst:"$(pwd)"/Library/Frameworks/iODBC.framework/Versions/3.52/iODBC
+'Library/Application Support/iODBC/bin/iodbctestw'
+env | grep DYLD

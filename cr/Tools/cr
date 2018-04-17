@@ -20,10 +20,11 @@ function get_git_branch() {
 # these variables are the same no matter what runtime options are used
 JIRA_USER=patrick.meredith
 CR_PATH="$HOME/Tools/upload.py"
-REVIEWERS="wisdom.omuya@10gen.com"
+#REVIEWERS="wisdom.omuya@10gen.com"
 #REVIEWERS="craig.wilson@10gen.com,wisdom.omuya@10gen.com"
-#REVIEWERS="ryan.chipman@10gen.com"
-CC_LIST="craig.wilson@10gen.com,ryan.chipman@10gen.com"
+REVIEWERS="ryan.chipman@10gen.com,wisdom.omuya@10gen.com"
+#CC_LIST="craig.wilson@10gen.com,ryan.chipman@10gen.com"
+CC_LIST="craig.wilson@10gen.com"
 
 while getopts "di:r:m:h" opt; do
     case $opt in
