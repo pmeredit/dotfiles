@@ -1,20 +1,9 @@
 un=$(uname -o 2> /dev/null || uname -s)
 
-eval "$(thefuck --alias)"
-
-alias l="exa -F"
-alias la="exa -Fa"
-alias ll="exa -Flg --git"
-alias ls="exa -F"
-
 alias v=nvim
 alias vim=nvim
 
 gnames="10gen pmeredit"
-
-if hash rg; then
-    alias grep="rg"
-fi
 
 if [ "$un" == "Cygwin" ]; then
     for name in $gnames; do

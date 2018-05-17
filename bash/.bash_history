@@ -498,3 +498,31 @@ export DYLD_INSERT_LIBRARIES=Library/Frameworks/iODBCinst.framework/Versions/3.5
 export DYLD_INSERT_LIBRARIES="$(pwd)"/Library/Frameworks/iODBCinst.framework/Versions/3.52/iODBCinst:"$(pwd)"/Library/Frameworks/iODBC.framework/Versions/3.52/iODBC
 'Library/Application Support/iODBC/bin/iodbctestw'
 env | grep DYLD
+`find`
+\`find\`
+nohup mysql --host 127.0.0.1  --port 3307  --ssl-mode required   -ualice --enable-cleartext-plugin -e 'select sleep(1000000)' &> /dev/null &
+nohup mysql --host 127.0.0.1  --port 3307  --ssl-mode required   -ualice --enable-cleartext-plugin -e 'select sleep(1000000)'  &
+nohup mysql --host 127.0.0.1  --port 3307  --ssl-mode required   -ualice --enable-cleartext-plugin -e 'select sleep(1000000)'  &
+ps aux | grep mysql
+X=foo Y=bargoofoocar [ "*$X*" = "$Y" ] && echo fuck
+X=foo Y=bargoofoocar [ "*$X*" = "$Y" ] || echo fuck
+X=foo Y=bargoofoocar [ *"$X"* = "$Y" ] || echo fuck
+X=foo Y=bargoofoocar [ "*$X*" = "$Y" ] || echo fuck
+X=foo Y=bargoofoocar [ "*$X*" = "$Y" ] || echo fuck
+X=foo Y=bargoofoocar [[ "*$X*" = "$Y" ]] || echo fuck
+X=foo Y=bargoofoocar if [[ "*$X*" = "$Y" ]]; echo yay; fi
+X=foo Y=bargoofoocar if [[ "*$X*" = "$Y" ]]; then; echo yay; fi
+X=foo Y=bargoofoocar if [[ "*$X*" = "$Y" ]]; then echo yay; fi
+export X=foo #Y=bargoofoocar #if [[ "*$X*" = "$Y" ]]; then echo yay; fi
+export Y=bargoofoocar
+if [[ "$X" = *"$Y"* ]]; then echo 'yay'; fi
+if [[ *"$X"* = *"$Y"* ]]; then echo 'yay'; fi
+if [[ *"$X"* = "$Y" ]]; then echo 'yay'; fi
+echo $Y
+echo $X
+if [[ *"$X"* = *"$Y"* ]]; then echo 'yay'; fi
+if [[ *"$X"* = "foo" ]]; then echo 'yay'; fi
+if [[ *"$X"* = *"foo"* ]]; then echo 'yay'; fi
+if [[ "$Y" =~ .*"$X".* ]]; then echo 'yay'; fi
+if [[ "$Y" =~ .*"$X".* ]]; then echo 'yay'; fi
+if ! [[ "$Y" =~ .*"$X".* ]]; then echo 'yay'; fi
