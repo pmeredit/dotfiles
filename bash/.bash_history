@@ -526,3 +526,7 @@ if [[ *"$X"* = *"foo"* ]]; then echo 'yay'; fi
 if [[ "$Y" =~ .*"$X".* ]]; then echo 'yay'; fi
 if [[ "$Y" =~ .*"$X".* ]]; then echo 'yay'; fi
 if ! [[ "$Y" =~ .*"$X".* ]]; then echo 'yay'; fi
+ls
+which ls
+ls
+fish

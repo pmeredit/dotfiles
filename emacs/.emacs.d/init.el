@@ -244,6 +244,10 @@
   (add-hook 'before-save-hook 'gofmt-before-save)
   (setq-default gofmt-command "goimports"))
 
+(defun auto-complete-for-go ()
+  (auto-complete-mode 1))
+(add-hook 'go-mode-hook 'auto-complete-for-go)
+
 (use-package mu4e
   :commands (mu4e)
   :config
@@ -282,7 +286,7 @@
  '(ivy-mode t)
  '(package-selected-packages
    (quote
-    (epresent evil-magit diff-hl badger-theme counsel-projectile projectile cider clojure-mode syndicate evil-surround go-mode eyebrowse magit which-key general use-package))))
+    (go-autocomplete auto-complete django-mode rg rust-mode epresent evil-magit diff-hl badger-theme counsel-projectile projectile cider clojure-mode syndicate evil-surround go-mode eyebrowse magit which-key general use-package))))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -296,4 +300,4 @@
  '(linum ((t (:inherit (shadow default) :background "#151515"))))
  '(shadow ((t (:foreground "#666666"))))
  '(whitespace-space ((t (:foreground "#353535"))))
-'(whitespace-tab ((t (:foreground "#353535")))))
+ '(whitespace-tab ((t (:foreground "#353535")))))
