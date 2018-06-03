@@ -12,7 +12,8 @@ set -gx PATH $HOME/.cargo/bin\
        /bin\
        /usr/sbin\
        /sbin\
-       $HOME/.fzf/bin
+       $HOME/.fzf/bin\
+	   $HOME/.local/bin
 
 if test -d /usr/local/Cellar/openssl/1.0.2n/lib/pkgconfig
 	set -gx PKG_CONFIG_PATH /usr/local/Cellar/openssl/1.0.2n/lib/pkgconfig
