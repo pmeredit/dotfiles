@@ -51,3 +51,6 @@ to complet without blocking common line endings.")
 
 (defvar auto-completion-private-snippets-directory nil
   "Configurable private snippets directory.")
+
+;; Define the buffer local company backend variable
+(spacemacs|defvar-company-backends python-mode)

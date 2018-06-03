@@ -255,3 +255,20 @@
               #'spacemacs//smartparens-disable-before-expand-snippet)
     (add-hook 'yas-after-exit-snippet-hook
               #'spacemacs//smartparens-restore-after-exit-snippet)))
+
+;; Add the relevant packages to the layer
+(setq python-packages
+      '(...
+        company
+        (company-anaconda :toggle (configuration-layer/package-usedp 'company))
+        ...))
+
+;; Hook company to python-mode
+(defun python/post-init-company ()
+  (spacemacs|add-company-hook python-mode))
+
+;; Add the backend to the major-mode specific backend list
+(defun python/init-company-anaconda ()
+  (use-package company-anaconda
+    :defer t
+    :init (push 'company-anaconda company-backends-python-mode)))

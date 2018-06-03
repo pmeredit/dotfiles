@@ -24,9 +24,11 @@ augroup aus
 au!
   au BufReadPost *.lalrpop set syntax=rust
   au BufReadPost *.pegjs set syntax=javascript
-  au BufWritePost * %s/\([.!?]\)\s\+/\1 /g
   au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
 augroup end
+
+autocmd BufRead *.rs :setlocal tags=./rusty-tags.vi;/
+autocmd BufWritePost *.rs :silent! exec "!rusty-tags vi --quiet --start-dir=" . expand('%:p:h') . "&" | redraw!
 
 augroup trailingWhitespace
     autocmd!
