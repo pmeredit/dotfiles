@@ -1,35 +1,3 @@
-cd iodbc_inst/
-ls
-usr/local/iODBC/bin/iodbc-config 
-cd ..
-ls
-cd iODBC-3.52.12/
-ls
-sudo make install
-cd ~
-ls
-cd git/mongosql-auth-c/
-ls
-cd test/
-ls
-ls
-ps aux | grep mongosql
-ls
-./bin/run-integration-tests-plain.sh 
-cd bin/
-vim run-integration-tests-plain.sh 
-ps aux | grep mongo
-monger run 3.6 mongo
-ls
-vim run-integration-tests-plain.sh 
-mysql -ubob -ppwd123
-vim run-integration-tests-plain.sh 
-mysql -ubob -ppwd123 -h127.0.0.1 -p3307
-mysql -ubob -ppwd123 -h127.0.0.1 -P3307
-mysql -ubob -ppwd123 -h127.0.0.1 -P3307 --enable-cleartext-plugin
-mysql -ubob -ppwd123 -h127.0.0.1 -P3307 --enable-cleartext-plugin --ssl
-mysql -ubob -ppwd123 -h127.0.0.1 -P3307 --enable-cleartext-plugin --ssl-mode=required
-ls
 vim start-sqlproxy.sh 
 ;s
 vo, run-integration-tests-plain.sh 

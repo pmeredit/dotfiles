@@ -331,7 +331,13 @@ you should place your code here."
   (global-company-mode)
 	(define-key evil-normal-state-map "\C-]" 'spacemacs/jump-to-definition)
 	(define-key evil-normal-state-map (kbd "SPC r g") 'helm-projectile-rg)
+  (defun go-insert-error-check ()
+      "Insert the typical err checking cargo cult"
+    (interactive)
+      (insert "if err != nil {\n\treturn nil\n}")
   )
+  (define-key go-mode-map (kbd "SPC m d") 'go-insert-error-check)
+)
 
 (setq ycmd-server-command (list "python" (file-truename "~/git/ycmd/ycmd")))
 
