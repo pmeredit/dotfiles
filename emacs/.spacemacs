@@ -334,7 +334,7 @@ you should place your code here."
   (defun go-insert-error-check ()
       "Insert the typical err checking cargo cult"
     (interactive)
-      (insert "if err != nil {\n\treturn nil\n}")
+      (insert "if err != nil {\n\treturn err\n}")
   )
   (define-key go-mode-map (kbd "SPC m d") 'go-insert-error-check)
 )
