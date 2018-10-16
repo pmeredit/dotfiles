@@ -330,8 +330,9 @@ you should place your code here."
   (setq which-key-idle-delay 0.1)
   (global-linum-mode)
   (global-company-mode)
-	(define-key evil-normal-state-map "\C-]" 'spacemacs/jump-to-definition)
 	(define-key evil-normal-state-map (kbd "SPC r g") 'helm-projectile-rg)
+  (evil-define-key 'normal go-mode-map (kbd "C-]") 'go-guru-definition-other-window)
+  (evil-define-key 'normal go-mode-map (kbd "C-}") 'go-guru-callers)
   (defun go-insert-error-check ()
       "Insert the typical err checking cargo cult"
     (interactive)

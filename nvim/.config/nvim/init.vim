@@ -20,6 +20,12 @@ set noexpandtab
 set cursorline
 
 let g:mapleader="\<space>"
+let g:go_fmt_command = "goimports"
+" path to directory where library can be found
+let g:clang_library_path='/usr/local/Cellar/llvm/7.0.0/lib'
+
+let g:rustfmt_command = "rustup run nightly rustfmt"
+let g:rustfmt_autosave = 1
 
 augroup aus
 au!
@@ -70,6 +76,9 @@ Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
 
+" C++
+Plug 'Rip-Rip/clang_complete'
+
 " Using a non-master branch
 Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
 
@@ -89,6 +98,7 @@ Plug 'lifepillar/vim-mucomplete'
 		\ 'sql': ['path', 'keyn', 'dict', 'uspl'],
 		\ 'python': ['path', 'keyn', 'dict', 'uspl'],
 		\ 'js': ['path', 'keyn', 'dict', 'uspl'],
+	    \ 'cpp': ['path', 'keyn', 'dict', 'uspl'],
 		\}
 
 Plug 'vmchale/ion-vim'
@@ -102,6 +112,8 @@ Plug 'whatyouhide/vim-gotham'
 Plug 'PProvost/vim-ps1'
 
 Plug 'w0rp/ale'
+
+Plug 'davidhalter/jedi-vim'
 
 Plug 'vim-ruby/vim-ruby'
 
