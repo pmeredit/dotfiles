@@ -4,6 +4,8 @@ if not functions -q fundle
     eval (curl -sfL https://git.io/fundle-install)
 end
 
+alias sshf="ssh patrick@10.1.22.71"
+
 set -gx PATH $HOME/.cargo/bin\
        $HOME/Go/bin\
        $HOME/Tools\

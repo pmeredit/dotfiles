@@ -1,18 +1,18 @@
-user: "patrick.meredith"
-api_key: "c04edb5c0b742522bd07e5a44f43683f"
-api_server_host: "https://evergreen.mongodb.com/api"
-ui_server_host: "https://evergreen.mongodb.com"
+api_server_host: https://evergreen.mongodb.com/api
+ui_server_host: https://evergreen.mongodb.com
+api_key: c04edb5c0b742522bd07e5a44f43683f
+user: patrick.meredith
 projects:
-- name: sqlproxy
+- name: mongodb-mongo-master
   default: true
+  alias: required
   variants:
-      #- benchmark
-    - code-quality
-     #   - config-tests__os_full_matrix~windows
-#   - full_matrix__os_full_matrix~osx_mongodb_version~latest_mongodb_topology~standalone
-#   - full_matrix__os_full_matrix~ubuntu1404-64_mongodb_version~latest_mongodb_topology~standalone
-    - full_matrix__os_full_matrix~windows_mongodb_version~latest_mongodb_topology~standalone
-#   - full_matrix__os_full_matrix~windows_mongodb_version~latest_mongodb_topology~sharded-cluster
-#   - race-detector
+  - enterprise-rhel-62-64-bit
+  - enterprise-rhel-62-64-bit-required-inmem
+  - enterprise-ubuntu1604-clang-3.8-libcxx
+  - enterprise-windows-64-2k8
+  - linux-64-debug
+  - rhel-62-64-bit-required-mobile
+  - ubuntu1604-debug-aubsan-lite
   tasks:
   - all
