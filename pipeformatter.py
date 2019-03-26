@@ -20,4 +20,4 @@ for stage in pipeline:
         continue
     for key in fields:
             print "\t" + key + ": " + str(fields[key])
-    print "}"
+    print "\t}\n}"
