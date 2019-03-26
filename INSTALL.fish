@@ -12,7 +12,7 @@ if not type -q stow
      end
 end
 
-for i in (ls | grep -v INSTALL.sh | grep -v apt-cyg | grep -v INSTALL.fish | grep -v omf.fish | grep -v omf.fish | grep -v README.md)
+for i in (ls | grep -v INSTALL.sh | grep -v apt-cyg | grep -v INSTALL.fish | grep -v omf.fish | grep -v omf.fish | grep -v README.md | grep -v pipeformatter.py)
     echo "stowing $i ..."
     stow $i
 end

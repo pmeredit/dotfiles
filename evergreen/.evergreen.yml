@@ -4,7 +4,6 @@ api_key: c04edb5c0b742522bd07e5a44f43683f
 user: patrick.meredith
 projects:
 - name: mongodb-mongo-master
-  default: true
   alias: required
   variants:
   - enterprise-rhel-62-64-bit
@@ -16,3 +15,5 @@ projects:
   - ubuntu1604-debug-aubsan-lite
   tasks:
   - all
+- name: sqlproxy
+  default: true

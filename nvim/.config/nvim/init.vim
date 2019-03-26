@@ -18,6 +18,7 @@ set tabstop=4
 set shiftwidth=4
 set noexpandtab
 set cursorline
+set textwidth=100
 
 let g:mapleader="\<space>"
 let g:go_fmt_command = "goimports"

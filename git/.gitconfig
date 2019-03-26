@@ -21,8 +21,10 @@
 	ff = only
 
 [alias]
+	a = add
 	hd = log -1
 	st = status
+	c = commit
 	ci = commit
 	co = checkout
 	d  = describe
