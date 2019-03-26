@@ -2,6 +2,7 @@
 
 import sys
 import yaml
+import json
 
 if len(sys.argv) < 2:
     print >> sys.stderr, "Usage: ./pipeformatter.py <filename>"
@@ -16,8 +17,8 @@ for stage in pipeline:
         fields = stage["$project"]
         print "{'$project': {"
     else:
-        print stage
+        print json.dumps(stage) + ","
         continue
     for key in fields:
-            print "\t" + key + ": " + str(fields[key])
-    print "\t}\n}"
+        print "\t'" + key + "': " + json.dumps(fields[key]) + ","
+    print "\t}\n},"
