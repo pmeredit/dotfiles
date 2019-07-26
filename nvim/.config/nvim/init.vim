@@ -94,12 +94,13 @@ Plug 'rust-lang/rust.vim'
 Plug 'lifepillar/vim-mucomplete'
 	set completeopt=menuone,noselect
 	let g:mucomplete#enable_auto_at_startup = 1
-	let g:mucomplete#chains = { 
+	let g:mucomplete#chains = {
 		\ 'default': ['path', 'omni', 'keyn', 'dict', 'uspl'],
 		\ 'sql': ['path', 'keyn', 'dict', 'uspl'],
 		\ 'python': ['path', 'keyn', 'dict', 'uspl'],
 		\ 'js': ['path', 'keyn', 'dict', 'uspl'],
 	    \ 'cpp': ['path', 'keyn', 'dict', 'uspl'],
+	    \ 'go': ['path', 'keyn', 'dict', 'uspl'],
 		\}
 
 Plug 'vmchale/ion-vim'

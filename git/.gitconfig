@@ -17,9 +17,6 @@
 [diff]
 	tool = vimdiff
 
-[merge]
-	ff = only
-
 [alias]
 	a = add
 	hd = log -1
