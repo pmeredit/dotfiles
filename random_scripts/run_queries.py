@@ -214,8 +214,8 @@ with open('testdata/benchmarks/tpch.yml') as f:
     for bench in y:
         if 1: #bench['name'] == 'micro_handwritten_denormalized_0':
             try:
-                #mycursor.execute('explain ' + bench['query'])
-                mycursor.execute(bench['query'])
+                mycursor.execute('explain ' + bench['query'])
+                #mycursor.execute(bench['query'])
                 print("name: ", bench['name'])
                 print("PASSED")
                 #drain cursor
