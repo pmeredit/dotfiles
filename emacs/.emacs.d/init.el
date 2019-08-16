@@ -176,15 +176,6 @@
    "pb" 'counsel-projectile-switch-to-buffer
    "pu" 'projectile-discover-projects-in-search-path
 
-   ;; ledger
-   "l" '(:ignore t :which-key "ledger")
-   "lf" (lambda () "file" (interactive) (find-file "~/ledger/test.ledger"))
-   "ld" 'plaint-download
-   "lr" 'ledger-report
-   "lc" 'ledger-check-buffer
-   "li" 'rpc/ledger-match-imports
-   "la" 'rpc/ledger-add-interactive
-
    ;; ivy
    "i" '(:ignore t :which-key "ivy")
    "ir" 'ivy-resume
@@ -225,8 +216,6 @@
   :config
   (evil-mode 1)
 
-  (evil-set-initial-state 'ledger-reconcile-mode 'emacs)
-  (evil-set-initial-state 'ledger-check-mode 'emacs)
   (evil-set-initial-state 'special-mode 'emacs)
 
   (define-key evil-visual-state-map (kbd "v") 'exchange-point-and-mark)
@@ -291,9 +280,7 @@
   )
 
 (use-package org
-  :ensure t
-  :config
-  (load-file "~/org/lisp/org.el"))
+  :ensure t)
 
 (use-package eyebrowse
   :ensure t
@@ -328,14 +315,6 @@
   (use-package go-dlv
 	:ensure t)
   )
-
-(use-package ledger-mode
-  :ensure t
-  :config
-  (load-file "~/.emacs.d/ledger/ledger.el")
-  (define-key ledger-reconcile-mode-map (kbd "m") 'ledger-reconcile-toggle)
-  (define-key ledger-mode-map (kbd "C-j") 'ledger-navigate-next-xact-or-directive)
-  (define-key ledger-mode-map (kbd "C-k") 'ledger-navigate-prev-xact-or-directive))
 
 (defun rpc/compile-quit-windows ()
   (interactive)
@@ -561,36 +540,9 @@
  ;; If there is more than one, they won't work right.
  '(column-number-mode t)
  '(ivy-mode t)
- '(ledger-reports
-   (quote
-	(("expenses-this-month" "ledger [[ledger-mode-flags]] -f /Users/pmeredit/ledger/test.ledger bal Expenses -p 'this month'")
-	 (#("expenses-last-month" 0 1
-		(idx 3))
-	  "ledger [[ledger-mode-flags]] -f /Users/pmeredit/ledger/test.ledger bal Expenses -p 'last month'")
-	 (#("bal" 0 1
-		(idx 1))
-	  "ledger [[ledger-mode-flags]] -f /Users/pmeredit/ledger/test.ledger bal Expenses -p 'last month'")
-	 (#("unmatched" 0 1
-		(idx 7))
-	  "ledger [[ledger-mode-flags]] -f /Users/pmeredit/ledger/test.ledger reg -p 'until 5 days ago' Liabilities and not %matched and not %copied --uncleared")
-	 (#("budget" 0 1
-		(idx 2))
-	  "ledger [[ledger-mode-flags]] -f /Users/pmeredit/ledger/test.ledger bal not equity and not income and not expenses")
-	 (#("unknown" 0 1
-		(idx 6))
-	  "ledger [[ledger-mode-flags]] -f /Users/pmeredit/ledger/test.ledger reg Unknown")
-	 (#("reg" 0 1
-		(idx 5))
-	  "%(binary) -f %(ledger-file) reg")
-	 (#("payee" 0 1
-		(idx 4))
-	  "%(binary) -f %(ledger-file) reg @%(payee)")
-	 (#("account" 0 1
-		(idx 0))
-	  "%(binary) -f %(ledger-file) reg %(account)"))))
  '(package-selected-packages
    (quote
-	(forge key-chord crux ryo-modal perspective company-restclient restclient yaml-mode git-timemachine dumb-jump smart-jump toml-mode cargo cargo-mode persp-mode tablist elfeed mu4e-alert rust-mode gotest worf ledger-mode smartparens git-gutter-fringe hydra go-eldoc company epresent evil-magit diff-hl badger-theme counsel-projectile projectile cider clojure-mode syndicate evil-surround go-mode eyebrowse magit which-key general use-package)))
+	(forge key-chord crux ryo-modal perspective company-restclient restclient yaml-mode git-timemachine dumb-jump smart-jump toml-mode cargo cargo-mode persp-mode tablist elfeed mu4e-alert rust-mode gotest worf smartparens git-gutter-fringe hydra go-eldoc company epresent evil-magit diff-hl badger-theme counsel-projectile projectile cider clojure-mode syndicate evil-surround go-mode eyebrowse magit which-key general use-package)))
  '(safe-local-variable-values
    (quote
 	((rpc/compile/build-command . "cd $(git rev-parse --show-toplevel) && go install cmd/mongosqld/mongosqld.go")
