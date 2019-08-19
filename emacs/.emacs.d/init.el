@@ -149,6 +149,11 @@
    "oh" 'rpc/org-narrow-to-headline
    "os" 'org-save-all-org-buffers
 
+   ;; neotree
+   "n" '(:ignore t :which-key "neotree")
+   "ns" 'neotree-show
+   "nh" 'neotree-hide
+
    ;; window
    "w" '(:ignore t :which-key "window")
    "wd" 'evil-window-delete
@@ -156,6 +161,8 @@
    "wk" 'evil-window-up
    "wj" 'evil-window-down
    "wh" 'evil-window-left
+   "w\\" 'evil-window-vsplit
+   "w=" 'evil-window-split
    "ww" 'eyebrowse-next-window-config
    "wW" 'eyebrowse-create-window-config
    "wR" 'eyebrowse-rename-window-config
@@ -542,7 +549,7 @@
  '(ivy-mode t)
  '(package-selected-packages
    (quote
-	(forge key-chord crux ryo-modal perspective company-restclient restclient yaml-mode git-timemachine dumb-jump smart-jump toml-mode cargo cargo-mode persp-mode tablist elfeed mu4e-alert rust-mode gotest worf smartparens git-gutter-fringe hydra go-eldoc company epresent evil-magit diff-hl badger-theme counsel-projectile projectile cider clojure-mode syndicate evil-surround go-mode eyebrowse magit which-key general use-package)))
+	(python rustic rust-playground flycheck-ocaml flycheck-rust demangle-mode clippy clang-format+ neotree caml forge key-chord crux ryo-modal perspective company-restclient restclient yaml-mode git-timemachine dumb-jump smart-jump toml-mode cargo cargo-mode persp-mode tablist elfeed mu4e-alert rust-mode gotest worf smartparens git-gutter-fringe hydra go-eldoc company epresent evil-magit diff-hl badger-theme counsel-projectile projectile cider clojure-mode syndicate evil-surround go-mode eyebrowse magit which-key general use-package)))
  '(safe-local-variable-values
    (quote
 	((rpc/compile/build-command . "cd $(git rev-parse --show-toplevel) && go install cmd/mongosqld/mongosqld.go")
