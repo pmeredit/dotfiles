@@ -19,6 +19,7 @@
 (setq default-fill-column 80)		; toggle wrapping text at the 80th character
 (setq initial-scratch-message "Welcome to Emacs") ; print a default message in the empty scratch buffer opened at startup
 (setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3")
+(setq dumb-jump-force-searcher 'rg)
 
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
@@ -78,10 +79,29 @@
 (setq-default whitespace-style '(face spaces tabs tab-mark trailing))
 (global-whitespace-mode)
 
-(setenv "PATH" (concat (getenv "PATH") ":/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/Users/pmeredit/Go/bin:/Users/pmeredit/.cargo/bin:/Library/TeX/texbin"))
-(setenv "GOPATH" "/Users/pmeredit/Go")
-(setenv "PKG_CONFIG_PATH" (concat (getenv "PKG_CONFIG_PATH") "/usr/local/Cellar/openssl/1.0.2n/lib/pkgconfig"))
-(setq exec-path (append exec-path '("/usr/local/bin" "/usr/sbin" "/usr/bin" "/sbin" "/Users/pmeredit/Go/bin" "/Users/pmeredit/.cargo/bin" "/Library/TeX/texbin")))
+(cond
+   ((string-equal system-type "darwin")
+	  (progn
+		  (setenv "PATH" (concat (getenv "PATH")
+							   ":/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/Users/pmeredit/Go/bin:/Users/pmeredit/.cargo/bin:/Library/TeX/texbin"))
+          (setenv "GOPATH" "/Users/pmeredit/Go")
+	      (setenv "PKG_CONFIG_PATH" (concat (getenv "PKG_CONFIG_PATH") "/usr/local/Cellar/openssl/1.0.2n/lib/pkgconfig"))
+		  (setq exec-path (append exec-path '(
+											  "/usr/local/bin" "/usr/sbin" "/usr/bin" "/sbin"
+											  "/Users/pmeredit/Go/bin" "/Users/pmeredit/.cargo/bin" "/Library/TeX/texbin")))
+		  )
+	  )
+   ((string-equal system-type "gnu/linux")
+	  (progn
+		  (setenv "PATH" (concat (getenv "PATH")
+							   ":/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/home/pmeredit/Go/bin:/home/pmeredit/.cargo/bin"))
+	      (setenv "GOPATH" "/home/pmeredit/Go")
+		  (setq exec-path (append exec-path '(
+											  "/usr/local/bin" "/usr/sbin" "/usr/bin" "/sbin"
+											  "/home/pmeredit/Go/bin" "/home/pmeredit/.cargo/bin" "/Library/TeX/texbin")))
+		)
+	)
+)
 
 (add-to-list 'load-path "~/.emacs.d/lisp/")
 
@@ -122,6 +142,12 @@
    "b" '(:ignore t :which-key "file")
    "bb" 'counsel-ibuffer
    "bd" 'evil-delete-buffer
+
+   ;; dumb-jump
+   "j" '(:ignore t :which-key "dumb-jump")
+   "jj" 'dumb-jump-go-current-window
+   "jb" 'dumb-jump-back
+   "jo" 'dumb-jump-go-other-window
 
    ;; git
    "g" '(:ignore t :which-key "git")
