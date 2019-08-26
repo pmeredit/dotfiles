@@ -54,16 +54,6 @@
   :lighter plaint
   plaint-download-mode-map)
 
-(defun zoom-frame-monitor ()
- "Zoom the current frame to an appropriate size for my thinkvision monitor."
- (interactive)
- (set-face-attribute 'default (selected-frame) :height 170))
-
-(defun zoom-frame-laptop ()
- "Zoom the current frame to an appropriate size for my laptop screen."
- (interactive)
- (set-face-attribute 'default (selected-frame) :height 110))
-
 (defun zoom-frame-in ()
  "Zoom in the current frame."
  (interactive)
@@ -89,6 +79,15 @@
 		  (setq exec-path (append exec-path '(
 											  "/usr/local/bin" "/usr/sbin" "/usr/bin" "/sbin"
 											  "/Users/pmeredit/Go/bin" "/Users/pmeredit/.cargo/bin" "/Library/TeX/texbin")))
+		  (defun zoom-frame-monitor ()
+			 "Zoom the current frame to an appropriate size for my thinkvision monitor."
+ 			 (interactive)
+ 			 (set-face-attribute 'default (selected-frame) :height 230))
+
+		  (defun zoom-frame-laptop ()
+ 			 "Zoom the current frame to an appropriate size for my laptop screen."
+ 			 (interactive)
+ 			 (set-face-attribute 'default (selected-frame) :height 110))
 		  )
 	  )
    ((string-equal system-type "gnu/linux")
@@ -99,6 +98,16 @@
 		  (setq exec-path (append exec-path '(
 											  "/usr/local/bin" "/usr/sbin" "/usr/bin" "/sbin"
 											  "/home/pmeredit/Go/bin" "/home/pmeredit/.cargo/bin" "/Library/TeX/texbin")))
+
+		  (defun zoom-frame-monitor ()
+			 "Zoom the current frame to an appropriate size for my thinkvision monitor."
+ 			 (interactive)
+ 			 (set-face-attribute 'default (selected-frame) :height 170))
+
+		  (defun zoom-frame-laptop ()
+ 			 "Zoom the current frame to an appropriate size for my laptop screen."
+ 			 (interactive)
+ 			 (set-face-attribute 'default (selected-frame) :height 110))
 		)
 	)
 )
