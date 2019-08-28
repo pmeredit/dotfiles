@@ -4,7 +4,6 @@
 ;; You may delete these explanatory comments.
 (package-initialize)
 
-(setq mac-command-modifier 'control)
 (setq delete-old-versions -1 )		; delete excess backup versions silently
 (setq version-control t )		; use version control
 (setq vc-make-backup-files t )		; make backups file even when in version controlled dir
@@ -16,10 +15,9 @@
 (setq coding-system-for-read 'utf-8)	; use utf-8 by default
 (setq coding-system-for-write 'utf-8)
 (setq sentence-end-double-space nil)	; sentence SHOULD end with only a point.
-(setq default-fill-column 80)		; toggle wrapping text at the 80th character
+(setq default-fill-column 110)		; toggle wrapping text at the 80th character
 (setq initial-scratch-message "Welcome to Emacs") ; print a default message in the empty scratch buffer opened at startup
 (setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3")
-(setq dumb-jump-force-searcher 'rg)
 
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
@@ -79,6 +77,8 @@
 		  (setq exec-path (append exec-path '(
 											  "/usr/local/bin" "/usr/sbin" "/usr/bin" "/sbin"
 											  "/Users/pmeredit/Go/bin" "/Users/pmeredit/.cargo/bin" "/Library/TeX/texbin")))
+
+		  (setq mac-command-modifier 'control)
 		  (defun zoom-frame-monitor ()
 			 "Zoom the current frame to an appropriate size for my thinkvision monitor."
  			 (interactive)
@@ -430,18 +430,21 @@
   :ensure t
   :config
   (global-company-mode 1)
+  (setq company-tooltip-align-annotations t)
+  (setq company-minimum-prefix-length 1)
   (setq-default company-echo-delay 0)
   (setq-default company-idle-delay 0.1)
   (setq-default company-auto-complete 'company-explicit-action-p)
   (setq-default company-minimum-prefix-length 2)
   (setq-default company-dabbrev-downcase nil)
-  (define-key company-active-map (kbd "<tab>") 'company-select-next-if-tooltip-visible-or-complete-selection)
+  (define-key company-active-map (kbd "<tab>") 'company-indent-or-complete-common)
   (define-key company-active-map (kbd "S-<tab>") 'company-select-previous-or-abort)
   )
 
 (use-package flycheck
   :ensure t
   :init (global-flycheck-mode)
+  :hook (prog-mode . flycheck-mode)
   :config
   (setq flycheck-indication-mode 'right-fringe)
   (fringe-helper-define 'flycheck-fringe-bitmap-double-arrow 'center
@@ -517,62 +520,75 @@
 
   )
 
-(use-package smartparens
+(use-package lsp-mode
+  :hook (XXX-mode . lsp)
+  :commands lsp)
+
+(use-package company-lsp
+  :ensure t
+  )
+
+(use-package lsp-ui
   :ensure t
   :config
-  (require 'smartparens-config)
-  (smartparens-global-mode)
-  (show-smartparens-global-mode))
+  (add-hook 'lsp-mode-hook 'lsp-ui-mode)
+  )
 
 (use-package js2-mode
   :ensure t)
 
+(use-package toml-mode
+  :ensure t)
+
 (use-package rust-mode
   :ensure t
+  :hook (rust-mode . lsp)
   :config
-  (setq rust-rustfmt-bin "~/.rustup/toolchains/nightly-x86_64-apple-darwin/bin/rustfmt")
+  (cond
+   ((string-equal system-type "darwin")
+	(progn
+	    (setq rust-rustfmt-bin "~/.rustup/toolchains/nightly-x86_64-apple-darwin/bin/rustfmt")
+	  ))
+   ((string-equal system-type "gnu/linux")
+	(progn
+	    (setq rust-rustfmt-bin "~/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/rustfmt")
+	  ))
+   )
   (setq rust-format-on-save t)
 
   (use-package cargo
-	:ensure t)
+	:ensure t
+	:hook (rust-mode . cargo-minor-mode)
+	)
 
   (use-package racer
 	:ensure t
 	:config
 	(add-hook 'rust-mode-hook #'racer-mode)
 	(add-hook 'racer-mode-hook #'eldoc-mode))
-  )
+)
 
 (use-package yaml-mode
-  :ensure t)
+	:ensure t)
 
 (use-package toml-mode
-  :ensure t)
-
-(use-package smart-jump
-  :ensure t
-  :config
-  (global-set-key (kbd "C-j") 'smart-jump-go)
-
-  (require 'smart-jump-go-mode)
-  (smart-jump-go-mode-register)
-  (define-key go-mode-map (kbd "C-c C-j") nil)
-
-  (require 'smart-jump-elisp-mode)
-  (smart-jump-elisp-mode-register)
-
-  (require 'smart-jump-rust-mode)
-  (smart-jump-rust-mode-register)
-  )
+	:ensure t)
 
 (use-package restclient
-  :ensure t
-  :config
+	:ensure t
+	:config
 
-  (use-package company-restclient
+(use-package company-restclient
 	:ensure t
 	:config
 	(add-to-list 'company-backends 'company-restclient))
+)
+
+
+(use-package dumb-jump
+  :ensure t
+  :config
+  (setq dumb-jump-force-searcher 'rg)
   )
 
 (custom-set-variables
@@ -584,7 +600,7 @@
  '(ivy-mode t)
  '(package-selected-packages
    (quote
-	(python rustic rust-playground flycheck-ocaml flycheck-rust demangle-mode clippy clang-format+ neotree caml forge key-chord crux ryo-modal perspective company-restclient restclient yaml-mode git-timemachine dumb-jump smart-jump toml-mode cargo cargo-mode persp-mode tablist elfeed mu4e-alert rust-mode gotest worf smartparens git-gutter-fringe hydra go-eldoc company epresent evil-magit diff-hl badger-theme counsel-projectile projectile cider clojure-mode syndicate evil-surround go-mode eyebrowse magit which-key general use-package)))
+	(eglot python rustic rust-playground flycheck-ocaml flycheck-rust demangle-mode clippy clang-format+ neotree caml forge key-chord crux ryo-modal perspective company-restclient restclient yaml-mode git-timemachine dumb-jump toml-mode cargo cargo-mode persp-mode tablist elfeed mu4e-alert rust-mode gotest worf smartparens git-gutter-fringe hydra go-eldoc company epresent evil-magit diff-hl badger-theme counsel-projectile projectile cider clojure-mode syndicate evil-surround go-mode eyebrowse magit which-key general use-package)))
  '(safe-local-variable-values
    (quote
 	((rpc/compile/build-command . "cd $(git rev-parse --show-toplevel) && go install cmd/mongosqld/mongosqld.go")
@@ -600,7 +616,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:inherit nil :stipple nil :background "#1c1c1c" :foreground "#f6f3e8" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 100 :width normal :foundry "nil" :family "Source Code Pro"))))
+ '(default ((t (:inherit nil :stipple nil :background "#1c1c1c" :foreground "#f6f3e8" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 150 :width normal :foundry "nil" :family "Source Code Pro"))))
  '(fringe ((t (:background "#151515"))))
  '(hl-line ((t (:foreground nil :underline nil))))
  '(linum ((t (:inherit (shadow default) :background "#151515"))))
