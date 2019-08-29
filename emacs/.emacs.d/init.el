@@ -202,11 +202,7 @@
    "w <left>" 'evil-window-left
    "w\\" 'evil-window-vsplit
    "w=" 'evil-window-split
-   "ww" 'eyebrowse-next-window-config
-   "wW" 'eyebrowse-create-window-config
-   "wR" 'eyebrowse-rename-window-config
-   "wD" 'eyebrowse-close-window-config
-   "wf" 'eyebrowse-switch-to-window-config
+   "ww" 'other-frame
 
    ;; dired
    "d" '(:ignore t :which-key "dired")
