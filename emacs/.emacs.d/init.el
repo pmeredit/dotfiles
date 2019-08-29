@@ -173,6 +173,10 @@
    "en" 'next-error
    "ep" 'previous-error
 
+   ;; lisp
+   "l" '(:ignore t :which-key "lisp")
+   "le" 'eval-last-sexp
+
    ;; org
    "o" '(:ignore t :which-key "org")
    "oa" 'org-agenda
@@ -334,29 +338,7 @@
   (eyebrowse-mode t))
 
 (use-package go-mode
-  :ensure t
-  :config
-  (add-hook 'before-save-hook 'gofmt-before-save)
-  (setq-default gofmt-command "goimports")
-
-  (use-package company-go
-    :ensure t
-    :config
-    (add-hook 'go-mode-hook
-		(lambda ()
-		(set (make-local-variable 'company-backends) '(company-go))
-		(company-mode 1)))
-    )
-
-  (use-package go-eldoc
-    :ensure t
-    :config
-    (add-hook 'go-mode-hook 'go-eldoc-setup)
-    )
-
-  (use-package go-dlv
-	:ensure t)
-  )
+  :ensure t)
 
 (defun rpc/compile-quit-windows ()
   (interactive)
@@ -430,14 +412,12 @@
   :ensure t
   :config
   (global-company-mode 1)
-  (setq company-tooltip-align-annotations t)
-  (setq company-minimum-prefix-length 1)
   (setq-default company-echo-delay 0)
   (setq-default company-idle-delay 0.1)
   (setq-default company-auto-complete 'company-explicit-action-p)
   (setq-default company-minimum-prefix-length 2)
   (setq-default company-dabbrev-downcase nil)
-  (define-key company-active-map (kbd "<tab>") 'company-indent-or-complete-common)
+  (define-key company-active-map (kbd "<tab>") 'company-select-next-if-tooltip-visible-or-complete-selection)
   (define-key company-active-map (kbd "S-<tab>") 'company-select-previous-or-abort)
   )
 
@@ -521,8 +501,13 @@
   )
 
 (use-package lsp-mode
-  :hook (XXX-mode . lsp)
-  :commands lsp)
+  :ensure t
+  :commands lsp
+  :hook ((go-mode . lsp)
+		 (lsp-mode .lsp-ui)
+		 (before-save . lsp-format-buffer))
+  :custom
+  (lsp-ui-peek-enable nil))
 
 (use-package company-lsp
   :ensure t
@@ -584,6 +569,9 @@
 	(add-to-list 'company-backends 'company-restclient))
 )
 
+(use-package yasnippet
+  :ensure t
+  )
 
 (use-package dumb-jump
   :ensure t
@@ -598,9 +586,10 @@
  ;; If there is more than one, they won't work right.
  '(column-number-mode t)
  '(ivy-mode t)
+ '(lsp-ui-peek-enable nil)
  '(package-selected-packages
    (quote
-	(company-lsp lsp-ui eglot python rustic rust-playground flycheck-ocaml flycheck-rust demangle-mode clippy clang-format+ neotree caml forge key-chord crux ryo-modal perspective company-restclient restclient yaml-mode git-timemachine dumb-jump toml-mode cargo cargo-mode persp-mode tablist elfeed mu4e-alert rust-mode gotest worf smartparens git-gutter-fringe hydra go-eldoc company epresent evil-magit diff-hl badger-theme counsel-projectile projectile cider clojure-mode syndicate evil-surround go-mode eyebrowse magit which-key general use-package)))
+	(yasnippet company-lsp lsp-ui eglot python rustic rust-playground flycheck-ocaml flycheck-rust demangle-mode clippy clang-format+ neotree caml forge key-chord crux ryo-modal perspective company-restclient restclient yaml-mode git-timemachine dumb-jump toml-mode cargo cargo-mode persp-mode tablist elfeed mu4e-alert rust-mode gotest worf smartparens git-gutter-fringe hydra go-eldoc company epresent evil-magit diff-hl badger-theme counsel-projectile projectile cider clojure-mode syndicate evil-surround go-mode eyebrowse magit which-key general use-package)))
  '(safe-local-variable-values
    (quote
 	((rpc/compile/build-command . "cd $(git rev-parse --show-toplevel) && go install cmd/mongosqld/mongosqld.go")
@@ -616,7 +605,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:inherit nil :stipple nil :background "#1c1c1c" :foreground "#f6f3e8" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 150 :width normal :foundry "nil" :family "Source Code Pro"))))
+ '(default ((t (:inherit nil :stipple nil :background "#1c1c1c" :foreground "#f6f3e8" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 190 :width normal :foundry "nil" :family "Source Code Pro"))))
  '(fringe ((t (:background "#151515"))))
  '(hl-line ((t (:foreground nil :underline nil))))
  '(linum ((t (:inherit (shadow default) :background "#151515"))))
