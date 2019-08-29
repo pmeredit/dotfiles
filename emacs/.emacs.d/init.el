@@ -193,9 +193,13 @@
    "w" '(:ignore t :which-key "window")
    "wd" 'evil-window-delete
    "wl" 'evil-window-right
+   "w <right>" 'evil-window-right
    "wk" 'evil-window-up
+   "w <up>" 'evil-window-up
    "wj" 'evil-window-down
+   "w <down>" 'evil-window-down
    "wh" 'evil-window-left
+   "w <left>" 'evil-window-left
    "w\\" 'evil-window-vsplit
    "w=" 'evil-window-split
    "ww" 'eyebrowse-next-window-config
@@ -600,7 +604,7 @@
  '(ivy-mode t)
  '(package-selected-packages
    (quote
-	(eglot python rustic rust-playground flycheck-ocaml flycheck-rust demangle-mode clippy clang-format+ neotree caml forge key-chord crux ryo-modal perspective company-restclient restclient yaml-mode git-timemachine dumb-jump toml-mode cargo cargo-mode persp-mode tablist elfeed mu4e-alert rust-mode gotest worf smartparens git-gutter-fringe hydra go-eldoc company epresent evil-magit diff-hl badger-theme counsel-projectile projectile cider clojure-mode syndicate evil-surround go-mode eyebrowse magit which-key general use-package)))
+	(company-lsp lsp-ui eglot python rustic rust-playground flycheck-ocaml flycheck-rust demangle-mode clippy clang-format+ neotree caml forge key-chord crux ryo-modal perspective company-restclient restclient yaml-mode git-timemachine dumb-jump toml-mode cargo cargo-mode persp-mode tablist elfeed mu4e-alert rust-mode gotest worf smartparens git-gutter-fringe hydra go-eldoc company epresent evil-magit diff-hl badger-theme counsel-projectile projectile cider clojure-mode syndicate evil-surround go-mode eyebrowse magit which-key general use-package)))
  '(safe-local-variable-values
    (quote
 	((rpc/compile/build-command . "cd $(git rev-parse --show-toplevel) && go install cmd/mongosqld/mongosqld.go")
@@ -616,7 +620,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:inherit nil :stipple nil :background "#1c1c1c" :foreground "#f6f3e8" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 150 :width normal :foundry "nil" :family "Source Code Pro"))))
+ '(default ((t (:inherit nil :stipple nil :background "#1c1c1c" :foreground "#f6f3e8" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 100 :width normal :foundry "nil" :family "Source Code Pro"))))
  '(fringe ((t (:background "#151515"))))
  '(hl-line ((t (:foreground nil :underline nil))))
  '(linum ((t (:inherit (shadow default) :background "#151515"))))
