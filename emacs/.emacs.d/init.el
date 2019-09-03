@@ -19,6 +19,13 @@
 (setq initial-scratch-message "Welcome to Emacs") ; print a default message in the empty scratch buffer opened at startup
 (setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3")
 
+;; scroll one line at a time (less "jumpy" than defaults)
+(setq mouse-wheel-scroll-amount '(1 ((shift) . 1))) ;; one line at a time
+(setq mouse-wheel-progressive-speed nil) ;; don't accelerate scrolling
+(setq mouse-wheel-follow-mouse 't) ;; scroll window under mouse
+(setq scroll-step 1
+      scroll-conservatively 10000) ;; keyboard scroll one line at a time
+
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
 (add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/") t)
@@ -152,13 +159,13 @@
    "bb" 'counsel-ibuffer
    "bd" 'evil-delete-buffer
 
-   ;; dumb-jump
-   "j" '(:ignore t :which-key "dumb-jump")
-   "jj" 'dumb-jump-go-current-window
-   "jb" 'dumb-jump-back
-   "jo" 'dumb-jump-go-other-window
+   ;; jumping
+   "j" '(:ignore t :which-key "xref")
+   "jj" 'xref-find-definitions
+   "jd" 'xref-find-definitions-other-window
+   "ju" 'xref-find-references
 
-   ;; git
+     ;; git
    "g" '(:ignore t :which-key "git")
    "gs" 'magit-status
    "gf" 'magit-file-popup
@@ -504,7 +511,7 @@
   :ensure t
   :commands lsp
   :hook ((go-mode . lsp)
-		 (lsp-mode .lsp-ui)
+		 (lsp-mode . lsp-ui)
 		 (before-save . lsp-format-buffer))
   :custom
   (lsp-ui-peek-enable nil)
@@ -584,12 +591,6 @@
   :ensure t
   )
 
-(use-package dumb-jump
-  :ensure t
-  :config
-  (setq dumb-jump-force-searcher 'rg)
-  )
-
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -600,7 +601,7 @@
  '(lsp-ui-peek-enable nil)
  '(package-selected-packages
    (quote
-	(lsp-python-ms python-mode imenus yasnippet company-lsp lsp-ui eglot rust-playground flycheck-ocaml flycheck-rust demangle-mode clippy clang-format+ neotree caml forge key-chord crux ryo-modal perspective company-restclient restclient yaml-mode git-timemachine dumb-jump toml-mode cargo cargo-mode persp-mode tablist elfeed mu4e-alert rust-mode gotest worf smartparens git-gutter-fringe hydra go-eldoc company epresent evil-magit diff-hl badger-theme counsel-projectile projectile cider clojure-mode syndicate evil-surround go-mode eyebrowse magit which-key general use-package)))
+	(lsp-python-ms python-mode imenus yasnippet company-lsp lsp-ui eglot rust-playground flycheck-ocaml flycheck-rust demangle-mode clippy clang-format+ neotree caml forge key-chord crux ryo-modal perspective company-restclient restclient yaml-mode git-timemachine toml-mode cargo cargo-mode persp-mode tablist elfeed mu4e-alert rust-mode gotest worf smartparens git-gutter-fringe hydra go-eldoc company epresent evil-magit diff-hl badger-theme counsel-projectile projectile cider clojure-mode syndicate evil-surround go-mode eyebrowse magit which-key general use-package)))
  '(safe-local-variable-values
    (quote
 	((rpc/compile/build-command . "cd $(git rev-parse --show-toplevel) && go install cmd/mongosqld/mongosqld.go")
