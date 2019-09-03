@@ -511,25 +511,13 @@
   :ensure t
   :commands lsp
   :hook ((go-mode . lsp)
-		 (lsp-mode . lsp-ui)
 		 (before-save . lsp-format-buffer))
-  :custom
-  (lsp-ui-peek-enable nil)
-  :config
-  (require 'lsp-ui)
-  (add-hook 'lsp-after-open-hook 'lsp-ui-imenu-enable)
   )
 
 (use-package company-lsp
   :ensure t
   :config
   (push 'company-lsp company-backends)
-  )
-
-(use-package lsp-ui
-  :ensure t
-  :config
-  (add-hook 'lsp-mode-hook 'lsp-ui-mode)
   )
 
 (use-package js2-mode
@@ -601,7 +589,7 @@
  '(lsp-ui-peek-enable nil)
  '(package-selected-packages
    (quote
-	(lsp-python-ms python-mode imenus yasnippet company-lsp lsp-ui eglot rust-playground flycheck-ocaml flycheck-rust demangle-mode clippy clang-format+ neotree caml forge key-chord crux ryo-modal perspective company-restclient restclient yaml-mode git-timemachine toml-mode cargo cargo-mode persp-mode tablist elfeed mu4e-alert rust-mode gotest worf smartparens git-gutter-fringe hydra go-eldoc company epresent evil-magit diff-hl badger-theme counsel-projectile projectile cider clojure-mode syndicate evil-surround go-mode eyebrowse magit which-key general use-package)))
+	(lsp-python-ms python-mode imenus yasnippet company-lsp eglot rust-playground flycheck-ocaml flycheck-rust demangle-mode clippy clang-format+ neotree caml forge key-chord crux ryo-modal perspective company-restclient restclient yaml-mode git-timemachine toml-mode cargo cargo-mode persp-mode tablist elfeed mu4e-alert rust-mode gotest worf smartparens git-gutter-fringe hydra go-eldoc company epresent evil-magit diff-hl badger-theme counsel-projectile projectile cider clojure-mode syndicate evil-surround go-mode eyebrowse magit which-key general use-package)))
  '(safe-local-variable-values
    (quote
 	((rpc/compile/build-command . "cd $(git rev-parse --show-toplevel) && go install cmd/mongosqld/mongosqld.go")
