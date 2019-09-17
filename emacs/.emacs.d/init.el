@@ -45,20 +45,6 @@
 (setq-default truncate-lines 0)
 (setq-default help-window-select t)
 
-(defvar plaint-download-mode-map (make-sparse-keymap)
-  "Keymap for plaint-download-mode.")
-
-(defun plaint-download-quit ()
-  (interactive)
-  (when (equal "*plaint-download*" (buffer-name))
-	(kill-buffer)))
-
-(define-minor-mode plaint-download-mode
-  "A minor mode for the *plaint-download* buffer."
-  nil
-  :lighter plaint
-  plaint-download-mode-map)
-
 (defun zoom-frame-in ()
  "Zoom in the current frame."
  (interactive)
@@ -125,9 +111,6 @@
 (load-theme 'umber t)
 
 (require 'use-package)
-
-(use-package swiper
-  :ensure t)
 
 (use-package counsel
   :ensure t)
@@ -279,8 +262,8 @@
   (define-key evil-visual-state-map (kbd ">") 'rpc/evil-shift-right-visual)
   (define-key evil-visual-state-map (kbd "<") 'rpc/evil-shift-left-visual)
 
-  (define-key evil-normal-state-map (kbd "/") 'swiper)
-  (define-key evil-normal-state-map (kbd "?") 'swiper)
+  (define-key evil-normal-state-map (kbd "/") 'evil-search-forward)
+  (define-key evil-normal-state-map (kbd "?") 'evil-search-backward)
 
   (defun rpc/evil-shift-right-visual ()
 	(interactive)
@@ -333,7 +316,7 @@
   )
 
 (use-package org
-  :ensure t)
+  :defer t)
 
 (use-package eyebrowse
   :ensure t
@@ -345,7 +328,7 @@
   (eyebrowse-mode t))
 
 (use-package go-mode
-  :ensure t)
+  :defer t)
 
 (defun rpc/compile-quit-windows ()
   (interactive)
@@ -521,13 +504,13 @@
   )
 
 (use-package js2-mode
-  :ensure t)
+  :defer t)
 
 (use-package toml-mode
-  :ensure t)
+  :defer t)
 
 (use-package rust-mode
-  :ensure t
+  :defer t
   :hook (rust-mode . lsp)
   :config
   (cond
@@ -555,15 +538,12 @@
 )
 
 (use-package python-mode
-  :ensure t
+  :defer t
   :hook (python-mode . lsp)
 )
 
 (use-package yaml-mode
-	:ensure t)
-
-(use-package toml-mode
-	:ensure t)
+	:defer t)
 
 (use-package restclient
 	:ensure t
@@ -588,7 +568,7 @@
  '(ivy-mode t)
  '(package-selected-packages
    (quote
-	(lsp-python-ms python-mode imenus yasnippet company-lsp eglot rust-playground flycheck-ocaml flycheck-rust demangle-mode clippy clang-format+ neotree caml forge key-chord crux ryo-modal perspective company-restclient restclient yaml-mode git-timemachine toml-mode cargo cargo-mode persp-mode tablist elfeed mu4e-alert rust-mode gotest worf smartparens git-gutter-fringe hydra go-eldoc company epresent evil-magit diff-hl badger-theme counsel-projectile projectile cider clojure-mode syndicate evil-surround go-mode eyebrowse magit which-key general use-package)))
+	(counsel lsp-python-ms python-mode imenus yasnippet company-lsp eglot rust-playground flycheck-ocaml flycheck-rust demangle-mode clippy clang-format+ neotree caml forge key-chord crux ryo-modal perspective company-restclient restclient yaml-mode git-timemachine toml-mode cargo cargo-mode persp-mode tablist elfeed mu4e-alert rust-mode gotest worf smartparens git-gutter-fringe hydra go-eldoc company epresent evil-magit diff-hl badger-theme counsel-projectile projectile cider clojure-mode syndicate evil-surround go-mode eyebrowse magit which-key general use-package)))
  '(safe-local-variable-values
    (quote
 	((rpc/compile/build-command . "cd $(git rev-parse --show-toplevel) && go install cmd/mongosqld/mongosqld.go")
