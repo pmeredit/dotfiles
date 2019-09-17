@@ -80,7 +80,7 @@
 		  (defun zoom-frame-laptop ()
  			 "Zoom the current frame to an appropriate size for my laptop screen."
  			 (interactive)
- 			 (set-face-attribute 'default (selected-frame) :height 110))
+ 			 (set-face-attribute 'default (selected-frame) :height 210))
 		  )
 	  )
    ((string-equal system-type "gnu/linux")
@@ -166,6 +166,7 @@
    ;; lisp
    "l" '(:ignore t :which-key "lisp")
    "le" 'eval-last-sexp
+   "lp" 'list-packages
 
    ;; org
    "o" '(:ignore t :which-key "org")
@@ -262,8 +263,13 @@
   (define-key evil-visual-state-map (kbd ">") 'rpc/evil-shift-right-visual)
   (define-key evil-visual-state-map (kbd "<") 'rpc/evil-shift-left-visual)
 
+  (define-key evil-emacs-state-map (kbd "/") 'evil-search-forward)
+  (define-key evil-emacs-state-map (kbd "?") 'evil-search-backward)
   (define-key evil-normal-state-map (kbd "/") 'evil-search-forward)
   (define-key evil-normal-state-map (kbd "?") 'evil-search-backward)
+
+  (define-key evil-emacs-state-map (kbd "n") 'evil-search-next)
+  (define-key evil-emacs-state-map (kbd "N") 'evil-search-previous)
 
   (defun rpc/evil-shift-right-visual ()
 	(interactive)
@@ -568,7 +574,7 @@
  '(ivy-mode t)
  '(package-selected-packages
    (quote
-	(counsel lsp-python-ms python-mode imenus yasnippet company-lsp eglot rust-playground flycheck-ocaml flycheck-rust demangle-mode clippy clang-format+ neotree caml forge key-chord crux ryo-modal perspective company-restclient restclient yaml-mode git-timemachine toml-mode cargo cargo-mode persp-mode tablist elfeed mu4e-alert rust-mode gotest worf smartparens git-gutter-fringe hydra go-eldoc company epresent evil-magit diff-hl badger-theme counsel-projectile projectile cider clojure-mode syndicate evil-surround go-mode eyebrowse magit which-key general use-package)))
+	(flappymacs counsel lsp-python-ms python-mode imenus yasnippet company-lsp eglot rust-playground flycheck-ocaml flycheck-rust demangle-mode clippy clang-format+ neotree caml forge key-chord crux ryo-modal perspective company-restclient restclient yaml-mode git-timemachine toml-mode cargo cargo-mode persp-mode tablist elfeed mu4e-alert rust-mode gotest worf smartparens git-gutter-fringe hydra go-eldoc company epresent evil-magit diff-hl badger-theme counsel-projectile projectile cider clojure-mode syndicate evil-surround go-mode eyebrowse magit which-key general use-package)))
  '(safe-local-variable-values
    (quote
 	((rpc/compile/build-command . "cd $(git rev-parse --show-toplevel) && go install cmd/mongosqld/mongosqld.go")
