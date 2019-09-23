@@ -133,6 +133,7 @@
    ;; file
    "f" '(:ignore t :which-key "file")
    "fe" '(:ignore t :which-key "emacs")
+   "ff" 'find-file
    "fee" (lambda () "edit" (interactive) (find-file "~/.emacs.d/init.el"))
    "feo" (lambda () "edit" (interactive) (find-file "~/org/lisp/org.el"))
    "fer" (lambda () "reload" (interactive) (load-file user-init-file))
