@@ -6,7 +6,8 @@ end
 
 alias sshf="ssh patrick@10.1.22.71"
 
-set -gx PATH $HOME/.cargo/bin\
+set -gx PATH $PATH\
+	   $HOME/.cargo/bin\
        $HOME/Go/bin\
        $HOME/Tools\
        /usr/local/bin\

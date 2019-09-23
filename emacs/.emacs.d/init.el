@@ -64,12 +64,18 @@
    ((string-equal system-type "darwin")
 	  (progn
 		  (setenv "PATH" (concat (getenv "PATH")
-							   ":/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/Users/pmeredit/Go/bin:/Users/pmeredit/.cargo/bin:/Library/TeX/texbin"))
+								 ":/usr/local/bin:/usr/sbin:"
+								 "/usr/bin:/sbin:/Users/pmeredit/Go/bin:"
+								 "/Users/pmeredit/.cargo/bin:"
+								 "/usr/local/texlive/2019/bin/x86_64-darwin/"
+								 ))
           (setenv "GOPATH" "/Users/pmeredit/Go")
 	      (setenv "PKG_CONFIG_PATH" (concat (getenv "PKG_CONFIG_PATH") "/usr/local/Cellar/openssl/1.0.2n/lib/pkgconfig"))
 		  (setq exec-path (append exec-path '(
 											  "/usr/local/bin" "/usr/sbin" "/usr/bin" "/sbin"
-											  "/Users/pmeredit/Go/bin" "/Users/pmeredit/.cargo/bin" "/Library/TeX/texbin")))
+											  "/Users/pmeredit/Go/bin" "/Users/pmeredit/.cargo/bin"
+											  "/usr/local/texlive/2019/bin/x86_64-darwin/"
+											  )))
 
 		  (setq mac-command-modifier 'control)
 		  (defun zoom-frame-monitor ()
@@ -86,11 +92,15 @@
    ((string-equal system-type "gnu/linux")
 	  (progn
 		  (setenv "PATH" (concat (getenv "PATH")
-							   ":/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/home/pmeredit/Go/bin:/home/pmeredit/.cargo/bin"))
+								 ":/usr/local/bin:/usr/sbin:"
+								 "/usr/bin:/sbin:/home/pmeredit/Go/bin:"
+								 "/home/pmeredit/.cargo/bin"
+								 ))
 	      (setenv "GOPATH" "/home/pmeredit/Go")
 		  (setq exec-path (append exec-path '(
 											  "/usr/local/bin" "/usr/sbin" "/usr/bin" "/sbin"
-											  "/home/pmeredit/Go/bin" "/home/pmeredit/.cargo/bin" "/Library/TeX/texbin")))
+											  "/home/pmeredit/Go/bin" "/home/pmeredit/.cargo/bin"
+											  )))
 
 		  (defun zoom-frame-monitor ()
 			 "Zoom the current frame to an appropriate size for my thinkvision monitor."
@@ -552,6 +562,7 @@
 (use-package yaml-mode
 	:defer t)
 
+
 (use-package restclient
 	:ensure t
 	:config
@@ -575,7 +586,7 @@
  '(ivy-mode t)
  '(package-selected-packages
    (quote
-	(flappymacs counsel lsp-python-ms python-mode imenus yasnippet company-lsp eglot rust-playground flycheck-ocaml flycheck-rust demangle-mode clippy clang-format+ neotree caml forge key-chord crux ryo-modal perspective company-restclient restclient yaml-mode git-timemachine toml-mode cargo cargo-mode persp-mode tablist elfeed mu4e-alert rust-mode gotest worf smartparens git-gutter-fringe hydra go-eldoc company epresent evil-magit diff-hl badger-theme counsel-projectile projectile cider clojure-mode syndicate evil-surround go-mode eyebrowse magit which-key general use-package)))
+	(auctex latex-extra latex-math-preview company-math flappymacs counsel lsp-python-ms python-mode imenus yasnippet company-lsp eglot rust-playground flycheck-ocaml flycheck-rust demangle-mode clippy clang-format+ neotree caml forge key-chord crux ryo-modal perspective company-restclient restclient yaml-mode git-timemachine toml-mode cargo cargo-mode persp-mode tablist elfeed mu4e-alert rust-mode gotest worf smartparens git-gutter-fringe hydra go-eldoc company epresent evil-magit diff-hl badger-theme counsel-projectile projectile cider clojure-mode syndicate evil-surround go-mode eyebrowse magit which-key general use-package)))
  '(safe-local-variable-values
    (quote
 	((rpc/compile/build-command . "cd $(git rev-parse --show-toplevel) && go install cmd/mongosqld/mongosqld.go")
