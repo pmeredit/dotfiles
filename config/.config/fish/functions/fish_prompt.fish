@@ -16,9 +16,9 @@ function fish_prompt
     # display, then when you press enter.
     printf "\033[K"
 
-	printf "$c1"(prompt_pwd)
+	printf " $c1"(prompt_pwd)
 
     # Prompt on a new line
-    printf $c4
+    printf " $c4"
     printf " $ce⛧⛧⛧⛧ $c4> "
 end

@@ -1,15 +1,15 @@
 function _common_section
-    printf $c1
+    printf " $c1"
     printf "["
-    printf $argv[1]
-    printf $c0
+    printf " $argv[1]"
+    printf " $c0"
     printf ":"
-    printf $c2
-    printf $argv[2]
-    printf $argv[3]
-    printf $c1
+    printf " $c2"
+    printf " $argv[2]"
+    printf " $argv[3]"
+    printf " $c1"
     printf "]"
-    printf $c0
+    printf " $c0"
 end
 
 function section
