@@ -11,7 +11,6 @@ set viminfo='20,<1000,s1000
 set hlsearch
 set ruler
 set smartcase
-set inccommand=nosplit
 set maxmempattern=10000
 set noswapfile
 set tabstop=4
