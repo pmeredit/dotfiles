@@ -1,1 +1,1 @@
-/Users/pmeredit/.fzf/shell/key-bindings.fish
+/home/pmeredit/.fzf/shell/key-bindings.fish
