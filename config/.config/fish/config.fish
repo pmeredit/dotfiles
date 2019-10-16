@@ -16,7 +16,8 @@ set -gx PATH $PATH\
        /usr/sbin\
        /sbin\
        $HOME/.fzf/bin\
-	   $HOME/.local/bin
+	   $HOME/.local/bin\
+	   $HOME/dotfiles/bin
 
 if test -d /usr/local/Cellar/openssl/1.0.2n/lib/pkgconfig
 	set -gx PKG_CONFIG_PATH /usr/local/Cellar/openssl/1.0.2n/lib/pkgconfig
@@ -34,6 +35,7 @@ alias pinst 'pacaur -S --needed'
 alias prm 'pacaur -Rds'
 alias pup 'pacaur -Syu'
 alias psr 'pacaur -Ss'
+alias wtmux '$HOME/dotfiles/bin/tmux'
 
 function ccargo 
 	set -lx RUSTC_WRAPPER sccache
