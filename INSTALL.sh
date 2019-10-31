@@ -11,7 +11,7 @@ if [ ! hash stow &> /dev/null ]; then
 fi
 
 for i in $(ls | grep -v INSTALL.sh | grep -v INSTALL.fish | grep -v omf.fish | grep -v apt-cyg |
-	grep -v README.md | grep -v pipeformatter.py ); do
+	grep -v README.md | grep -v pipeformatter.py | grep -v bin | grep -v random); do
 	echo "stowing $i ..."
 	stow $i
 done
