@@ -1,24 +1,9 @@
-[user]
-	name  = Patrick Meredith
-	email = pmeredit@gmail.com
-[core]
-	editor = nvim
-
 [alias]
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --decorate
 
 #[url "ssh://git@github.com/"]
 #  insteadOf = https://github.com/
 
-[rerere]
-	enabled = 1
-	autoupdate = 1
-
-[web]
-	brower = google-chrome
-
-[diff]
-	tool = vimdiff
 
 [alias]
 	a = add
@@ -28,20 +13,45 @@
 	ci = commit
 	co = checkout
 	d  = describe
+
+[branch]
+  autosetupmerge = always
+  autosetuprebase = always
+
 [color]
 	branch = auto
 	diff = auto
 	status = auto
+
 [color "branch"]
 	current = yellow reverse
 	local = yellow
 	remote = green
+
 [color "diff"]
 	meta = yellow bold
 	frag = magenta bold
 	old = red bold
 	new = green bold
+
 [color "status"]
 	added = yellow
 	changed = green
 	untracked = cyan
+
+[core]
+	editor = nvim
+
+[diff]
+	tool = vimdiff
+
+[rerere]
+	enabled = 1
+	autoupdate = 1
+
+[user]
+	name  = Patrick Meredith
+	email = pmeredit@gmail.com
+
+[web]
+	brower = google-chrome
