@@ -5,7 +5,7 @@ endif
 syntax enable
 filetype plugin indent on
 
-set spell
+" set spell
 set number
 set viminfo='20,<1000,s1000
 set hlsearch
