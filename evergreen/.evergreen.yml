@@ -3,17 +3,23 @@ ui_server_host: https://evergreen.mongodb.com
 api_key: c04edb5c0b742522bd07e5a44f43683f
 user: patrick.meredith
 projects:
-- name: mongodb-mongo-master
-  alias: required
-  variants:
-  - enterprise-rhel-62-64-bit
-  - enterprise-rhel-62-64-bit-required-inmem
-  - enterprise-ubuntu1604-clang-3.8-libcxx
-  - enterprise-windows-64-2k8
-  - linux-64-debug
-  - rhel-62-64-bit-required-mobile
-  - ubuntu1604-debug-aubsan-lite
-  tasks:
-  - all
-- name: sqlproxy
-  default: true
+    - name: mongodb-mongo-master
+      alias: required
+      variants:
+        - enterprise-rhel-62-64-bit
+        - enterprise-rhel-62-64-bit-required-inmem
+        - enterprise-ubuntu1604-clang-3.8-libcxx
+        - enterprise-windows-64-2k8
+        - linux-64-debug
+        - rhel-62-64-bit-required-mobile
+        - ubuntu1604-debug-aubsan-lite
+      tasks:
+        - all
+      trigger_aliases: []
+    - name: sqlproxy
+      default: true
+      trigger_aliases: []
+disable_auto_defaulting: false
+projects_for_directory:
+    /home/pmeredit/git/mongosync: mongosync
+    /home/pmeredit/git/mongosync/mongosync/testing: mongosync

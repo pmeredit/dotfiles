@@ -1,5 +1,12 @@
 let g:netrw_dirhistmax  =10
 let g:netrw_dirhistcnt =3
-let g:netrw_dirhist_3='/home/pmeredit/.config/alacritty'
-let g:netrw_dirhist_2='/home/pmeredit/git/sqlproxy/schema/mapping'
-let g:netrw_dirhist_1='/home/pmeredit/git/sqlproxy/schema'
+let g:netrw_dirhist_3='/home/pmeredit/git/mongo'
+let g:netrw_dirhist_2='/home/pmeredit/git/mongosync/internal/mongosync/statistics'
+let g:netrw_dirhist_1='/home/pmeredit/git/mongosync/internal/mongosync/mocks'
+let g:netrw_dirhist_0='/home/pmeredit/git/mongosync/internal/logger'
+let g:netrw_dirhist_9='/home/pmeredit/git/mongosync'
+let g:netrw_dirhist_8='/home/pmeredit/git/mongosql-rs/mongosql/src/util'
+let g:netrw_dirhist_7='/home/pmeredit/git/mongosql-rs/mongosql/src/json_schema'
+let g:netrw_dirhist_6='/home/pmeredit/git/mongosql-rs/mongosql/src/schema'
+let g:netrw_dirhist_5='/home/pmeredit/git/mongosql-rs/mongosql/src/ast/rewrites'
+let g:netrw_dirhist_4='/home/pmeredit/git/mongo-jdbc-driver'

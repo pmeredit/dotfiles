@@ -1,0 +1,1 @@
+/home/pmeredit/.config/fisherman/nvm.fish/functions/nvm.fish

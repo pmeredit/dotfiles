@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =0
+let g:netrw_dirhist_0='/home/pmeredit/git/sqlproxy/schema/mapping/testdata/map-test/complex-conflicts'
+let g:netrw_dirhist_9='/home/pmeredit/git/sqlproxy/testdata/suites/tableau'
+let g:netrw_dirhist_8='/home/pmeredit/git/mongosql-rs/mongosql/src/schema'
+let g:netrw_dirhist_7='/home/pmeredit/git/mongosql-rs/mongosql/src/ir'
+let g:netrw_dirhist_6='/home/pmeredit/git/mongosql-rs'
+let g:netrw_dirhist_5='/home/pmeredit/git/mongosql-rs/visitgen/test'
+let g:netrw_dirhist_4='/home/pmeredit/git/sqlproxy/testdata/resources/gssapi'
+let g:netrw_dirhist_3='/home/pmeredit/git/mongosql-rs/go/mongosql'
+let g:netrw_dirhist_2='/home/pmeredit/git/mongosql-rs/mongosql-c'
+let g:netrw_dirhist_1='/home/pmeredit/git/mongosql-rs/tests/spec_tests/rewrite_tests'

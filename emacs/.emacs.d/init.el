@@ -526,33 +526,30 @@
 (use-package toml-mode
   :ensure t)
 
-(use-package rust-mode
-  :ensure t
-  :hook (rust-mode . lsp)
+(use-package rustic
+  :ensure
+  :bind (:map rustic-mode-map
+              ("M-j" . lsp-ui-imenu)
+              ("M-?" . lsp-find-references)
+              ("C-c C-c l" . flycheck-list-errors)
+              ("C-c C-c a" . lsp-execute-code-action)
+              ("C-c C-c r" . lsp-rename)
+              ("C-c C-c q" . lsp-workspace-restart)
+              ("C-c C-c Q" . lsp-workspace-shutdown)
+              ("C-c C-c s" . lsp-rust-analyzer-status))
   :config
-  (cond
-   ((string-equal system-type "darwin")
-	(progn
-	    (setq rust-rustfmt-bin "~/.rustup/toolchains/nightly-x86_64-apple-darwin/bin/rustfmt")
-	  ))
-   ((string-equal system-type "gnu/linux")
-	(progn
-	    (setq rust-rustfmt-bin "~/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/rustfmt")
-	  ))
-   )
-  (setq rust-format-on-save t)
+  ;; uncomment for less flashiness
+  ;; (setq lsp-eldoc-hook nil)
+  ;; (setq lsp-enable-symbol-highlighting nil)
+  ;; (setq lsp-signature-auto-activate nil)
 
-  (use-package cargo
-	:ensure t
-	:hook (rust-mode . cargo-minor-mode)
-	)
+  ;; comment to disable rustfmt on save
+  (setq rustic-format-on-save t)
+  (add-hook 'rustic-mode-hook 'rk/rustic-mode-hook))
 
-  (use-package racer
-	:ensure t
-	:config
-	(add-hook 'rust-mode-hook #'racer-mode)
-	(add-hook 'racer-mode-hook #'eldoc-mode))
-)
+(defun rk/rustic-mode-hook ()
+  ;; so that run C-c C-c C-r works without having to confirm
+  (setq-local buffer-save-without-query t))
 
 (use-package python-mode
   :ensure t
@@ -585,17 +582,15 @@
  '(column-number-mode t)
  '(ivy-mode t)
  '(package-selected-packages
-   (quote
-	(racer auctex latex-extra latex-math-preview company-math flappymacs counsel lsp-python-ms python-mode imenus yasnippet company-lsp eglot rust-playground flycheck-ocaml flycheck-rust demangle-mode clippy clang-format+ neotree caml forge key-chord crux ryo-modal perspective company-restclient restclient yaml-mode git-timemachine toml-mode cargo cargo-mode persp-mode tablist elfeed mu4e-alert rust-mode gotest worf smartparens git-gutter-fringe hydra go-eldoc company epresent evil-magit diff-hl badger-theme counsel-projectile projectile cider clojure-mode syndicate evil-surround go-mode eyebrowse magit which-key general use-package)))
+   '(racer auctex latex-extra latex-math-preview company-math flappymacs counsel lsp-python-ms python-mode imenus yasnippet company-lsp eglot rust-playground flycheck-ocaml flycheck-rust demangle-mode clippy clang-format+ neotree caml forge key-chord crux ryo-modal perspective company-restclient restclient yaml-mode git-timemachine toml-mode cargo cargo-mode persp-mode tablist elfeed mu4e-alert rust-mode gotest worf smartparens git-gutter-fringe hydra go-eldoc company epresent evil-magit diff-hl badger-theme counsel-projectile projectile cider clojure-mode syndicate evil-surround go-mode eyebrowse magit which-key general use-package))
  '(safe-local-variable-values
-   (quote
-	((rpc/compile/build-command . "cd $(git rev-parse --show-toplevel) && go install cmd/mongosqld/mongosqld.go")
+   '((rpc/compile/build-command . "cd $(git rev-parse --show-toplevel) && go install cmd/mongosqld/mongosqld.go")
 	 (rpc/compile/check-command . "go install")
 	 (rpc/compile/check-command . "go install -gcflags='-e'")
 	 (rpc/compile/unit-test-command . "go test")
 	 (rpc/compile/build-command . "cargo build")
 	 (rpc/compile/check-command . "cargo check")
-	 (rpc/compile/unit-test-command . "cargo test")))))
+	 (rpc/compile/unit-test-command . "cargo test"))))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
