@@ -55,3 +55,5 @@
 
 [web]
 	brower = google-chrome
+[url "git@github.com:"]
+	insteadOf = https://github.com/
