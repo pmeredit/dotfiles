@@ -25,8 +25,9 @@ let g:go_fmt_command = "goimports"
 " path to directory where library can be found
 let g:clang_library_path='/usr/local/Cellar/llvm/7.0.0/lib'
 
-let g:rustfmt_command = "rustup run nightly rustfmt"
+let g:rustfmt_command = "rustfmt"
 let g:rustfmt_autosave = 1
+let g:rustfmt_fail_silently = 0
 
 augroup aus
 au!
@@ -56,7 +57,7 @@ Plug 'machakann/vim-highlightedyank'
 Plug 'andymass/vim-matchup'
 
 " completion (much better than mu-complete was)
-Plug 'neoclide/coc.nvim'
+Plug 'neoclide/coc.nvim', { 'branch': 'master', 'do': 'yarn install --frozen-lockfile' }
 
 Plug 'dag/vim-fish'
 
