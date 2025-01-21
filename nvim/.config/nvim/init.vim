@@ -56,6 +56,9 @@ Plug 'itchyny/lightline.vim'
 Plug 'machakann/vim-highlightedyank'
 Plug 'andymass/vim-matchup'
 
+" color scheme
+Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
+
 " completion (much better than mu-complete was)
 Plug 'neoclide/coc.nvim', { 'branch': 'master', 'do': 'yarn install --frozen-lockfile' }
 
@@ -88,6 +91,9 @@ Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
 
 " Rust
 Plug 'rust-lang/rust.vim'
+
+" Zig
+Plug 'ziglang/zig.vim'
 
 Plug 'vmchale/ion-vim'
 
@@ -263,3 +269,5 @@ nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
+
+colorscheme catppuccin " catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
